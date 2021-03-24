@@ -274,12 +274,13 @@ li{
   }
   
   .listItem{
-    margin-top: 0.4rem;
+    
     height: 7rem;
     /* width: 100vw; */
   }
 
   .item, .itemDone{
+    margin-top: 0.4rem;
     font-size: 1.4rem;
   }
 
