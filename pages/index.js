@@ -2,16 +2,14 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { render } from 'react-dom'
 
-
 function setAsCompleted(){
+  
   var item = document.querySelector('h2.item')
   var date = document.querySelector('p.date')
-  var button = document.querySelector('button.done')
   var progressBar = document.querySelector('div.correntProgress')
 
   item.setAttribute('class', 'itemDone')
   date.setAttribute('class', 'dateDone')
-  button.setAttribute('class', 'doneDone')
   progressBar.setAttribute('class', 'correntProgressUpdate')
 }
 
@@ -19,7 +17,6 @@ const second = 1000;
 const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24;
-
 
 function countDays(){
   const today = new Date().getTime();
@@ -29,6 +26,18 @@ function countDays(){
   return(time2)
 }
 countDays()
+
+function oneMonth(){
+  const today = new Date().getTime();
+  const date = new Date(`March 24 2021 20:17:00 `).getTime();
+
+  if(today >= date){
+    setAsCompleted()
+  }
+  return('06/04/2021')
+}
+oneMonth()
+
 
 export default function Home() {
   
@@ -49,23 +58,23 @@ export default function Home() {
             <li class='listItem'>
               <div class='itemBox' >
                 <h2 class='itemDone'>Inicio de namoro </h2>
-                <p class='dateDone'> - 06/03/2021</p>
+                <p class='dateDone'>06/03/2021</p>
               </div>
-              <button class='doneDone' onClick={setAsCompleted}>Done</button>
+              {/* <button class='doneDone' onClick={setAsCompleted}>Done</button> */}
             </li>
             <li class='listItem'>
               <div class='itemBox' >
                 <h2 class='item'>1 mês de namoro </h2>
-                <p class='date'> - 06/04/2021</p>
+                <p class='date'>{oneMonth()}</p>
               </div>
-              <button class='done' onClick={setAsCompleted}>Marcar como feito</button>
+              {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
             </li>
             <li class='listItem'>
               <div class='itemBox' >
                 <h2 class='item'>2 meses de namoro </h2>
-                <p class='date'> - 06/05/2021</p>
+                <p class='date'>06/05/2021</p>
               </div>
-              <button class='done' onClick={setAsCompleted}>Marcar como feito</button>
+              {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
             </li>
           </ul>
           <button class='addMore'>

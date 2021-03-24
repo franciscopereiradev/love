@@ -335,7 +335,7 @@ li{
   }
 
   .correntProgressUpdate{
-    height: 16px;
+    height: 16nppx;
     background: var(--title);
   }
 
