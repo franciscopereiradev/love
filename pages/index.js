@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { render } from 'react-dom'
 
-function setAsCompleted(){
+async function setAsCompleted(){
   
   var item = document.querySelector('h2.item')
   var date = document.querySelector('p.date')
