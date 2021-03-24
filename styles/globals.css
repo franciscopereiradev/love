@@ -330,12 +330,12 @@ li{
   }
 
   .correntProgress{
-    height: 17px;
+    height: 16px;
     background: var(--title);
   }
 
   .correntProgressUpdate{
-    height: 17px;
+    height: 16px;
     background: var(--title);
   }
 
