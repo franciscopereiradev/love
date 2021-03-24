@@ -41,7 +41,7 @@ countDays()
 function oneMonth(){
   const today = new Date().getTime();
   const dateOne = new Date(`April 06 2020 00:00:00 `).getTime();
-  const dateTwo = new Date(`May 06 2020 00:00:00 `).getTime();
+  const dateTwo = new Date(`April 07 2020 00:00:00 `).getTime();
 
   if(today >= dateOne){
     setAsPassedOne()
