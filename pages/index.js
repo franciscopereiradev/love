@@ -29,7 +29,7 @@ countDays()
 
 function oneMonth(){
   const today = new Date().getTime();
-  const date = new Date(`March 24 2021 20:17:00 `).getTime();
+  const date = new Date(`March 25 2021 00:00:00 `).getTime();
 
   if(today >= date){
     setAsCompleted()
