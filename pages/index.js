@@ -15,13 +15,13 @@ async function setAsPassedOne(){
 
 async function setAsPassedTwo(){
   
-  var item = document.querySelector('h2.item2')
-  var date = document.querySelector('p.date2')
-  var progressBar = document.querySelector('div.correntProgress')
+  var item2 = document.querySelector('h2.item2')
+  var date2 = document.querySelector('p.date2')
+  var progressBar2 = document.querySelector('div.correntProgress')
 
-  item.setAttribute('class', 'itemDone')
-  date.setAttribute('class', 'dateDone')
-  progressBar.setAttribute('class', 'correntProgressUpdate2')
+  item2.setAttribute('class', 'itemDone')
+  date2.setAttribute('class', 'dateDone')
+  progressBar2.setAttribute('class', 'correntProgressUpdate2')
 }
 
 const second = 1000;
