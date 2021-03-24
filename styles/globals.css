@@ -292,12 +292,12 @@ li{
     /* width: 100vw; */
   }
 
-  .item, .itemDone{
+  .item1, .item2, .itemDone{
     margin-top: 0.4rem;
     font-size: 1.4rem;
   }
 
-  .date, .dateDone{
+  .date1, .date2, .dateDone{
     font-size: 0.6rem;
   }
 
