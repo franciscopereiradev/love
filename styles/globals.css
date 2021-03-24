@@ -119,6 +119,7 @@ li{
 .done{
   transition: 500ms;
   background: var(--title);
+  margin-right: 10px;
   height: 60px;
   width: 250px;
   border-radius: 15px;
@@ -145,6 +146,18 @@ li{
   height: 50%;
   width: 90%;
   border-radius: 15px 15px 0 0;
+}
+
+.list{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem{
+  width: 100vw;
+  margin: 0 0.4rem;
+  /* height: 6rem; */
 }
 
 .addMore{
@@ -255,28 +268,31 @@ li{
   
 
   .title{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .days{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .achievements{
-    margin-top: 80px;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+    width: 100vw;
   }
 
   .item, .itemDone{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .date, .dateDone{
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 
   .done{
     width: 10rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .addMore{
@@ -284,8 +300,14 @@ li{
     /* background-color: transparent; */
     /* box-shadow: none; */
     width: 33%;
-    height: 60px;
-    bottom: 80px;
+    height: 2.4rem;
+    bottom: 2rem;
+  }
+
+  .add1, .add2{
+    width: 1.2rem;
+    height: 0.2rem;
+    border-radius: 5rem;
   }
 
   .progressBarMain{
@@ -296,22 +318,22 @@ li{
     border-radius: 0;
     border: none;
     box-shadow: none;
-    top: 160px;
+    top: 140px;
   }
 
   .progressBar{
-    height: 25px;
+    height: 20px;
     background: var(--background);
     border-color: var(--title);
   }
 
   .correntProgress{
-    height: 22px;
+    height: 17px;
     background: var(--title);
   }
 
   .correntProgressUpdate{
-    height: 22px;
+    height: 17px;
     background: var(--title);
   }
 
@@ -321,10 +343,10 @@ li{
   }
 
   .dev > p{
-    font-size: 1.6rem;
+    font-size: 0.6rem;
   }
 
   .dev > h2{
-    font-size: 1.6rem;
+    font-size: 0.6rem;
   }
 }
