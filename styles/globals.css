@@ -274,6 +274,7 @@ li{
   }
   
   .listItem{
+    margin-top: 0.4rem;
     height: 7rem;
     /* width: 100vw; */
   }
