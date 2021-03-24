@@ -2,15 +2,26 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { render } from 'react-dom'
 
-async function setAsCompleted(){
+async function setAsPassedOne(){
   
-  var item = document.querySelector('h2.item')
-  var date = document.querySelector('p.date')
+  var item = document.querySelector('h2.item1')
+  var date = document.querySelector('p.date1')
   var progressBar = document.querySelector('div.correntProgress')
 
   item.setAttribute('class', 'itemDone')
   date.setAttribute('class', 'dateDone')
   progressBar.setAttribute('class', 'correntProgressUpdate')
+}
+
+async function setAsPassedTwo(){
+  
+  var item = document.querySelector('h2.item2')
+  var date = document.querySelector('p.date2')
+  var progressBar = document.querySelector('div.correntProgress')
+
+  item.setAttribute('class', 'itemDone')
+  date.setAttribute('class', 'dateDone')
+  progressBar.setAttribute('class', 'correntProgressUpdate2')
 }
 
 const second = 1000;
@@ -29,10 +40,13 @@ countDays()
 
 function oneMonth(){
   const today = new Date().getTime();
-  const date = new Date(`March 25 2021 00:00:00 `).getTime();
+  const dateOne = new Date(`April 06 2021 00:00:00 `).getTime();
+  const dateTwo = new Date(`May 06 2021 00:00:00 `).getTime();
 
-  if(today >= date){
-    setAsCompleted()
+  if(today >= dateOne){
+    setAsPassedOne()
+  }else if(today >= dateTwo){
+    setAsPassedTwo()
   }
   return('06/04/2021')
 }
@@ -64,15 +78,15 @@ export default function Home() {
             </li>
             <li class='listItem'>
               <div class='itemBox' >
-                <h2 class='item'>1 mês de namoro </h2>
-                <p class='date'>{oneMonth()}</p>
+                <h2 class='item1'>1 mês de namoro </h2>
+                <p class='date1'>{oneMonth()}</p>
               </div>
               {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
             </li>
             <li class='listItem'>
               <div class='itemBox' >
-                <h2 class='item'>2 meses de namoro </h2>
-                <p class='date'>06/05/2021</p>
+                <h2 class='item2'>2 meses de namoro </h2>
+                <p class='date2'>06/05/2021</p>
               </div>
               {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
             </li>
