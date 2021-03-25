@@ -246,6 +246,7 @@ li{
 @media(max-width:900px){
 
   .main{
+    height: 95vh;
     width: 100vw;
     background: var(--background);
     border-radius: 0px;
@@ -276,7 +277,7 @@ li{
   }
 
   .achievements{
-
+    height: auto;
     padding: 0;
     margin-top: 100px;
     width: 100vw;
@@ -344,7 +345,7 @@ li{
   }
 
   .correntProgressUpdate{
-    height: 16nppx;
+    height: 16px;
     background: var(--title);
   }
 
