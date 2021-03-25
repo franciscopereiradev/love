@@ -63,7 +63,7 @@ export default function Home() {
       <div class='main'>
         <div class='header'>
           <h1 class='title'>
-            Estamos justos à
+            Estamos juntos à
           </h1>
           <h1 class='days'>
             {countDays()} dias
