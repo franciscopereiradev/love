@@ -54,15 +54,10 @@ li{
 
 .main{
   display: flex;
-  margin: 5vh 0;
   flex-direction: column;
   align-items: center;
-  background: var(--background-secondary);
-  width: 90vw;
-  height: 90vh;
-  border-radius: 15px;
-  
-
+  width: 100vw;
+  height: 100vh;
 }
 
 .list{
@@ -84,6 +79,11 @@ li{
 }
 
 .title{
+  margin: 0;
+  padding: 0;
+}
+
+.days{
   margin: 0;
   padding: 0;
 }
@@ -142,7 +142,6 @@ li{
   display: flex;
   flex-direction: row;
   background-color: var(--background);
-  height: 50%;
   width: 90%;
   border-radius: 15px 15px 0 0;
 }
@@ -150,15 +149,15 @@ li{
 .addMore{
   transition: 500ms;
   display: flex;
-  position: absolute;
   justify-content: center;
   align-items: center;
   background-color: var(--title);
-  height: 50px;
-  width: 50px;
+  height: 2.4rem;
+  width: 8rem;
+
+  bottom: 4rem;
   border: none;
-  right: 200px;
-  margin-top: 20px;  
+  
   padding: none;
   border-radius: 50px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -171,38 +170,32 @@ li{
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
-.add1{
-  
+.add1, .add2{
   position: absolute;
   background-color: var(--background);
-  height: 5px;
-  width: 40px;
-  border-radius: 5px;
+  width: 1.2rem;
+  height: 0.2rem;
+  border-radius: 5rem;
 }
 .add2{
-  position: absolute;
-  background-color: var(--background);
-  height: 5px;
-  width: 40px;
-  border-radius: 5px;
   transform: rotate(90deg);
 }
+
+
 .progressBarMain{
+  margin: 0.6rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background);
-  height: 30%;
-  width: 90%;
-  margin-top: -16px;
-  border-radius: 15px;
-  border: 2px solid var(--title);
+  background-color: transparent;
+  height: 1.8rem;
+  width: 100vw;
 }
 
 .progressBar{
-  background-color: var(--background-secundary);
+  background-color: transparent;
   width: 90%;
-  height: 40px;
+  height: 1.6rem;
   border-radius: 50px;
   border: 2px solid var(--title);
 }
@@ -237,6 +230,9 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  height: 2rem;
+  bottom: 0.2rem;
 }
 
 .dev > h2{
@@ -246,7 +242,9 @@ li{
 @media(max-width:900px){
 
   .main{
-    height: 95vh;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     width: 100vw;
     background: var(--background);
     border-radius: 0px;
@@ -309,11 +307,9 @@ li{
 
   .addMore{
     left: 33%;
-    /* background-color: transparent; */
-    /* box-shadow: none; */
     width: 33%;
     height: 2.4rem;
-    bottom: 2rem;
+    bottom: 4rem;
   }
 
   .add1, .add2{
@@ -326,32 +322,15 @@ li{
     background: var(--background);
     position: absolute;
     width: 100vw;
-    height: 70px;
+    height: 1.4rem;
     border-radius: 0;
     border: none;
     box-shadow: none;
-    top: 95px;
+    top: 90px;
   }
 
   .progressBar{
-    height: 20px;
-    background: var(--background);
-    border-color: var(--title);
-  }
-
-  .correntProgress{
-    height: 16px;
-    background: var(--title);
-  }
-
-  .correntProgressUpdate{
-    height: 16px;
-    background: var(--title);
-  }
-
-  .dev{
-   position: absolute;
-   bottom: 0px;
+    height: 1.2rem;
   }
 
   .dev > p{

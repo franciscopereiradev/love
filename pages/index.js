@@ -59,6 +59,7 @@ export default function Home() {
   return (
     <div id='pageLanding'>
       <title>LoveYou ❤</title>
+      
       <div class='main'>
         <div class='header'>
           <h1 class='title'>
@@ -68,6 +69,11 @@ export default function Home() {
             {countDays()} dias
           </h1>
         </div>
+        <section class='progressBarMain'>
+          <div class='progressBar'>
+            <div class='correntProgress'></div>
+          </div>
+        </section>
         <section class='achievements'>
           <ul class='list'>
             <li class='listItem'>
@@ -92,28 +98,14 @@ export default function Home() {
               {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
             </li>
           </ul>
-          <button class='addMore'>
+        </section>
+        <button class='addMore'>
             <div class='add1'></div>
             <div class='add2'></div>
           </button>
-        </section>
-        <section class='progressBarMain'>
-          <p class='subtitle'>
-
-          </p>
-          <div class='progressBar'>
-            <div class='correntProgress'>
-
-            </div>
-          </div>
-        </section>
         <section class='dev'>
-          <p>
-            Made with Love ❤
-          </p>
-          <h2>
-            From <strong>Me</strong> to <strong>You!</strong>
-          </h2>
+          <p>Made with Love ❤</p>
+          <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
         </section>
       </div>
     </div>
