@@ -244,11 +244,7 @@ li{
 }
 
 @media(max-width:900px){
-
-  .pageLanding{
-    height: 100vh;
-  }
-  j
+  
   .main{
     width: 100vw;
     background: var(--background);
