@@ -140,6 +140,7 @@ li{
 
 .achievements{
   display: flex;
+  max-height: 55%;
   flex-direction: row;
   background-color: var(--background);
   width: 90%;
@@ -149,13 +150,14 @@ li{
 .addMore{
   transition: 500ms;
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
   background-color: var(--title);
   height: 2.4rem;
   width: 8rem;
 
-  bottom: 4rem;
+  bottom: 3rem;
   border: none;
   
   padding: none;
@@ -228,18 +230,19 @@ li{
 
 .dev{
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
   margin: 0.4rem 0 0 0;
   height: 2rem;
-  bottom: 0.2rem;
+  bottom: 0.4rem;
 }
 
 .dev > h2{
   margin-left: 10px;
 }
 
-@media(max-width:1601px){
+@media(max-width:900px){
 
   .main{
     margin: 0;
