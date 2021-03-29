@@ -29,12 +29,13 @@ const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24;
 
+const today = new Date().getTime();
+const date_ini = new Date(`March 06 2021 00:00:00 `).getTime();
+
 function countDays(){
-  const today = new Date().getTime();
-  const date_ini = new Date(`March 06 2021 00:00:00 `).getTime();
   const time = today - date_ini;
-  const time2 = Math.floor(time/day)
-  return(time2)
+  const timeInDays = Math.floor(time/day)
+  return(timeInDays)
 }
 countDays()
 
@@ -53,6 +54,42 @@ function oneMonth(){
 }
 oneMonth()
 
+function daysTo(){
+  const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
+  const date_twoY = new Date(`March 06 2023 00:00:00`).getTime();
+  
+  if(date_oneY > today){
+    const time3 = date_oneY - today
+    const timeInDays2 = Math.floor(time3/day)
+    
+
+    return(timeInDays2)
+  } else if(date_oneY <= today){
+    const time3 = date_twoY - today
+    const timeInDays2 = Math.floor(time3/day)
+    
+    return(timeInDays2)
+
+  }
+  
+}
+daysTo()
+
+function howManyYears(){
+  const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
+  const date_twoY = new Date(`March 06 2023 00:00:00`).getTime();
+
+  if(date_oneY > today){
+    const howManyYears = 1
+
+    return(`${howManyYears} ano`)
+  } else{
+    const howManyYears = 2
+    
+    return(`${howManyYears} anos`)
+  }
+}
+howManyYears()
 
 export default function Home() {
   
@@ -68,6 +105,7 @@ export default function Home() {
           <h1 class='days'>
             {countDays()} dias
           </h1>
+          <h2 class='years'>Faltam {daysTo()} dias para fazer-mos {howManyYears()} <strong>juntos!</strong></h2>
         </div>
         <section class='progressBarMain'>
           <div class='progressBar'>

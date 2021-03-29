@@ -89,6 +89,12 @@ li{
   padding: 0;
 }
 
+.years{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
 .days{
   margin: 0;
   padding: 0;
@@ -276,6 +282,12 @@ li{
     margin: 0;
     padding: 0;
     font-size: 1.4rem;
+  }
+
+  .years{
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
   }
 
   .days{
