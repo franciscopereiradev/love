@@ -4,7 +4,6 @@ html{
   --text-secondary: #b9c4db;
   --background: #f2f3f5;
   --background-secondary: #fff;
-
 }
 body {
   padding: 0;
@@ -217,19 +216,24 @@ li{
 .correntProgress{
   margin-left: -2px;
   background-color: var(--title);
-  width: 33%;
+  /* width: 8%; */
   height: 100%;
   border-radius: 50px;
 }
 
-.correntProgressUpdate{
+.progressBarMain > p {
+  position: absolute;
+  color: var(--title);
+  font-size: 1rem;
+}
+/* .correntProgressUpdate{
   transition: 1s;
   margin-left: -2px;
   background-color: var(--title);
   width: 66%;
   height: 100%;
   border-radius: 50px;
-}
+} */
 
 .correntProgressUpdate2{
   transition: 1s;

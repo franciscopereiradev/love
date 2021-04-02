@@ -64,6 +64,7 @@ function daysTo(){
     
 
     return(timeInDays2)
+
   } else if(date_oneY <= today){
     const time3 = date_twoY - today
     const timeInDays2 = Math.floor(time3/day)
@@ -90,6 +91,20 @@ function howManyYears(){
 }
 howManyYears()
 
+function progress(){
+  const today = new Date().getTime();
+  const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
+
+  const days = date_oneY - today
+  const time = Math.floor(days/day)
+
+    const percent = Math.floor(time/365 * 100)
+    const progress = 100 - percent
+
+    return(progress)
+
+} progress()
+
 export default function Home() {
   
   return (
@@ -108,8 +123,9 @@ export default function Home() {
         </div>
         <section class='progressBarMain'>
           <div class='progressBar'>
-            <div class='correntProgress'></div>
+            <div class='correntProgress' style={{width: `${progress()}%`}}></div>
           </div>
+            <p>{`${progress()}%`}</p>
         </section>
         <section class='achievements'>
           <ul class='list'>
