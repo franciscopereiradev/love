@@ -160,7 +160,8 @@ li{
 
 .addMore{
   transition: 500ms;
-  display: flex;
+  /* display: flex; */
+  display: none;
   position: absolute;
   justify-content: center;
   align-items: center;

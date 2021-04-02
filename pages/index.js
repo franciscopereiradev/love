@@ -77,7 +77,6 @@ daysTo()
 
 function howManyYears(){
   const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
-  const date_twoY = new Date(`March 06 2023 00:00:00`).getTime();
 
   if(date_oneY > today){
     const howManyYears = 1
