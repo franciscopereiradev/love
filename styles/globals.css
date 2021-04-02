@@ -358,6 +358,12 @@ li{
     height: 1.2rem;
   }
 
+  .progressBarMain > p {
+    position: absolute;
+    color: var(--title);
+    font-size: 0.6rem;
+  }
+
   .dev > p{
     font-size: 0.6rem;
   }
