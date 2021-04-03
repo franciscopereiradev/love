@@ -108,58 +108,62 @@ function progress(){
 export default function Home() {
   
   return (
-    <div id='pageLanding'>
+    <div class='pageLanding'>
       <title>LoveYou ❤</title>
       
       <div class='main'>
-        <div class='header'>
-          <h1 class='title'>
-            Estamos juntos à
-          </h1>
-          <h1 class='days'>
-            {countDays()} dias
-          </h1>
-          <h2 class='years'>Faltam {daysTo()} dias para fazer-mos {howManyYears()} <strong>juntos!</strong></h2>
-        </div>
-        <section class='progressBarMain'>
-          <div class='progressBar'>
-            <div class='correntProgress' style={{width: `${progress()}%`}}></div>
+        <div class='circle1'></div>
+        <div class='circle2'></div>
+        <div class='glass'>
+          <div class='header'>
+            <h1 class='title'>
+              Estamos juntos à
+            </h1>
+            <h1 class='days'>
+              {countDays()} dias
+            </h1>
+            <h2 class='years'>Faltam {daysTo()} dias para fazer-mos {howManyYears()} <strong>juntos!</strong></h2>
           </div>
-            <p>{`${progress()}%`}</p>
-        </section>
-        <section class='achievements'>
-          <ul class='list'>
-            <li class='listItem'>
-              <div class='itemBox' >
-                <h2 class='itemDone'>Inicio de namoro </h2>
-                <p class='dateDone'>06/03/2021</p>
-              </div>
-              {/* <button class='doneDone' onClick={setAsCompleted}>Done</button> */}
-            </li>
-            <li class='listItem'>
-              <div class='itemBox' >
-                <h2 class='item1'>1 mês de namoro </h2>
-                <p class='date1'>{oneMonth()}</p>
-              </div>
-              {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
-            </li>
-            <li class='listItem'>
-              <div class='itemBox' >
-                <h2 class='item2'>2 meses de namoro </h2>
-                <p class='date2'>06/05/2021</p>
-              </div>
-              {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
-            </li>
-          </ul>
-        </section>
-        <button class='addMore'>
-            <div class='add1'></div>
-            <div class='add2'></div>
-          </button>
-        <section class='dev'>
-          <p>Made with Love ❤</p>
-          <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
-        </section>
+          <section class='progressBarMain'>
+            <div class='progressBar'>
+              <div class='correntProgress' style={{width: `${progress()}%`}}></div>
+            </div>
+              <p>{`${progress()}%`}</p>
+          </section>
+          <section class='achievements'>
+            <ul class='list'>
+              <li class='listItem'>
+                <div class='itemBox' >
+                  <h2 class='itemDone'>Inicio de namoro </h2>
+                  <p class='dateDone'>06/03/2021</p>
+                </div>
+                {/* <button class='doneDone' onClick={setAsCompleted}>Done</button> */}
+              </li>
+              <li class='listItem'>
+                <div class='itemBox' >
+                  <h2 class='item1'>1 mês de namoro </h2>
+                  <p class='date1'>{oneMonth()}</p>
+                </div>
+                {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
+              </li>
+              <li class='listItem'>
+                <div class='itemBox' >
+                  <h2 class='item2'>2 meses de namoro </h2>
+                  <p class='date2'>06/05/2021</p>
+                </div>
+                {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
+              </li>
+            </ul>
+          </section>
+          <button class='addMore'>
+              <div class='add1'></div>
+              <div class='add2'></div>
+            </button>
+          <section class='dev'>
+            <p>Made with Love ❤</p>
+            <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
+          </section>
+        </div>
       </div>
     </div>
     

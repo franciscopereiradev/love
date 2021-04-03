@@ -1,7 +1,8 @@
 html{
-  --title: #707b93;
-  --text: #474e5c;
-  --text-secondary: #b9c4db;
+  --title: #f2f3f5;
+  --text: #e1e2e5;
+  --text-secondary: #c1c2c5;
+  --wallpaper: #2a0382;
   --background: #f2f3f5;
   --background-secondary: #fff;
 }
@@ -51,19 +52,50 @@ li{
   /* align-items: center; */
 }
 
+
 .main{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to right top, rgb(92, 0, 128), rgb(29, 131, 190));
   width: 100vw;
   height: 100vh;
+}
+
+.glass{
+  background: #fff;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
+}
+
+.circle1, .circle2{
+  background: #fff;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1{
+  top: 5%;
+  right: 15%;
+}
+
+.circle2{
+  bottom: 5%;
+  left: 10%;
 }
 
 .list{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 90%;
+  /* width: 90%; */
 }
 
 .listItem{
@@ -152,9 +184,9 @@ li{
 .achievements{
   display: flex;
   flex-direction: row;
-  background-color: var(--background);
-  width: 90%;
-  border-radius: 15px 15px 0 0;
+  /* background-color: var(--background); */
+  /* width: 90%; */
+  border-radius: 15px;
 }
 
 .addMore{
@@ -202,7 +234,7 @@ li{
   align-items: center;
   background-color: transparent;
   height: 1.8rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .progressBar{
@@ -228,7 +260,7 @@ li{
 
 .dev{
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   justify-content: center;
   align-items: center;
   margin: 0.4rem 0 0 0;
@@ -247,11 +279,61 @@ li{
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background: var(--background);
-    border-radius: 0px;
+    /* background: var(--background); */
+    /* border-radius: 0px; */
   }
 
-  .header{
+  .glass{
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .circle1, .circle2{
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .circle1{
+    top: 1%;
+    right: 2%;
+  }
+
+  .circle2{
+    bottom: 2%;
+    left: 3%;
+  }
+
+  .title{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+
+  .listItem{
+    height: 5rem;
+  }
+
+  .item1, .item2, .itemDone{
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+  }
+
+  .date1, .date2, .dateDone{
+    font-size: 0.6rem;
+  }
+
+  .dev{
+    align-items: fle;
+  }
+
+  .dev > p{
+    font-size: 0.8rem;
+  }
+
+  .dev > h2{
+    font-size: 0.8rem;
+  }
+  /* .header{
     position: absolute;
     margin: 0;
     padding: 0;
@@ -265,11 +347,7 @@ li{
   }
   
 
-  .title{
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
-  }
+  
 
   .years{
     margin: 0;
@@ -281,24 +359,15 @@ li{
     font-size: 1.4rem;
   }
 
-  .achievements{
-    height: auto;
-    padding: 0;
-    margin-top: 100px;
-    width: 100vw;
-  }
+  
 
   .list{
     width: 95vw;
   }
   
-  .listItem{
-    margin-top: 1rem;
-    height: 5rem;
-    /* width: 100vw; */
-  }
+  
 
-  .item1, .item2, .itemDone{
+  /* .item1, .item2, .itemDone{
     margin-top: 0.4rem;
     font-size: 1.4rem;
   }
@@ -346,12 +415,6 @@ li{
     position: absolute;
     font-size: 0.8rem;
   }
-
-  .dev > p{
-    font-size: 0.6rem;
-  }
-
-  .dev > h2{
-    font-size: 0.6rem;
-  }
+*/
+ 
 }
