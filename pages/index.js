@@ -130,6 +130,7 @@ export default function Home() {
             </div>
               <p>{`${progress()}%`}</p>
           </section>
+          
           <section class='achievements'>
             <ul class='list'>
               <li class='listItem'>
