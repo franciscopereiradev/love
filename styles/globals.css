@@ -308,6 +308,10 @@ li{
     font-size: 1.4rem;
   }
 
+  .days{
+    font-size: 2rem;
+  }
+
   .listItem{
     height: 5rem;
   }
