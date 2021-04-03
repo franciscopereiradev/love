@@ -274,6 +274,11 @@ li{
 
 @media(max-width:900px){
 
+  .pageLanding{
+    margin: 0;
+    padding: 0;
+  }
+
   .main{
     margin: 0;
     padding: 0;
@@ -298,7 +303,7 @@ li{
   }
 
   .circle2{
-    bottom: -10%;
+    bottom: -14%;
     left: 2%;
   }
 
