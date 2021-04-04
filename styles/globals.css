@@ -158,8 +158,6 @@ li{
   font-size: 32px;
 }
 
-
-
 .listItemYear{
   background: linear-gradient(to right top, rgb(92, 0, 128), rgb(29, 131, 190));
 }
@@ -321,17 +319,15 @@ li{
   }
 
   .listItem{
-    /* margin: 0;
-    padding: 0; */
     height: 6rem;
   }
 
-  .item1, .item2, .itemDone{
+  .item1, .item2, .itemDone, .itemYear{
     margin-top: 0.8rem;
     font-size: 1.4rem;
   }
 
-  .date1, .date2, .dateDone{
+  .date1, .date2, .dateDone, .dateYear{
     font-size: 0.6rem;
   }
 
