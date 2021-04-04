@@ -159,7 +159,7 @@ li{
 }
 
 .listItemYear{
-  background: linear-gradient(to right top, rgb(92, 0, 128), rgb(29, 131, 190));
+  background: linear-gradient(to right top, rgba(92, 0, 128, 0.7), rgb(29, 131, 190, 0.6));
 }
 
 .itemDone{
