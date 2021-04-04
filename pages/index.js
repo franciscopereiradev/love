@@ -138,21 +138,78 @@ export default function Home() {
                   <h2 class='itemDone'>Inicio de namoro </h2>
                   <p class='dateDone'>06/03/2021</p>
                 </div>
-                {/* <button class='doneDone' onClick={setAsCompleted}>Done</button> */}
               </li>
               <li class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item1'>1 mês de namoro </h2>
                   <p class='date1'>{oneMonth()}</p>
                 </div>
-                {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
               </li>
               <li class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item2'>2 meses de namoro </h2>
                   <p class='date2'>06/05/2021</p>
                 </div>
-                {/* <button class='done' onClick={setAsCompleted}>Marcar como feito</button> */}
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item2'>3 meses de namoro </h2>
+                  <p class='date2'>06/06/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>4 meses de namoro </h2>
+                  <p class='date3'>06/07/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>5 meses de namoro </h2>
+                  <p class='date3'>06/08/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>6 meses de namoro </h2>
+                  <p class='date3'>06/09/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>7 meses de namoro </h2>
+                  <p class='date3'>06/10/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>8 meses de namoro </h2>
+                  <p class='date3'>06/11/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>9 meses de namoro </h2>
+                  <p class='date3'>06/12/2021</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>10 meses de namoro </h2>
+                  <p class='date3'>06/01/2022</p>
+                </div>
+              </li>
+              <li class='listItem2'>
+                <div class='itemBox2' >
+                  <h2 class='item3'>11 meses de namoro </h2>
+                  <p class='date3'>06/02/2022</p>
+                </div>
+              </li>
+              <li class='listItemYear'>
+                <div class='itemBox' >
+                  <h2 class='itemYear'>1 ano de namoro </h2>
+                  <p class='dateYear'>06/03/2022</p>
+                </div>
               </li>
             </ul>
           </section>
