@@ -318,7 +318,7 @@ li{
     width: 100%;
   }
 
-  .listItem{
+  .listItem, .listItemYear{
     height: 6rem;
   }
 
