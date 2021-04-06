@@ -154,7 +154,7 @@ li{
   display: none;
 }
 
-.item1, .item2, .itemYear{
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .itemYear{
   margin: 0;
   padding: 0;
   font-size: 32px;
@@ -172,7 +172,7 @@ li{
   text-decoration-line: line-through;
 }
 
-.date1, .date2, .dateYear{
+.date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9, .date10, .date11, .dateYear{
   font-size: 18px;;
 }
 
