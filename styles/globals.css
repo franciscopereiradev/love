@@ -324,12 +324,12 @@ li{
     height: 6rem;
   }
 
-  .item1, .item2, .itemDone, .itemYear{
+  .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{
     margin-top: 0.8rem;
     font-size: 1.4rem;
   }
 
-  .date1, .date2, .dateDone, .dateYear{
+  .date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9, .date10, .date11, .dateDone, .dateYear{
     font-size: 0.6rem;
   }
 
