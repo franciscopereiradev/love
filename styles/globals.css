@@ -2,9 +2,11 @@ html{
   --title: #f2f3f5;
   --text: #e1e2e5;
   --text-secondary: #c1c2c5;
-  --wallpaper: #2a0382;
+  --wallpaper: rgb(92, 0, 128);
+  --wallpaper-secondary: rgb(29, 131, 190);
   --background: #f2f3f5;
   --background-secondary: #fff;
+
 }
 body {
   padding: 0;
@@ -58,7 +60,7 @@ li{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right top, rgb(92, 0, 128), rgb(29, 131, 190));
+  background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary));
   width: 100vw;
   height: 100vh;
 }
@@ -159,7 +161,7 @@ li{
 }
 
 .listItemYear{
-  background: linear-gradient(to right top, rgba(92, 0, 128, 0.7), rgb(29, 131, 190, 0.6));
+  background: linear-gradient(to right top, rgba(92, 0, 128, 0.2), rgb(29, 131, 190, 0.2));
 }
 
 .itemDone{

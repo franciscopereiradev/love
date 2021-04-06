@@ -3,25 +3,19 @@ import styles from '../styles/Home.module.css'
 import { render } from 'react-dom'
 
 async function setAsPassedOne(){
-  
   var item = document.querySelector('h2.item1')
   var date = document.querySelector('p.date1')
-  var progressBar = document.querySelector('div.correntProgress')
 
   item.setAttribute('class', 'itemDone')
   date.setAttribute('class', 'dateDone')
-  progressBar.setAttribute('class', 'correntProgressUpdate')
 }
 
 async function setAsPassedTwo(){
-  
   var item2 = document.querySelector('h2.item2')
   var date2 = document.querySelector('p.date2')
-  var progressBar2 = document.querySelector('div.correntProgress')
 
   item2.setAttribute('class', 'itemDone')
   date2.setAttribute('class', 'dateDone')
-  progressBar2.setAttribute('class', 'correntProgressUpdate2')
 }
 
 const second = 1000;
@@ -51,8 +45,7 @@ function oneMonth(){
     setAsPassedTwo()
   }
   return('06/04/2021')
-}
-oneMonth()
+}oneMonth()
 
 function daysTo(){
   const date_oneY = new Date(`March 06 2022 00:00:00`).getTime();
@@ -133,7 +126,7 @@ export default function Home() {
           
           <section class='achievements'>
             <ul class='list'>
-              <li class='listItem'>
+              <li class='listItem2'>
                 <div class='itemBox' >
                   <h2 class='itemDone'>Inicio de namoro </h2>
                   <p class='dateDone'>06/03/2021</p>
@@ -151,8 +144,8 @@ export default function Home() {
                   <p class='date2'>06/05/2021</p>
                 </div>
               </li>
-              <li class='listItem2'>
-                <div class='itemBox2' >
+              <li class='listItem'>
+                <div class='itemBox' >
                   <h2 class='item2'>3 meses de namoro </h2>
                   <p class='date2'>06/06/2021</p>
                 </div>
