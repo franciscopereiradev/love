@@ -297,11 +297,13 @@ li{
     
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
   }
 
   .glass{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +324,7 @@ li{
   }
 
   .circle2{
-    bottom: 1%;
+    bottom: 2px;
     left: 2%;
   }
 
