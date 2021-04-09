@@ -2,8 +2,8 @@ html{
   --title: #f2f3f5;
   --text: #e1e2e5;
   --text-secondary: #c1c2c5;
-  /* --wallpaper: rgb(92, 0, 128); */
-  /* --wallpaper-secondary: rgb(29, 131, 190); */
+  --wallpaper: rgb(92, 0, 128);
+  --wallpaper-secondary: rgb(29, 131, 190);
   --background: #f2f3f5;
   --background-secondary: #fff;
 
@@ -54,25 +54,7 @@ li{
   /* align-items: center; */
 }
 
-.hover{
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-}
 
-.hover > h1{
-  margin: 0;
-  padding: 0;
-  color: #000;
-}
-
-.hover > h2{
-  margin: 0;
-  padding: 0;
-  color: #000;
-}
 
 .main{
   display: flex;
@@ -285,6 +267,25 @@ li{
   margin-left: 10px;
 }
 
+.hover{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+.hover > h1{
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.hover > h2{
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
 @media(max-width:900px){
 
   .pageLanding{
