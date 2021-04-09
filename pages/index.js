@@ -206,11 +206,11 @@ export default function Home() {
   return (
     <div class='pageLanding'>
       <title>LoveYou ❤</title>
-      <div class='hover'>
+      {/* <div class='hover'>
         <h1>OFFline :(</h1>
         <h2>Por tempo indeterminado</h2>
-      </div>
-      {/* <div class='main'>
+      </div> */}
+      <div class='main'>
         <div class='circle1'></div>
         <div class='circle2'></div>
         <div class='glass'>
@@ -321,7 +321,7 @@ export default function Home() {
             <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
           </section>
         </div>
-      </div> */}
+      </div>
     </div>
     
   )
