@@ -344,7 +344,7 @@ li{
     
     margin: 0;
     padding: 0;
-    height: 150vh;
+    height: 120vh;
     width: 100vw;
   }
 
@@ -353,10 +353,10 @@ li{
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 90vw;
-    height: 130vh;
+    height: 100vh;
   }
 
   .circle1, .circle2{
@@ -423,8 +423,7 @@ li{
     display: flex;
     position: absolute;
     align-items: center;
-    margin-top: 50px;
-    width: 92%;
+    width: 82%;
     bottom: 15px;
     height: 4rem;
     border-radius: 50px;
@@ -434,7 +433,7 @@ li{
   }
 
   .userMobile > a{
-    position: fixed;
+    position: absolute;
     margin: 0;
     padding: 0;
     left: 7.5px;
