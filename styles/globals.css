@@ -423,7 +423,7 @@ li{
     display: flex;
     /* position: absolute; */
     align-items: center;  
-    width: 82%;
+    width: 88%;
     height: 4rem;
     border-radius: 50px;
     background: #fff;
@@ -449,7 +449,7 @@ li{
     padding: 0;
     display: flex;
     /* flex-direction: column; */
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   
   .userMobile > div > p{
