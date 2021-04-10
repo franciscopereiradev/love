@@ -201,6 +201,14 @@ function progress(){
 
 } progress()
 
+// function userNames(){
+//   const names = [
+//     'Francisco', 
+//     'Carolina']
+
+//   return(names)
+// } userNames()
+
 export default function Home() {
   
   return (
@@ -316,11 +324,30 @@ export default function Home() {
               <div class='add1'></div>
               <div class='add2'></div>
             </button>
+          
+          <section class="userMobile">
+            <a>
+              {/* <img></img> */}
+            </a>
+            <div>
+              <p>Carolina</p>
+              <p>Francisco</p>
+            </div>
+          </section>
+        </div>
+          <section class="user">
+            <a>
+              {/* <img></img> */}
+            </a>
+            <div>
+              <p>Carolina</p>
+              <p>Francisco</p>
+            </div>
+          </section>
           <section class='dev'>
             <p>Made with Love ❤</p>
             <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
           </section>
-        </div>
       </div>
     </div>
     
