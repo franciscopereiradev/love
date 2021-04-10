@@ -421,11 +421,13 @@ li{
 
   .userMobile{
     display: flex;
-    position: absolute;
-    align-items: center;
+    /* position: absolute; */
+    align-self: center;
+    justify-content: center;
+    align-items: center;  
     width: 82%;
-    bottom: 15px;
     height: 4rem;
+    margin-top: 15px;
     border-radius: 50px;
     background: #fff;
     backdrop-filter: blur(2rem);
