@@ -75,6 +75,14 @@ li{
   background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
 }
 
+.glassLogin{
+  background: #fff;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
+}
 .circle1, .circle2{
   background: #fff;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
@@ -302,7 +310,7 @@ li{
   cursor: pointer;
 }
 
-.user > a{
+.photoUser{
   position: fixed;
   margin: 0;
   padding: 0;
@@ -315,7 +323,7 @@ li{
   background: linear-gradient(to right bottom, rgba(255,255, 255, 0.3), rgba(255,255, 255, 0.6));
 }
 
-.user > div{
+.nameUser{
   margin: 0;
   padding: 0;
   display: flex;
@@ -323,7 +331,7 @@ li{
   margin-left: 1.2rem;
 }
 
-.user > div > p{
+.nameUser > p{
   margin: 0;
   padding: 0;
   font-size: 1.4rem;
@@ -333,6 +341,66 @@ li{
 .userMobile{
   display: none;
 }
+
+.loginBox{
+  margin: 15px 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.2), rgba(255, 255, 255, 0.1));
+
+  border-radius: 15px;
+}
+
+.loginInput{
+  display: flex;
+  margin: 0;
+  padding-left: 10px;
+  border: none;
+  align-content: center;
+  justify-content: center;
+  height: 40px;
+  font-weight: 500;
+  font-size: 28px;
+  border-radius: 10px;
+  width: 200px;
+  color: #222222;
+
+}
+
+.entrar{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: #f1f2f5;
+  margin: 20px ;
+  height: 80px;
+  width: 200px;
+  border-radius: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.entrar > h2{
+  margin: 0;
+  padding-top: 10px;
+  transition: 1s;
+  color: #202020;  
+}
+
+.entrar:hover{
+  transition: 1s;
+  background: #202020;
+}
+
+.entrar:hover > h2{
+  transition: 1s;
+  color: #f1f2f5;
+}
+
+
 @media(max-width:900px){
 
   .pageLanding{
@@ -371,7 +439,7 @@ li{
   }
 
   .circle2{
-    bottom: -125px;
+    bottom: -135px;
     left: 2%;
   }
 

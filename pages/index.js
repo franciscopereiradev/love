@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { render } from 'react-dom'
+import Login from './login.js'
 
 async function setAsPassedOne(){
   var item = document.querySelector('h2.item1')
@@ -335,19 +336,20 @@ export default function Home() {
             </div>
           </section>
         </div>
-          <section class="user">
-            <a>
-              {/* <img></img> */}
-            </a>
-            <div>
+
+        <a class='user' href='./account'>
+          <div class='photoUser'>
+            {/* <img></img> */}
+          </div>
+            <div class='nameUser'>
               <p>Carolina</p>
               <p>Francisco</p>
             </div>
-          </section>
-          <section class='dev'>
-            <p>Made with Love ❤</p>
-            <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
-          </section>
+        </a>
+        <section class='dev'>
+          <p>Made with Love ❤</p>
+          <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
+        </section>
       </div>
     </div>
     
