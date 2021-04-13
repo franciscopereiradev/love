@@ -13,7 +13,7 @@ export default function Login(){
                         <h2>Login</h2>
                         <input class='loginInput' placeholder='marry me'></input>
                         <h2>Password</h2>
-                        <input class='loginInput' placeholder='password'></input>
+                        <input class='loginInput' type='password' placeholder='password'></input>
                         <a class='entrar'>
                             <h2>Entrar</h2>
                         </a>
