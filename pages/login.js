@@ -11,7 +11,7 @@ export default function Login(){
                     
                     <div class='loginBox'>
                         <h2>Login</h2>
-                        <input class='loginInput' placeholder='marry me'></input>
+                        <input class='loginInput' placeholder='login'></input>
                         <h2>Password</h2>
                         <input class='loginInput' type='password' placeholder='password'></input>
                         <a class='entrar'>
