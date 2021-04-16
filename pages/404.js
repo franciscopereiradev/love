@@ -10,7 +10,7 @@ export default function Register(){
 
             </div>
             <div class='countdown' >
-                <p>никогда 停止 combat zum бид</p>
+                {/* <p>никогда 停止 combat zum бид</p> */}
             </div>
         </div>
     )

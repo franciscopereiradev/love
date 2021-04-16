@@ -24,9 +24,9 @@ export default function Login(){
             </div>
             <div class='countdown' >
                 <p id='demo'></p>
-                <div class='button'>
+                {/* <div class='button'>
                     <a href='./404'>Click here</a>
-                </div>
+                </div> */}
             </div>
         </div>
     )
