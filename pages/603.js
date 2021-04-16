@@ -2,7 +2,7 @@ export default function Register(){
     return(
 
         <div class='pageLanding'>
-            <title>LoveYou ❤ | Register</title>
+            <title>LoveYou ❤ | Error 603</title>
             <div class='main'>
                 <div class='circle1'></div>
                 <div class='circle2'></div>
@@ -10,7 +10,10 @@ export default function Register(){
 
             </div>
             <div class='countdown' >
-                <p>404 - page not found</p>
+            <p>Error 603 - Love has been found</p>
+            <p>But...</p>
+            <p>Nop, is not here!</p>
+            <p>Try other place...</p>
             </div>
         </div>
     )
