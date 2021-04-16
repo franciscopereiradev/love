@@ -403,6 +403,7 @@ li{
 
 .countdown{
   display: flex;
+  flex-direction: column;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -418,6 +419,7 @@ li{
   color: #323232;
   font-size: 44px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 @media(max-width:900px){

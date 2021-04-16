@@ -381,6 +381,7 @@ export default function Home() {
       </div>
       <div class='countdown' >
         <p id='demo'></p>
+        <p>"Tic Tac"</p>
       </div>
     </div>
     
