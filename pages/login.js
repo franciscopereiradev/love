@@ -10,8 +10,8 @@ export default function Login(){
                     <h1 class='title'>Login</h1>
                     
                     <div class='loginBox'>
-                        <h2>Login</h2>
-                        <input class='loginInput' placeholder='login'></input>
+                        <h2>Username</h2>
+                        <input class='loginInput' placeholder='username'></input>
                         <h2>Password</h2>
                         <input class='loginInput' type='password' placeholder='password'></input>
                         <a class='entrar'>

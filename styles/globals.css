@@ -77,8 +77,8 @@ li{
 
 .glassLogin{
   background: #fff;
-  width: 40vw;
-  height: 80vh;
+  width: 30vw;
+  height: 60vh;
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
   background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
@@ -361,12 +361,13 @@ li{
   border: none;
   align-content: center;
   justify-content: center;
-  height: 40px;
+  height: 4rem;
+  width: 18rem;
   font-weight: 500;
   font-size: 28px;
-  border-radius: 10px;
-  width: 200px;
-  color: #222222;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #0000004d;
 
 }
 
@@ -374,10 +375,10 @@ li{
   display: flex;
   align-content: center;
   justify-content: center;
-  background: #f1f2f5;
-  margin: 20px ;
-  height: 80px;
-  width: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 40px;
+  height: 60px;
+  width: 300px;
   border-radius: 15px;
   transition: 1s;
   cursor: pointer;
@@ -385,14 +386,14 @@ li{
 
 .entrar > h2{
   margin: 0;
-  padding-top: 10px;
+  padding-top: 5px;
   transition: 1s;
   color: #202020;  
 }
 
 .entrar:hover{
   transition: 1s;
-  background: #202020;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .entrar:hover > h2{
@@ -400,6 +401,24 @@ li{
   color: #f1f2f5;
 }
 
+.countdown{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  backdrop-filter: blur(2rem);
+  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
+}
+
+.countdown > p{
+  color: #323232;
+  font-size: 44px;
+  font-weight: 700;
+}
 
 @media(max-width:900px){
 
