@@ -380,8 +380,8 @@ export default function Home() {
         </section>
       </div>
       <div class='countdown' >
-        <p>.. .-.. --- ...- . -.-- --- ..-</p>
         <p id='demo'></p>
+        <p>16:16 - Login</p>
       </div>
     </div>
     
