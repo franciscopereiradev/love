@@ -210,7 +210,7 @@ function progress(){
 //   return(names)
 // } userNames()
 
-var countDownDate = new Date("April 17, 2021 00:00:00").getTime();
+var countDownDate = new Date("April 24, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
