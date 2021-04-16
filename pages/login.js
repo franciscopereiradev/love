@@ -23,8 +23,8 @@ export default function Login(){
 
             </div>
             <div class='countdown' >
-                <p>.-- --- .-. .-.. -..</p>
-                <p>-- -.-- ..- -. .. ...- . .-. ... .</p>
+                {/* <p>.-- --- .-. .-.. -..</p>
+                <p>-- -.-- ..- -. .. ...- . .-. ... .</p> */}
                 <p id='demo'></p>
                 {/* <div class='button'>
                     <a href='./404'>Click here</a>
