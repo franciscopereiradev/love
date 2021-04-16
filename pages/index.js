@@ -381,7 +381,7 @@ export default function Home() {
       </div>
       <div class='countdown' >
         <p id='demo'></p>
-        <p>17:17 - same place</p>
+        {/* <p>17:17 - same place</p> */}
       </div>
     </div>
     
