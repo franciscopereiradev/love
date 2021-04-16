@@ -1,4 +1,4 @@
-export default function Login(){
+export default function Register(){
     return(
 
         <div class='pageLanding'>
@@ -8,6 +8,9 @@ export default function Login(){
                 <div class='circle2'></div>
                 <div class='glassLogin'></div>
 
+            </div>
+            <div class='countdown' >
+                <p>никогда не переставай бороться за нас</p>
             </div>
         </div>
     )
