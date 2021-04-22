@@ -77,8 +77,8 @@ li{
 
 .glassLogin{
   background: #fff;
-  width: 30vw;
-  height: 60vh;
+  width: 500px;
+  height: 600px;
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
   background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
@@ -382,11 +382,12 @@ li{
   border-radius: 15px;
   transition: 1s;
   cursor: pointer;
+  border: none;
 }
 
 .entrar > h2{
   margin: 0;
-  padding-top: 5px;
+  padding-top: 8px;
   transition: 1s;
   color: #202020;  
 }
