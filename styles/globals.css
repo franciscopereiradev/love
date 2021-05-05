@@ -77,8 +77,8 @@ li{
 
 .glassLogin{
   background: #fff;
-  width: 500px;
-  height: 600px;
+  width: 30vw;
+  height: 60vh;
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
   background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
@@ -181,6 +181,10 @@ li{
   text-decoration-line: line-through;
 }
 
+.itemCollapse{
+  display: none;
+}
+
 .date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9, .date10, .date11, .dateYear{
   font-size: 18px;;
 }
@@ -189,6 +193,10 @@ li{
   font-size: 18px;;
   color: var(--text);
   text-decoration-line: line-through;
+}
+
+.dateCollapse{
+  display: none;
 }
 
 .addMore{
@@ -382,12 +390,11 @@ li{
   border-radius: 15px;
   transition: 1s;
   cursor: pointer;
-  border: none;
 }
 
 .entrar > h2{
   margin: 0;
-  padding-top: 8px;
+  padding-top: 5px;
   transition: 1s;
   color: #202020;  
 }
