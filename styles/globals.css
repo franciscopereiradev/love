@@ -67,12 +67,12 @@ li{
 }
 
 .glass{
-  background: #fff;
-  width: 60vw;
-  height: 80vh;
-  border-radius: 2rem;
-  backdrop-filter: blur(2rem);
-  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
+  background: rgb(0, 0, 0);
+  width: 40vw;
+  height: 77vh;
+  border-radius: 1.4rem;
+  backdrop-filter: blur(1.4rem);
+  background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3));
 }
 
 .glassLogin{
@@ -81,11 +81,11 @@ li{
   height: 60vh;
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
-  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3));
 }
 .circle1, .circle2{
   background: #fff;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5));
   height: 20rem;
   width: 20rem;
   position: absolute;
@@ -94,12 +94,12 @@ li{
 
 .circle1{
   top: 5%;
-  right: 15%;
+  right: 20%;
 }
 
 .circle2{
   bottom: 5%;
-  left: 10%;
+  left: 20%;
 }
 
 
@@ -155,8 +155,8 @@ li{
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4),
-   rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(200, 200, 255, 0.4),
+   rgba(200, 200, 255, 0.3));
 }
 
 .listItem2{
@@ -170,7 +170,7 @@ li{
 }
 
 .listItemYear{
-  background: linear-gradient(to right top, rgba(92, 0, 128, 0.2), rgb(29, 131, 190, 0.2));
+  background: linear-gradient(to right top, rgba(200, 200, 255, 0.5) , rgba(255, 255, 255, 0.7));
 }
 
 .itemDone{
@@ -240,8 +240,8 @@ li{
 }
 
 .progressBar{
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), 
-    rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(200, 200, 255, 0.4), 
+    rgba(200, 200, 255, 0.3));
   width: 90%;
   height: 1.6rem;
   /* padding: 2px; */
@@ -250,7 +250,7 @@ li{
 }
 
 .correntProgress{
-  background: linear-gradient(33deg, rgba(255, 255, 255, 0.9) 21%, rgba(255, 255, 255, 0.7));
+  background: linear-gradient(33deg, rgba(200, 200, 255, 0.9) 21%, rgba(255, 255, 255, 0.7));
   height: 100%;
   border-radius: 50px;
 }
@@ -263,9 +263,8 @@ li{
 
 .dev{
   display: flex;
+  justify-content: center ;
   align-items: center;
-  margin: 1rem 0 0 0;
-  height: 2rem;
 }
 
 .dev > h2{

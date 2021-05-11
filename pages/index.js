@@ -365,6 +365,10 @@ export default function Home() {
               <p>Francisco</p>
             </div>
           </section>
+          <section class='dev'>
+            <p>Made with Love ❤</p>
+            <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
+          </section>
         </div>
 
         <a class='user' href='./account'>
@@ -376,10 +380,7 @@ export default function Home() {
               <p>Francisco</p>
             </div>
         </a>
-        <section class='dev'>
-          <p>Made with Love ❤</p>
-          <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
-        </section>
+        
       </div>
       {/* <div class='countdown' >
         <p id='demo'></p>
