@@ -478,13 +478,13 @@ li{
 
   .circle1, .circle2{
     position: absolute;
-    height: 5rem;
-    width: 5rem;
+    height: 10rem;
+    width: 10rem;
   }
 
   .circle1{
-    top: 1%;
-    right: 2%;
+    top: 6%;
+    right: 10%;
   }
 
   .circle2{
