@@ -537,7 +537,7 @@ li{
   }
 
   .userMobile{
-    display: flex;
+    display: none;
     /* position: absolute; */
     align-items: center;  
     width: 95%;
