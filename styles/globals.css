@@ -496,7 +496,7 @@ li{
   }
 
   .title{
-    margin: 0.4rem 0 0 0;
+    margin: 0;
     padding: 0;
     font-size: 1.4rem;
   }
@@ -510,7 +510,20 @@ li{
   }
 
   .listItem, .listItemYear{
-    height: 5rem;
+    height: 4.6rem;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  #listSt{
+    border-radius: 15px 15px 0 0 ;
+  }
+  #listLast{
+    border-radius: 0 0 15px 15px;
+  }
+  .listItemYear{
+    margin-top: 0.4rem;
+    border-radius: 15px;
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{
