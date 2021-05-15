@@ -455,14 +455,15 @@ li{
   .pageLanding{
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
   }
 
   .main{
-    
     margin: 0;
     padding: 0;
-    height: 120vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
   }
 
   .glass{
@@ -470,10 +471,12 @@ li{
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0.8rem);
+    border-radius: 0px;
   }
 
   .circle1, .circle2{
@@ -488,7 +491,7 @@ li{
   }
 
   .circle2{
-    bottom: -185px;
+    bottom: 3%;
     left: 2%;
   }
 
