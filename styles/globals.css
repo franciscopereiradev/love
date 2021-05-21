@@ -2,8 +2,10 @@ html{
   --title: #f2f3f5;
   --text: #e1e2e5;
   --text-secondary: #c1c2c5;
-  --wallpaper: rgb(92, 0, 128);
-  --wallpaper-secondary: rgb(29, 131, 190);
+  --wallpaper: rgb(212, 120, 35);
+  --wallpaper-secondary: rgb(63,81,181);
+  /* --wallpaper: rgb(92, 0, 128);
+  --wallpaper-secondary: rgb(29, 131, 190); */
   --background: #f2f3f5;
   --background-secondary: #fff;
 
