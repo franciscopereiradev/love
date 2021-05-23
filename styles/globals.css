@@ -3,7 +3,7 @@ html{
   --text: #e1e2e5;
   --text-secondary: #c1c2c5;
   --wallpaper: rgb(212, 120, 35);
-  --wallpaper-secondary: rgb(63,81,181);
+  --wallpaper-secondary: rgb(29,131,190);
   /* --wallpaper: rgb(92, 0, 128);
   --wallpaper-secondary: rgb(29, 131, 190); */
   --background: #f2f3f5;
@@ -70,8 +70,8 @@ li{
 
 .glass{
   background: rgb(0, 0, 0);
-  width: 40vw;
-  height: 77vh;
+  width: 48rem;
+  height: 48rem;
   border-radius: 1.4rem;
   backdrop-filter: blur(1.4rem);
   background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3));
@@ -157,8 +157,8 @@ li{
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  background: linear-gradient(to right bottom, rgba(200, 200, 255, 0.4),
-   rgba(200, 200, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),
+   rgba(255, 255, 255, 0.4));
 }
 
 .listItem2{
@@ -172,7 +172,7 @@ li{
 }
 
 .listItemYear{
-  background: linear-gradient(to right top, rgba(200, 200, 255, 0.5) , rgba(255, 255, 255, 0.7));
+  background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(255, 255, 255, 0.4));
 }
 
 .itemDone{
@@ -242,8 +242,8 @@ li{
 }
 
 .progressBar{
-  background: linear-gradient(to right bottom, rgba(200, 200, 255, 0.4), 
-    rgba(200, 200, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4), 
+    rgba(200, 235, 255, 0.3));
   width: 90%;
   height: 1.6rem;
   /* padding: 2px; */
@@ -252,7 +252,7 @@ li{
 }
 
 .correntProgress{
-  background: linear-gradient(33deg, rgba(200, 200, 255, 0.9) 21%, rgba(255, 255, 255, 0.7));
+  background: linear-gradient(33deg, rgba(200, 235, 255, 0.9) 21%, rgba(255, 255, 255, 0.7));
   height: 100%;
   border-radius: 50px;
 }
@@ -477,8 +477,9 @@ li{
     align-items: center;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(0rem);
+    backdrop-filter: blur(1rem);
     border-radius: 0px;
+    background: linear-gradient(to right bottom, rgba(50,50,50, 0.0), rgba(50,50,50, 0.0));
   }
 
   .circle1, .circle2{
@@ -526,6 +527,7 @@ li{
   .listItemYear{
     margin-top: 0.4rem;
     border-radius: 15px;
+    background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{
