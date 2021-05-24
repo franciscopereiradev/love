@@ -205,9 +205,6 @@ function progress(){
 
 } progress()
 
-  document.oncontextmenu = document.body.oncontextmenu = function() {return false};
-
-
 // function userNames(){
 //   const names = [
 //     'Francisco', 
