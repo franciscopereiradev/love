@@ -201,8 +201,12 @@ function progress(){
     const progress = 100 - percent
 
     return(progress)
+    
 
 } progress()
+
+  document.oncontextmenu = document.body.oncontextmenu = function() {return false};
+
 
 // function userNames(){
 //   const names = [
@@ -239,6 +243,8 @@ function progress(){
 //     document.getElementById("demo").innerHTML = "EXPIRED";
 //   }
 // }, 1000);
+
+
 
 export default function Home() {
   

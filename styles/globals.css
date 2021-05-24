@@ -11,6 +11,7 @@ html{
 
 }
 body {
+  cursor: context-menu(none);
   padding: 0;
   margin: 0;
   display: flex;
@@ -676,3 +677,147 @@ li{
 */
  
 }
+
+@media(max-height:800px){
+
+  .pageLanding{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .main{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .glass{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0rem);
+    border-radius: 0px;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  }
+
+  .circle1, .circle2{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .circle1{
+    top: 3%;
+    right: 2%;
+  }
+
+  .circle2{
+    bottom: 3%;
+    left: 2%;
+  }
+
+  .title{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+
+  .days{
+    font-size: 2rem;
+  }
+
+  .achievements{
+    width: 100%;
+  }
+
+  .listItem, .listItemYear{
+    height: 4.6rem;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  #listSt{
+    border-radius: 15px 15px 0 0 ;
+  }
+  #listLast{
+    border-radius: 0 0 15px 15px;
+  }
+  .listItemYear{
+    margin-top: 0.4rem;
+    border-radius: 15px;
+    background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(200, 235, 255, 0.4));
+  }
+
+  .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9, .date10, .date11, .dateDone, .dateYear{
+    font-size: 0.6rem;
+  }
+
+  .progressBarMain > p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dev > p{
+    font-size: 0.8rem;
+  }
+
+  .dev > h2{
+    font-size: 0.8rem;
+  }
+
+  .user{
+    display: none;
+  }
+
+  .userMobile{
+    display: none;
+    /* position: absolute; */
+    align-items: center;  
+    width: 95%;
+    height: 4rem;
+    border-radius: 50px;
+    background: #fff;
+    backdrop-filter: blur(2rem);
+    background: linear-gradient(to right bottom, rgba(255,255, 255, 0.2), rgba(255,255, 255, 0.1));
+  }
+
+  .userMobile > a{
+    /* position: absolute; */
+    margin: 0;
+    padding: 0;
+    margin-left: 7.5px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    /* background: #fff; */
+    backdrop-filter: blur(2rem);
+    background: linear-gradient(to right bottom, rgba(255,255, 255, 0.3), rgba(255,255, 255, 0.6));
+  }
+  
+  .userMobile > div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-direction: column; */
+    margin-left: 1rem;
+  }
+  
+  .userMobile > div > p{
+    margin: 0;
+    padding: 6px;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }}
