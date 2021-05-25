@@ -717,7 +717,7 @@ li{
     width: 10rem;
   }
 
-  /* .circle1{
+  .circle1{
     top: 3%;
     right: 2%;
   }
@@ -725,7 +725,7 @@ li{
   .circle2{
     bottom: 3%;
     left: 2%;
-  } */
+  }
 
   .title{
     margin: 0;
@@ -745,12 +745,7 @@ li{
     height: 4.6rem;
     border-radius: 0px;
     margin: 0;
-    width: 32rem;
     box-shadow: 4px 4px 4px, rgba(0, 0, 0, 0.35);
-  }
-
-  .progressBar{
-    width: 32rem;
   }
 
   #listSt{
