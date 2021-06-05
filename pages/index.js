@@ -305,7 +305,7 @@ export default function Home() {
                 </div>
               </li>
               <li class='listItem'>
-                <div class='itemBox2' >
+                <div class='itemBox' >
                   <h2 class='item5'>5 meses de namoro </h2>
                   <p class='date5'>06/08/2021</p>
                 </div>
