@@ -286,8 +286,8 @@ export default function Home() {
                   <p class='date1'>{oneMonth()}</p>
                 </div>
               </li>
-              <li id='listSt' class='listItem'>
-                <div class='itemBox2' >
+              <li id='listSt' class='listItem2'>
+                <div class='itemBox' >
                   <h2 class='item2'>2 meses de namoro </h2>
                   <p class='date2'>06/05/2021</p>
                 </div>
