@@ -286,25 +286,25 @@ export default function Home() {
                   <p class='date1'>{oneMonth()}</p>
                 </div>
               </li>
-              <li id='listSt' class='listItem2'>
+              <li class='listItem2'>
                 <div class='itemBox' >
                   <h2 class='item2'>2 meses de namoro </h2>
                   <p class='date2'>06/05/2021</p>
                 </div>
               </li>
-              <li class='listItem'>
+              <li id='listSt' class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item3'>3 meses de namoro </h2>
                   <p class='date3'>06/06/2021</p>
                 </div>
               </li>
-              <li id='listLast' class='listItem'>
+              <li class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item4'>4 meses de namoro </h2>
                   <p class='date4'>06/07/2021</p>
                 </div>
               </li>
-              <li class='listItem'>
+              <li id='listLast' class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item5'>5 meses de namoro </h2>
                   <p class='date5'>06/08/2021</p>
