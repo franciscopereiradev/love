@@ -28,6 +28,8 @@ async function setAsPassedTree(){
   item2.setAttribute('class', 'itemDone')
   date2.setAttribute('class', 'dateDone')
 }
+
+// aa
 async function setAsPassedFour(){
   var item2 = document.querySelector('h2.item4')
   var date2 = document.querySelector('p.date4')
