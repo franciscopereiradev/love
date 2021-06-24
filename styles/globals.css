@@ -70,12 +70,15 @@ li{
 }
 
 .glass{
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
   width: 48rem;
   height: 48rem;
   border-radius: 1.4rem;
-  backdrop-filter: blur(1.4rem);
-  background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3));
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2.4rem);
+  /* background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3)); */
 }
 
 .glassLogin{
@@ -158,9 +161,10 @@ li{
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),
-   rgba(255, 255, 255, 0.4));
-  box-shadow: 0px 4px 14px 0 rgb(0 0 0 / 33%);
+  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),rgba(255, 255, 255, 0.4));
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .listItem2{
@@ -248,10 +252,10 @@ li{
     rgba(200, 235, 255, 0.3));
   width: 90%;
   height: 1.6rem;
-  /* padding: 2px; */
   border-radius: 50px;
-  /* border: 2px solid var(--text); */
-  box-shadow: 0px 4px 14px 0 rgb(0 0 0 / 33%);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .correntProgress{
@@ -517,20 +521,26 @@ li{
 
   .listItem, .listItemYear{
     height: 4.6rem;
-    border-radius: 0px;
-    margin: 0;
-    box-shadow: 0px 4px 14px 0 rgb(0 0 0 / 33%);;
+    /*border-radius: 0px;
+    margin: 0; */
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
   }
 
   #listSt{
-    border-radius: 15px 15px 0 0 ;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    
   }
   #listLast{
-    border-radius: 0 0 15px 15px;
+    
   }
   .listItemYear{
     margin-top: 0.4rem;
     border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
@@ -541,6 +551,11 @@ li{
 
   .date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9, .date10, .date11, .dateDone, .dateYear{
     font-size: 0.6rem;
+  }
+
+  .progressBar{
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .progressBarMain > p {
@@ -743,20 +758,26 @@ li{
 
   .listItem, .listItemYear{
     height: 4.6rem;
-    border-radius: 0px;
-    margin: 0;
-    box-shadow: 4px 4px 4px, rgba(0, 0, 0, 0.35);
+    /*border-radius: 0px;
+    margin: 0; */
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
   }
 
   #listSt{
-    border-radius: 15px 15px 0 0 ;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    
   }
   #listLast{
-    border-radius: 0 0 15px 15px;
+    
   }
   .listItemYear{
     margin-top: 0.4rem;
     border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
@@ -767,6 +788,11 @@ li{
 
   .date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9, .date10, .date11, .dateDone, .dateYear{
     font-size: 0.6rem;
+  }
+
+  .progressBar{
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .progressBarMain > p {
