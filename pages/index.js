@@ -312,13 +312,13 @@ export default function Home() {
                 </div>
               </li>
               <li id='listLast' class='listItem'>
-                <div class='itemBox2' >
+                <div class='itemBox' >
                   <h2 class='item6'>6 meses de namoro </h2>
                   <p class='date6'>06/09/2021</p>
                 </div>
               </li>
               <li class='listItem2'>
-                <div class='itemBox' >
+                <div class='itemBox2' >
                   <h2 class='item7'>7 meses de namoro </h2>
                   <p class='date7'>06/10/2021</p>
                 </div>
