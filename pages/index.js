@@ -293,7 +293,7 @@ export default function Home() {
                   <p class='date2'>06/05/2021</p>
                 </div>
               </li>
-              <li class='listItem'>
+              <li class='listItem2'>
                 <div class='itemBox' >
                   <h2 class='item3'>3 meses de namoro </h2>
                   <p class='date3'>06/06/2021</p>
@@ -311,7 +311,7 @@ export default function Home() {
                   <p class='date5'>06/08/2021</p>
                 </div>
               </li>
-              <li id='listLast' class='listItem2'>
+              <li id='listLast' class='listItem'>
                 <div class='itemBox2' >
                   <h2 class='item6'>6 meses de namoro </h2>
                   <p class='date6'>06/09/2021</p>
