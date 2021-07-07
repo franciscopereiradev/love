@@ -375,9 +375,9 @@ export default function Home() {
             <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
           </section>
           
-            <a class='birthdayHL' href='./birthday'>
+            {/* <a class='birthdayHL' href='./birthday'>
               <p>❤</p>
-            </a>
+            </a> */}
         </div>
 
         {/* <a class='user' href='./account'>
