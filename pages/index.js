@@ -293,25 +293,25 @@ export default function Home() {
                   <p class='date2'>06/05/2021</p>
                 </div>
               </li>
-              <li id='listSt' class='listItem'>
+              <li class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item3'>3 meses de namoro </h2>
                   <p class='date3'>06/06/2021</p>
                 </div>
               </li>
-              <li class='listItem'>
+              <li id='listSt' class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item4'>4 meses de namoro </h2>
                   <p class='date4'>06/07/2021</p>
                 </div>
               </li>
-              <li id='listLast' class='listItem'>
+              <li class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item5'>5 meses de namoro </h2>
                   <p class='date5'>06/08/2021</p>
                 </div>
               </li>
-              <li class='listItem2'>
+              <li id='listLast' class='listItem2'>
                 <div class='itemBox2' >
                   <h2 class='item6'>6 meses de namoro </h2>
                   <p class='date6'>06/09/2021</p>
@@ -360,30 +360,35 @@ export default function Home() {
               <div class='add2'></div>
             </button>
           
-          <section class="userMobile">
+          {/* <section class="userMobile">
             <a>
-              {/* <img></img> */}
+              <img></img>
             </a>
             <div>
               <p>Carolina</p>
               <p>Francisco</p>
             </div>
-          </section>
+          </section> */}
+          
           <section class='dev'>
             <p>Made with Love ❤</p>
             <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
           </section>
+          
+            <a class='birthdayHL' href='./birthday'>
+              <p>❤</p>
+            </a>
         </div>
 
-        <a class='user' href='./account'>
+        {/* <a class='user' href='./account'>
           <div class='photoUser'>
-            {/* <img></img> */}
+            <img></img>
           </div>
             <div class='nameUser'>
               <p>Carolina</p>
               <p>Francisco</p>
             </div>
-        </a>
+        </a> */}
         
       </div>
       {/* <div class='countdown' >
