@@ -690,9 +690,8 @@ footer{
   }
 
   .header{
-    margin: 0;
-    margin-top: -100px;
     top: 0;
+    margin: 0;
     padding: 0;
   }
 
