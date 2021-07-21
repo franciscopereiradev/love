@@ -553,7 +553,7 @@ div > p.blank{
   height: 100vh;
   background: #fff;
   backdrop-filter: blur(2rem);
-  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.5), rgba(255,255, 255, 0.3));
+  background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary));
 }
 
 .countdown > p{
@@ -689,7 +689,7 @@ footer{
 
   .header{
     margin: 0;
-    margin-top: -60px;
+    margin-top: -80px;
     padding: 0;
   }
 
