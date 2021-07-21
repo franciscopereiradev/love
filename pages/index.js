@@ -374,6 +374,8 @@ export default function Home() {
             <p>Made with Love ❤</p>
             <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
           </section>
+          
+        </div>
           <footer>
             <a class='homeHL' class='pageCorrent' href='./'>
               <p>Home</p>
@@ -382,8 +384,6 @@ export default function Home() {
               <p>❤</p>
             </a>
           </footer>
-          
-        </div>
 
         {/* <a class='user' href='./account'>
           <div class='photoUser'>

@@ -2,10 +2,10 @@ html{
   --title: #f2f3f5;
   --text: #e1e2e5;
   --text-secondary: #c1c2c5;
-  --wallpaper: rgb(204, 30, 204);
-  --wallpaper-secondary: rgb(0, 110, 255);
-  /* --wallpaper: rgb(255, 92, 0);
-  --wallpaper-secondary: rgb(0, 102, 255); */
+  --wallpaper: rgb(255, 92, 0);
+  --wallpaper-secondary: rgb(0, 102, 255);
+  /* --wallpaper: rgb(204, 30, 204);
+  --wallpaper-secondary: rgb(0, 110, 255); */
   /*--wallpaper: rgb(212, 120, 35);
   --wallpaper: rgb(92, 0, 128);
   --wallpaper-secondary: rgb(29, 131, 190); */
@@ -543,6 +543,7 @@ div > p.blank{
 }
 
 .countdown{
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -554,6 +555,10 @@ div > p.blank{
   background: #fff;
   background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary));
   
+}
+
+.glass, .countdown{
+  overflow: hidden;
 }
 
 .countdown > p{
