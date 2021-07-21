@@ -40,7 +40,7 @@ export default function Birthday(){
                 <div class='circle1'></div>
                 <div class='circle2'></div>
                 <div class='glassBD'>
-                    <div class='header'>
+                    {/* <div class='header'>
                         <h1 class='bdTitle'>Parabéns Mozão ❤</h1>
                         <p class='textinho'>Olá amor, quero que saibas que és o amor da minha vida e que é contigo que eu quero passar o resto da minha vida! Amo cada momento, cada minuto, cada segundo que passo contigo.<br></br>
                             Desde já MUITOS PARABÉNS MOMO, já são 17, agora temos outra vez a mesma idade hihihi! <br></br> Nunca pensei em alguma vez amar alguem como te amo a ti, és a pessoa mais importante na minha vida e quero te comigo
@@ -58,7 +58,7 @@ export default function Birthday(){
                         <p>4- Não faças batona mesmo que estejas com dificuldade em algum nivel, pede antes ajuda, os amigos deixam os jogos mais divertidos!</p>
                         <p>5- Diverte-te!!! :)</p>
                         <button onClick={start} class='keyCheck'>Começar</button>
-                    </div>
+                    </div> */}
                     
                     <div class='countdown' >
                         <p>Comming soon!</p>
