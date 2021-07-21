@@ -59,17 +59,18 @@ export default function Birthday(){
                         <p>5- Diverte-te!!! :)</p>
                         <button onClick={start} class='keyCheck'>Começar</button>
                     </div>
-                    <footer>
+                    
+                    <div class='countdown' >
+                        <p>Comming soon!</p>
+                        <p id='demo'></p>
+                        <footer>
                         <a class='homeHL' href='./'>
                             <p>Home</p>
                         </a>
                         <a class='birthdayHL' class='pageCorrent' href='./birthday'>
                             <p>❤</p>
                         </a>
-                    </footer>
-                    <div class='countdown' >
-                        <p>Comming soon!</p>
-                        <p id='demo'></p>
+                        </footer>
                      </div>
                 </div>
             </div>
