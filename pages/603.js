@@ -11,9 +11,9 @@ export default function Register(){
             </div>
             <div class='countdown' >
             <p>Error 603 - Love has been found</p>
-            <p>But...</p>
+            {/* <p>But...</p>
             <p>Nop, is not here!</p>
-            <p>Try other place...</p>
+            <p>Try other place...</p> */}
             </div>
         </div>
     )

@@ -374,10 +374,15 @@ export default function Home() {
             <p>Made with Love ❤</p>
             <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
           </section>
-          
-            {/* <a class='birthdayHL' href='./birthday'>
+          <footer>
+            <a class='homeHL' class='pageCorrent' href='./'>
+              <p>Home</p>
+            </a>
+            <a class='birthdayHL' href='./birthday'>
               <p>❤</p>
-            </a> */}
+            </a>
+          </footer>
+          
         </div>
 
         {/* <a class='user' href='./account'>
