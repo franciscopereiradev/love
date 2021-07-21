@@ -8,8 +8,8 @@ export default function Birthday(){
     return(
         <div class='pageLanding'>
             <div class='main'>
-            <div class='circle1'></div>
-            <div class='circle2'></div>
+                <div class='circle1'></div>
+                <div class='circle2'></div>
                 <div class='glassBD'>
                     <div class='header'>
                         <h1 class='bdTitle'>Parabéns Mozão ❤</h1>
@@ -38,6 +38,10 @@ export default function Birthday(){
                             <p>❤</p>
                         </a>
                     </footer>
+                    <div class='countdown' >
+                        <p id='demo'></p>
+                        <p>When everything started!</p>
+                     </div>
                 </div>
             </div>
         </div>
