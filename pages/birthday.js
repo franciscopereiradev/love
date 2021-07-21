@@ -61,7 +61,7 @@ export default function Birthday(){
                     </div> */}
                     
                     <div class='countdown' >
-                        <p>Comming soon!</p>
+                        <p>Coming soon!</p>
                         <p id='demo'></p>
                         <footer>
                         <a class='homeHL' href='./'>
@@ -71,7 +71,7 @@ export default function Birthday(){
                             <p>❤</p>
                         </a>
                         </footer>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
