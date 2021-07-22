@@ -89,11 +89,11 @@ async function setAsPassedEleven(){
 async function changeToMainBD(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
-  // var buttonHome = document.querySelector('div#homeHL')
-  // var buttonBD = document.querySelector('div#birthdayHL')
+  var buttonHome = document.querySelector('Button#homeBt')
+  var buttonBD = document.querySelector('Button#birthdayBt')
 
-  // buttonHome = setAttribute('class', 'pageNotCorrent')
-  // buttonBD = setAttribute('class', 'pageCorrent')
+  buttonHome.setAttribute('class', 'pageNotCorrent')
+  buttonBD.setAttribute('class', 'pageCorrent')
   mainBD.setAttribute('class', 'mainCorrent')
   mainHome.setAttribute('class', 'mainHome')
 }
@@ -101,12 +101,12 @@ async function changeToMainBD(){
 async function changeToMainHome(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
-  // var buttonHome = document.querySelector('div#homeHL')
-  // var buttonBD = document.querySelector('div#birthdayHL')
+  var buttonHome = document.querySelector('Button#homeBt')
+  var buttonBD = document.querySelector('Button#birthdayBt')
 
 
-  // buttonHome = setAttribute('class', 'pageCorrent')
-  // buttonBD = setAttribute('class', 'pageNotCorrent')
+  buttonHome.setAttribute('class', 'pageCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
   mainBD.setAttribute('class', 'mainBirthday')
   mainHome.setAttribute('class', 'mainCorrent')
 }
@@ -442,7 +442,7 @@ export default function Home() {
         </a> */}
         
       </div>
-      <div id='mainBirthday'>
+      <div id='mainBirthday' class='mainBirthday'>
         <div class='circle1'></div>
         <div class='circle2'></div>
           <div class='glassBD'>
@@ -472,10 +472,10 @@ export default function Home() {
           </div>
         </div>
         <footer>
-          <button id='homeHL' class='pageNotCorrent' onClick={changeToMainHome} href='./'>
+          <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
             <p>Home</p>
           </button>
-          <button id='birthdayHL' class='pageNotCorrent' onClick={changeToMainBD} href='./birthday'>
+          <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
             <p>❤</p>
           </button>
         </footer>
