@@ -36,7 +36,7 @@ export default function Birthday(){
 
     return(
         <div class='pageLanding'>
-            <div class='main'>
+            <div class='mainBirthday'>
                 <div class='circle1'></div>
                 <div class='circle2'></div>
                 <div class='glassBD'>
@@ -60,18 +60,18 @@ export default function Birthday(){
                         <button onClick={start} class='keyCheck'>Começar</button>
                     </div> */}
                     
-                    <div class='countdown' >
-                        <p>Coming soon!</p>
-                        <p id='demo'></p>
-                        <footer>
-                        <a class='homeHL' href='./'>
+                </div>
+                <div class='countdown' >
+                    <p>Coming soon!</p>
+                    <p id='demo'></p>
+                    <footer>
+                    <a class='homeHL' href='./'>
                             <p>Home</p>
-                        </a>
-                        <a class='birthdayHL' class='pageCorrent' href='./birthday'>
-                            <p>❤</p>
-                        </a>
-                        </footer>
-                    </div>
+                    </a>
+                    <a class='birthdayHL' class='pageCorrent' href='./birthday'>
+                        <p>❤</p>
+                    </a>
+                    </footer>
                 </div>
             </div>
         </div>
