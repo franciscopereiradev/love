@@ -474,6 +474,7 @@ export default function Home() {
         <p id='demo'></p>
         <p>When everything started!</p>
       </div> */}
+    </div>
       <footer>
         <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
           <p>Home</p>
@@ -482,6 +483,5 @@ export default function Home() {
           <p>❤</p>
         </button>
       </footer>
-    </div>
     </div>
   )}
