@@ -448,12 +448,12 @@ export default function Home() {
           <div class='glassBD'>
             <div class='header'>
                 <h1 class='bdTitle'>Parabéns Mozão ❤</h1>
-                <p class='textinho'>Olá amor, quero que saibas que és o amor da minha vida e que é contigo que eu quero passar o resto da minha vida! Amo cada momento, cada minuto, cada segundo que passo contigo.<br></br>
+                {/* <p class='textinho'>Olá amor, quero que saibas que és o amor da minha vida e que é contigo que eu quero passar o resto da minha vida! Amo cada momento, cada minuto, cada segundo que passo contigo.<br></br>
                   Desde já MUITOS PARABÉNS MOMO, já são 17, agora temos outra vez a mesma idade hihihi! <br></br> Nunca pensei em alguma vez amar alguem como te amo a ti, és a pessoa mais importante na minha vida e quero te comigo
                   para SEMPRE! Espero que tenhas um dia incrivel perto de quem mais gostas e de quem mais amas, beijão momo!! <br></br>
                   Estou e sempre estarei aqui para ti meu amor! ❤❤❤<br></br>
                   Agora vamos ao jogoooo!! :D
-                </p>
+                </p> */}
               </div>
               <div class='rules'>
                 <h3 class='bdSubtitle'>Regras</h3>
