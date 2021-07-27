@@ -79,6 +79,9 @@ li{
   font-size: 16px;
   text-align: center;
   color: #fff;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -178,6 +181,9 @@ div > p.blank{
 .bdSubtitle{
   color: #fff;
   font-weight: 500;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
 }
 
 
