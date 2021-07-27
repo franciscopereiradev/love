@@ -16,7 +16,7 @@ export default function Birthday(){
 
     return(
         <div class='pageLanding'>
-            <div class='main'>
+            <div class='mainCorrent'>
             <div class='circle1'></div>
             <div class='circle2'></div>
                 <div class='glassBD'>

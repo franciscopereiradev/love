@@ -3,7 +3,7 @@ export default function Register(){
 
         <div class='pageLanding'>
             <title>LoveYou ❤ | Error 603</title>
-            <div class='main'>
+            <div class='mainCorrent'>
                 <div class='circle1'></div>
                 <div class='circle2'></div>
                 <div class='glassLogin'></div>
