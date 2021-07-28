@@ -101,11 +101,11 @@ li{
   width: 70%;
 }
 
-.textinho{
+.levels > .textinho{
   text-align: center;
-  margin: 20px;
-  font-size: 16px;
+  margin: 10px;
   color: #fff;
+  font-size: 12px;
 }
 
 div > p.blank{
@@ -151,6 +151,9 @@ div > p.blank{
 }
 
 .keyCheck{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 500ms;
   border: none;
   border-radius: 10px;
@@ -183,6 +186,7 @@ div > p.blank{
   font-weight: 500;
   margin: 0;
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
 }
 

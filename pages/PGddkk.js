@@ -24,7 +24,7 @@ export default function Birthday(){
                     </div>
                     <div class='levels'>
                         <h3 class='bdSubtitle'>Nivel 10</h3>
-                        <p>Boa chegaste ao nivel 10, agora podes pedir a tua 1ª prenda!</p>
+                        <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Presente 🎁</a>
                         <p>Dica: em que nivel estamos?</p> 
                         <p class='inputText'>Coloca aqui a senha</p>
                         <input class='inputKey'></input>

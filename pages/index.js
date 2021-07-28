@@ -269,33 +269,33 @@ async function start(){
   return(window.location.href = '/level1')
 }
 
-var countDownDate = new Date("July 29, 2021 00:00:00").getTime();
+// var countDownDate = new Date("July 29, 2021 00:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+// // Update the count down every 1 second
+// var x = setInterval(function() {
 
-// Get today's date and time
-var now = new Date().getTime();
+// // Get today's date and time
+// var now = new Date().getTime();
 
-// Find the distance between now and the count down date
-var distance = countDownDate - now;
+// // Find the distance between now and the count down date
+// var distance = countDownDate - now;
 
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// // Time calculations for days, hours, minutes and seconds
+// var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+// var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+// var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+// var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-// Display the result in the element with id="demo"
-document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s ";
+// // Display the result in the element with id="demo"
+// document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+// + minutes + "m " + seconds + "s ";
 
-// If the count down is finished, write some text
-if (distance < 0) {
-  clearInterval(x);
-  document.getElementById("demo").innerHTML = "EXPIRED";
-}
-}, 1000);
+// // If the count down is finished, write some text
+// if (distance < 0) {
+//   clearInterval(x);
+//   document.getElementById("demo").innerHTML = "EXPIRED";
+// }
+// }, 1000);
 
 
 export default function Home() {
@@ -445,16 +445,16 @@ export default function Home() {
       <div id='mainBirthday' class='mainBirthday'>
         <div class='circle1'></div>
         <div class='circle2'></div>
-          {/* <div class='glassBD'>
+          <div class='glassBD'>
             <div class='header'>
-                <h1 class='bdTitle'>Parabéns Mozão ❤</h1> */}
+                <h1 class='bdTitle'>Parabéns Mozão ❤</h1>
                 {/* <p class='textinho'>Olá amor, quero que saibas que és o amor da minha vida e que é contigo que eu quero passar o resto da minha vida! Amo cada momento, cada minuto, cada segundo que passo contigo.<br></br>
                   Desde já MUITOS PARABÉNS MOMO, já são 17, agora temos outra vez a mesma idade hihihi! <br></br> Nunca pensei em alguma vez amar alguem como te amo a ti, és a pessoa mais importante na minha vida e quero te comigo
                   para SEMPRE! Espero que tenhas um dia incrivel perto de quem mais gostas e de quem mais amas, beijão momo!! <br></br>
                   Estou e sempre estarei aqui para ti meu amor! ❤❤❤<br></br>
                   Agora vamos ao jogoooo!! :D
                 </p> */}
-              {/* </div>
+              </div>
               <div class='rules'>
                 <h3 class='bdSubtitle'>Regras</h3>
                 <p>1- Codigos em formato de datas devem ser apresentados da seguinte forma (dd/mm) Ex: 1 de janeiro - 0101!</p>
@@ -465,11 +465,11 @@ export default function Home() {
               <button onClick={start} class='keyCheck'>Começar</button>
             </div>
                   
-          </div> */}
-          <div class='countdown' >
+          </div>
+          {/* <div class='countdown' >
             <p>Coming soon!</p>
             <p id='demo'></p>      
-          </div>
+          </div> */}
       {/* <div class='countdown' >
         <p id='demo'></p>
         <p>When everything started!</p>
@@ -485,3 +485,4 @@ export default function Home() {
       </footer>
     </div>
   )}
+  

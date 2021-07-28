@@ -5,6 +5,7 @@ async function level3(){
     var input = document.querySelector('input.inputKey')
 
     if(level == input.value){
+        alert('Recebeste um presente: \n -Um textinho!')
         window.location.href = '/QrCQ'
     } else {
         alert('Passe errada!')

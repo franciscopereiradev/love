@@ -3,6 +3,7 @@ async function level6(){
     var input = document.querySelector('input.inputKey')
 
     if(level == input.value){
+        alert('Recebeste um presente: \n -Kinders!')
         window.location.href = '/Qhgtd'
     } else {
         alert('Passe errada!')

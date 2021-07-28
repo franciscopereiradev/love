@@ -3,6 +3,7 @@ async function level9(){
     var input = document.querySelector('input.inputKey')
 
     if(level == input.value){
+        alert('Recebeste um presente: \n -Um video!')
         window.location.href = '/PGddkk'
     } else {
         alert('Passe errada!')

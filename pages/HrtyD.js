@@ -1,5 +1,5 @@
 async function level13(){
-    var level = '144220'
+    var level = '219'
     var input = document.querySelector('input.inputKey')
 
     if(level == input.value){

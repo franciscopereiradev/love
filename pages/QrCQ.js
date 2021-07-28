@@ -9,6 +9,7 @@ async function level4(){
     }
 }
 
+
 export default function Birthday(){
 
 
@@ -19,12 +20,13 @@ export default function Birthday(){
             <div class='circle2'></div>
                 <div class='glassBD'>
                     <div class='header'>
-                        <h1 class='bdTitle'>Parabéns Mozão ❤8</h1>
+                        <h1 class='bdTitle'>Parabéns Mozão ❤</h1>
                         <h2></h2>
                     </div>
                     <div class='levels'>
                         <h3 class='bdSubtitle'>Nivel 4</h3>
-                        <p class='inputText'>Coloca aqui a senha 31</p>
+                        <a class='keyCheck' href='/textinho' target='_black'>Presente 🎁</a>
+                        <p class='inputText'>Coloca aqui a senha</p>
                         <input class='inputKey'></input>
                         <button onClick={level4} class='keyCheck'>Verificar</button>
                     </div>
