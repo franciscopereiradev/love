@@ -101,7 +101,7 @@ li{
   width: 70%;
 }
 .textinhoMain{
-  isplay: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -115,7 +115,7 @@ li{
   width: 90%;
 }
 
-.levels > .textinho{
+.textinhoMain > .textinho{
   text-align: center;
   margin: 10px;
   color: #fff;
