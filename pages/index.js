@@ -510,14 +510,14 @@ export default function Home() {
         </div>
       </div>
       <footer>
+        <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
+          <p>🎁</p>
+        </button>
         <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
           <p>Home</p>
         </button>
         <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
           <p>❤</p>
-        </button>
-        <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
-          <p>🎁</p>
         </button>
       </footer>
     </div>
