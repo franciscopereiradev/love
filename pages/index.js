@@ -89,26 +89,51 @@ async function setAsPassedEleven(){
 async function changeToMainBD(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
-  var buttonHome = document.querySelector('Button#homeBt')
-  var buttonBD = document.querySelector('Button#birthdayBt')
+  var mainReward = document.querySelector('div#mainReward')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
 
   buttonHome.setAttribute('class', 'pageNotCorrent')
   buttonBD.setAttribute('class', 'pageCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
   mainBD.setAttribute('class', 'mainCorrent')
   mainHome.setAttribute('class', 'mainHome')
+  mainReward.setAttribute('class', 'mainReward')
 }
 
 async function changeToMainHome(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
-  var buttonHome = document.querySelector('Button#homeBt')
-  var buttonBD = document.querySelector('Button#birthdayBt')
+  var mainReward = document.querySelector('div#mainReward')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
 
 
   buttonHome.setAttribute('class', 'pageCorrent')
   buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
   mainBD.setAttribute('class', 'mainBirthday')
   mainHome.setAttribute('class', 'mainCorrent')
+  mainReward.setAttribute('class', 'mainReward')
+}
+
+async function changeToMainReward(){
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
+
+
+  buttonHome.setAttribute('class', 'pageNotCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageCorrent')
+  mainBD.setAttribute('class', 'mainBirthday')
+  mainHome.setAttribute('class', 'mainHome')
+  mainReward.setAttribute('class', 'mainCorrent')
 }
 
 const second = 1000;
@@ -474,13 +499,25 @@ export default function Home() {
         <p id='demo'></p>
         <p>When everything started!</p>
       </div> */}
-    </div>
+      </div>  
+      <div id='mainReward' class='mainReward'>
+        <div class='circle1'></div>
+        <div class='circle2'></div>
+        <div class='glassBD'>
+          <h1 class='title'>Presentes</h1>
+          <a class='keyCheck' href='/textinho' target='_black'>Textinho</a>
+          <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
+        </div>
+      </div>
       <footer>
         <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
           <p>Home</p>
         </button>
         <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
           <p>❤</p>
+        </button>
+        <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
+          <p>🎁</p>
         </button>
       </footer>
     </div>

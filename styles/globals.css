@@ -206,7 +206,7 @@ div > p.blank{
 
 
 
-.mainHome, .mainBirthday{
+.mainHome, .mainBirthday, .mainReward{
   display: none;
 }
 
