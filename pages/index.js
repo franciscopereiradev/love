@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { render } from 'react-dom'
-import Login from './login.js'
+import Login from '../source/components/login.js'
 
 async function setAsPassedOne(){
 //   var item = document.querySelector('h2.item1')
@@ -134,6 +134,47 @@ async function changeToMainReward(){
   mainBD.setAttribute('class', 'mainBirthday')
   mainHome.setAttribute('class', 'mainHome')
   mainReward.setAttribute('class', 'mainCorrent')
+}
+
+async function loginFooterNone(){
+  var mainLogin = document.querySelector('div#mainLogin')
+  var footer = document.querySelector('footer#footer')
+
+  if(mainLogin.style.display = 'flex'){
+    footer.style.display = 'none'
+    console.log('all good')
+  }
+
+}
+loginFooterNone()
+
+async function madeLogin(){
+  var mainLogin = document.querySelector('div#mainLogin')
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
+  var footer = document.querySelector('footer#footer')
+  var user = document.querySelector('input#user')
+  var pass = document.querySelector('input#password')
+
+  var userCheck = 'momo'
+  var passCheck = '0603'
+
+  if(user.value === userCheck && pass.value === passCheck){
+  buttonHome.setAttribute('class', 'pageCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
+  mainBD.setAttribute('class', 'mainBirthday')
+  mainHome.setAttribute('class', 'mainCorrent')
+  mainReward.setAttribute('class', 'mainReward')
+  mainLogin.setAttribute('class', 'mainLogin')
+  footer.style.display = 'flex'
+  mainLogin.style.display = 'none'
+  
+  }
 }
 
 const second = 1000;
@@ -332,7 +373,7 @@ export default function Home() {
         <h1>OFFline :(</h1>
         <h2>Por tempo indeterminado</h2>
       </div> */}
-      <div class='mainCorrent' id='mainHome'>
+      <div class='mainHome' id='mainHome'>
         <div class='circle1'></div>
         <div class='circle2'></div>
         <div class='glass'>
@@ -509,7 +550,24 @@ export default function Home() {
           <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
         </div>
       </div>
-      <footer>
+      
+      <div class='mainCorrent' id='mainLogin'>
+        <div class='circle1'></div>
+        <div class='circle2'></div>
+        <div class='glassBD'>
+          <h1>Login</h1>
+          <p>Username</p>
+          <input id='user' class='loginInput'></input>
+          <p>Password</p>
+          <input id='password' class='loginInput' type='password'></input>
+          <div class='rememberBox'>
+            <input id='remember' name='login' type='checkbox'></input>
+            <p>Lembrar login</p>
+          </div>
+          <button onClick={madeLogin} class='keyLogin'>Entrar</button>
+        </div>
+      </div>
+      <footer id='footer'>
         <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
           <p>🎁</p>
         </button>

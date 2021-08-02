@@ -164,7 +164,7 @@ div > p.blank{
   width: 220px;
 }
 
-.keyCheck{
+.keyCheck, .keyLogin{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,12 +178,21 @@ div > p.blank{
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   background: linear-gradient(to right top, rgba(255, 255, 255) , rgb(255, 255, 255));
   margin-bottom: 20px;
+}
+
+.keyCheck{
   width: 180px;
   height: 30px;
   cursor: pointer;
 }
 
-.keyCheck:hover{
+.keyLogin{
+  width: 70%;
+  height: 45px;
+  cursor: pointer;
+}
+
+.keyCheck:hover, .keyLogin:hover{
   transition: 500ms;
   background: linear-gradient(to right top, rgb(255, 255, 255, 0.5) , rgb(255, 255, 255, 0.5));
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 1);
@@ -206,7 +215,7 @@ div > p.blank{
 
 
 
-.mainHome, .mainBirthday, .mainReward{
+.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone{
   display: none;
 }
 
@@ -241,14 +250,6 @@ div > p.blank{
   height: auto;
 }
 
-.glassLogin{
-  background: #fff;
-  width: 30vw;
-  height: 60vh;
-  border-radius: 2rem;
-  backdrop-filter: blur(2rem);
-  background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3));
-}
 .circle1, .circle2{
   background: #fff;
   background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5));
@@ -511,32 +512,23 @@ div > p.blank{
   display: none;
 }
 
-.loginBox{
-  margin: 15px 50px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  background: linear-gradient(to right bottom, rgba(255,255, 255, 0.2), rgba(255, 255, 255, 0.1));
-
-  border-radius: 15px;
-}
-
 .loginInput{
+  margin-bottom: 25px;
+  padding: 0 20px;
+  width: 70%;
+  height: 70px;
   display: flex;
-  margin: 0;
-  padding-left: 10px;
-  border: none;
-  align-content: center;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  height: 4rem;
-  width: 18rem;
-  font-weight: 500;
-  font-size: 28px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.5);
-  color: #0000004d;
+  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),rgba(255, 255, 255, 0.4));
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 24px;
 
 }
 
@@ -674,8 +666,31 @@ footer{
 }
 
 .homeBt > p, .pageCorrent > p, .pageNotCorrent > p{
+  margin: 0;
+  padding: 0;
   color: #fff;
   font-size: 26px;
+}
+
+.rememberBox{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.rememberBox > input{
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+}
+
+.rememberBox > p{
+  font-size: 16px;
+  color: #fff;
 }
 
 @media(max-width:900px){
