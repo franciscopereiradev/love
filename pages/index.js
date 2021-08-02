@@ -545,7 +545,7 @@ export default function Home() {
         <div class='circle1'></div>
         <div class='circle2'></div>
         <div class='glassBD'>
-          <h1 class='title'>Presentes</h1>
+          <h1>Presentes</h1>
           <a class='keyCheck' href='/textinho' target='_black'>Textinho</a>
           <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
         </div>
