@@ -173,7 +173,8 @@ async function madeLogin(){
   mainLogin.setAttribute('class', 'mainLogin')
   footer.style.display = 'flex'
   mainLogin.style.display = 'none'
-  
+  } else {
+    alert('Username ou password incorretos!')
   }
 }
 
