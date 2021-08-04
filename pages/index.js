@@ -157,13 +157,11 @@ async function madeLogin(){
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
   var footer = document.querySelector('footer#footer')
-  var user = document.querySelector('input#user')
   var pass = document.querySelector('input#password')
 
-  var userCheck = 'momo'
   var passCheck = '0603'
 
-  if(user.value === userCheck && pass.value === passCheck){
+  if(pass.value === passCheck){
   buttonHome.setAttribute('class', 'pageCorrent')
   buttonBD.setAttribute('class', 'pageNotCorrent')
   buttonReward.setAttribute('class', 'pageNotCorrent')
@@ -557,14 +555,12 @@ export default function Home() {
         <div class='circle2'></div>
         <div class='glassBD'>
           <h1>Login</h1>
-          <p>Username</p>
-          <input id='user' class='loginInput'></input>
-          <p>Password</p>
+          <p>Couple Code</p>
           <input id='password' class='loginInput' type='password'></input>
-          <div class='rememberBox'>
+          {/* <div class='rememberBox'>
             <input id='remember' name='login' type='checkbox'></input>
             <p>Lembrar login</p>
-          </div>
+          </div> */}
           <button onClick={madeLogin} class='keyLogin'>Entrar</button>
         </div>
       </div>
