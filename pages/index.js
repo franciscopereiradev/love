@@ -554,8 +554,7 @@ export default function Home() {
         <div class='circle1'></div>
         <div class='circle2'></div>
         <div class='glassBD'>
-          <h1>Login</h1>
-          <p>Couple Code</p>
+          <h1>Couple Code ❤</h1>
           <input id='password' class='loginInput' type='password'></input>
           {/* <div class='rememberBox'>
             <input id='remember' name='login' type='checkbox'></input>
