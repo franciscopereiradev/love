@@ -176,15 +176,18 @@ async function madeLogin(){
   }
 }
 
-document.addEventListener("keypress", function(e) {
-  if(e.key === 'Enter') {
-  
+async function enterCheck(){
+
+  document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+      
       var btn = document.querySelector(".keyLogin");
-    
-    btn.click();
-  
-  }
-});
+      
+      btn.click();
+      
+    }
+  });
+} enterCheck()
 
 const second = 1000;
 const minute = second * 60;
