@@ -418,26 +418,26 @@ export default function Home() {
                   <p class='date3'>06/06/2021</p>
                 </div>
               </li>
-              <li id='listSt' class='listItem'>
-                <div class='itemBox' >
+              <li class='listItem2'>
+                <div class='itemBox2' >
                   <h2 class='item4'>4 meses de namoro </h2>
                   <p class='date4'>06/07/2021</p>
                 </div>
               </li>
-              <li class='listItem'>
+              <li id='listSt' class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item5'>5 meses de namoro </h2>
                   <p class='date5'>06/08/2021</p>
                 </div>
               </li>
-              <li id='listLast' class='listItem'>
+              <li class='listItem'>
                 <div class='itemBox' >
                   <h2 class='item6'>6 meses de namoro </h2>
                   <p class='date6'>06/09/2021</p>
                 </div>
               </li>
-              <li class='listItem2'>
-                <div class='itemBox2' >
+              <li id='listLast' class='listItem'>
+                <div class='itemBox' >
                   <h2 class='item7'>7 meses de namoro </h2>
                   <p class='date7'>06/10/2021</p>
                 </div>
