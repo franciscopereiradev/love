@@ -172,9 +172,19 @@ async function madeLogin(){
   footer.style.display = 'flex'
   mainLogin.style.display = 'none'
   } else {
-    alert('Username ou password incorretos!')
+    alert('Couple code não encontrado!')
   }
 }
+
+document.addEventListener("keypress", function(e) {
+  if(e.key === 'Enter') {
+  
+      var btn = document.querySelector(".keyLogin");
+    
+    btn.click();
+  
+  }
+});
 
 const second = 1000;
 const minute = second * 60;
@@ -361,7 +371,6 @@ async function start(){
 //   document.getElementById("demo").innerHTML = "EXPIRED";
 // }
 // }, 1000);
-
 
 export default function Home() {
   
@@ -560,7 +569,8 @@ export default function Home() {
             <input id='remember' name='login' type='checkbox'></input>
             <p>Lembrar login</p>
           </div> */}
-          <button onClick={madeLogin} class='keyLogin'>Entrar</button>
+          <input type='submit' onClick={madeLogin} value='Entrar' class='keyLogin'></input>
+          
         </div>
       </div>
       <footer id='footer'>
