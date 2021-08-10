@@ -62,7 +62,7 @@ li{
 
 header{
   display: flex;
-  position: fixed;
+  position: absolute;
   flex-direction: row;
   justify-content: flex-end;
   margin: 0;
