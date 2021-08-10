@@ -617,7 +617,7 @@ export default function Home() {
           <input id='password' class='loginInput' type='password'></input>
           <div class='rememberBox'>
             <input id='remember' name='login' type='checkbox'></input>
-            <p>Lembrar login</p>
+            <p>Lembrar Couple Code ❤</p>
           </div>
           <input type='submit' onClick={madeLogin} value='Entrar' class='keyLogin'></input>
           
@@ -634,7 +634,7 @@ export default function Home() {
           <p>❤</p>
         </button>
         <button id='logout'class='pageNotCorrent' onClick={logout}>
-          <p>Exit</p>
+          <p>Sair</p>
         </button>
       </footer>
     </div>
