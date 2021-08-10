@@ -431,10 +431,16 @@ export default function Home() {
         <h1>OFFline :(</h1>
         <h2>Por tempo indeterminado</h2>
       </div> */}
+      
       <div class='mainHome' id='mainHome'>
         <div class='circle1'></div>
         <div class='circle2'></div>
         <div class='glass'>
+        <header>
+          <button id='logout'class='logout' onClick={logout}>
+            <p>🚪</p>
+          </button>
+        </header>
           <div class='header'>
             <h1 class='title'>
               Estamos juntos à
@@ -628,14 +634,12 @@ export default function Home() {
           <p>🎁</p>
         </button>
         <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
-          <p>Home</p>
+          <p>🏠</p>
         </button>
         <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
           <p>❤</p>
         </button>
-        <button id='logout'class='pageNotCorrent' onClick={logout}>
-          <p>Sair</p>
-        </button>
+        
       </footer>
     </div>
   )}

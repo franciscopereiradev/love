@@ -60,6 +60,33 @@ li{
   /* align-items: center; */
 }
 
+header{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  top: 0px;
+  
+}
+
+.logout{
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.logout > p{
+  font-size: 16px;
+  color: #fff;
+}
+
 .rules, .inputKeyBG{
   display: flex;
   flex-direction: column;
