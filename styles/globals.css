@@ -83,7 +83,9 @@ header{
 }
 
 .logout > p{
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
   color: #fff;
 }
 
@@ -804,9 +806,9 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     
   }
-  #listLast{
+  /* #listLast{
     
-  }
+  } */
   .listItemYear{
     margin-top: 0.4rem;
     border-radius: 15px;
@@ -1041,9 +1043,9 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     
   }
-  #listLast{
+  /* #listLast{
     
-  }
+  } */
   .listItemYear{
     margin-top: 0.4rem;
     border-radius: 15px;
