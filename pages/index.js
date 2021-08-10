@@ -437,7 +437,7 @@ export default function Home() {
         <div class='circle2'></div>
         <div class='glass'>
         <header>
-          <button id='logout'class='logout' onClick={logout}>
+          <button id='logout'class='pageNotCorrent' onClick={logout}>
             <p>Sair</p>
           </button>
         </header>
