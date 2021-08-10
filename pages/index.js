@@ -354,6 +354,9 @@ function progress(){
 
 } progress()
 
+async function addMore(){
+  alert('Em breve!')
+}
 // function userNames(){
 //   const names = [
 //     'Francisco', 
@@ -539,10 +542,10 @@ export default function Home() {
               </li>
             </ul>
           </section>
-          <button class='addMore'>
+          <button id='addMore' class='pageNotCorrent' onClick={addMore}>
               <div class='add1'></div>
               <div class='add2'></div>
-            </button>
+          </button>
           
           {/* <section class="userMobile">
             <a>
