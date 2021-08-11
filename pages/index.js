@@ -722,8 +722,8 @@ export default function Home() {
             <ul class='list'>
                 <li class='listItem'>
                     <div class='itemBox' >
-                        <h2 id='eventAdded' class='item1'>{localStorage.event}</h2>
-                        <p id='eventDateAdded' class='date1'>{localStorage.eventDate}</p>
+                        <h2 id='eventAdded' class='item1'></h2>
+                        <p id='eventDateAdded' class='date1'></p>
                     </div>
                 </li>
             </ul>
