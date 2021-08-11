@@ -148,6 +148,16 @@ div > p.blank{
   color: #fff;
 }
 
+.addBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.addBox > button{
+  margin-right: 10px;
+}
 
 .inputKeyBG{
   display: flex;

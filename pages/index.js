@@ -567,10 +567,16 @@ export default function Home() {
               </li>
             </ul>
           </section>
-          <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
+          <div class='addBox'>
+            <button id='addMore' class='pageNotCorrent' onClick={addMore}>
+              <p>📝</p>
+            </button>
+            <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
               <div class='add1'></div>
               <div class='add2'></div>
-          </button>
+            </button>
+          </div>
+          
           
           {/* <section class="userMobile">
             <a>
