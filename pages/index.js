@@ -91,6 +91,7 @@ async function changeToMainBD(){
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
   var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
@@ -102,6 +103,7 @@ async function changeToMainBD(){
   mainHome.setAttribute('class', 'mainHome')
   mainReward.setAttribute('class', 'mainReward')
   mainAdd.setAttribute('class', 'mainAdd')
+  mainAdded.setAttribute('class', 'mainAdded')
 }
 
 async function changeToMainHome(){
@@ -109,6 +111,7 @@ async function changeToMainHome(){
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
   var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
@@ -121,6 +124,7 @@ async function changeToMainHome(){
   mainHome.setAttribute('class', 'mainCorrent')
   mainReward.setAttribute('class', 'mainReward')
   mainAdd.setAttribute('class', 'mainAdd')
+  mainAdded.setAttribute('class', 'mainAdded')
 }
 
 async function changeToMainReward(){
@@ -128,6 +132,7 @@ async function changeToMainReward(){
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
   var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
@@ -140,6 +145,7 @@ async function changeToMainReward(){
   mainHome.setAttribute('class', 'mainHome')
   mainReward.setAttribute('class', 'mainCorrent')
   mainAdd.setAttribute('class', 'mainAdd')
+  mainAdded.setAttribute('class', 'mainAdded')
 }
 
 async function ChangetoMainAdd(){
@@ -159,6 +165,40 @@ async function ChangetoMainAdd(){
   mainHome.setAttribute('class', 'mainHome')
   mainReward.setAttribute('class', 'mainReward')
   mainAdd.setAttribute('class', 'mainCorrent')
+}
+
+async function ChangetoMainAdded(){
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+  var mainAdded = document.querySelector('div#mainAdded')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
+
+
+  buttonHome.setAttribute('class', 'pageNotCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
+  mainBD.setAttribute('class', 'mainBirthday')
+  mainHome.setAttribute('class', 'mainHome')
+  mainReward.setAttribute('class', 'mainReward')
+  mainAdded.setAttribute('class', 'mainCorrent')
+}
+
+async function addMore(){
+  var event = document.querySelector('input#event')
+  var eventDate = document.querySelector('input#eventDate')
+
+  if(event.value == '' || eventDate.value == ''){
+    alert('Preencha todos os campos')
+  } else{
+    localStorage.setItem('event', event.value)
+    localStorage.setItem('eventDate', eventDate.value)
+    
+    window.location.href = '/'
+  }
+  
 }
 
 async function loginFooterNone(){
@@ -418,9 +458,6 @@ async function start(){
   return(window.location.href = '/level1')
 }
 
-async function addMore(){
-  alert('Em breve!')
-}
 
 // var countDownDate = new Date("July 29, 2021 00:00:00").getTime();
 
@@ -568,7 +605,7 @@ export default function Home() {
             </ul>
           </section>
           <div class='addBox'>
-            <button id='addMore' class='pageNotCorrent' onClick={addMore}>
+            <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdded}>
               <p>📝</p>
             </button>
             <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
@@ -670,12 +707,29 @@ export default function Home() {
         <div class='glassBD'>
             <h1>Nova data</h1>
             <p>Evento</p>
-            <input class='loginInput'></input>
+            <input id='event' class='loginInput'></input>
             <p>Data do evento</p>
-            <input class='loginInput' type='date'></input>
+            <input id='eventDate' class='loginInput' type='date'></input>
             <button onClick={addMore} class='keyLogin'>Guardar</button>
         </div>
       </div>
+
+      <div id='mainAdded' class='mainAdded'>
+        <div class='circle1'></div>
+        <div class='circle2'></div>
+        <div class='glassBD'>
+            <h1>Eventos</h1>
+            <ul class='list'>
+                <li class='listItem'>
+                    <div class='itemBox' >
+                        <h2 id='eventAdded' class='item1'>{localStorage.event}</h2>
+                        <p id='eventDateAdded' class='date1'>{localStorage.eventDate}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+
       <footer id='footer'>
         <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
           <p>🎁</p>

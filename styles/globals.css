@@ -74,6 +74,7 @@ header{
 }
 
 
+
 .rules, .inputKeyBG{
   display: flex;
   flex-direction: column;
@@ -239,7 +240,7 @@ div > p.blank{
 
 
 
-.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone, .mainAdd{
+.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone, .mainAdd, .mainAdded{
   display: none;
 }
 
