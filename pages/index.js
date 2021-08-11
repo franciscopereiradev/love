@@ -90,6 +90,7 @@ async function changeToMainBD(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
@@ -100,12 +101,14 @@ async function changeToMainBD(){
   mainBD.setAttribute('class', 'mainCorrent')
   mainHome.setAttribute('class', 'mainHome')
   mainReward.setAttribute('class', 'mainReward')
+  mainAdd.setAttribute('class', 'mainAdd')
 }
 
 async function changeToMainHome(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
@@ -117,12 +120,14 @@ async function changeToMainHome(){
   mainBD.setAttribute('class', 'mainBirthday')
   mainHome.setAttribute('class', 'mainCorrent')
   mainReward.setAttribute('class', 'mainReward')
+  mainAdd.setAttribute('class', 'mainAdd')
 }
 
 async function changeToMainReward(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
@@ -134,6 +139,26 @@ async function changeToMainReward(){
   mainBD.setAttribute('class', 'mainBirthday')
   mainHome.setAttribute('class', 'mainHome')
   mainReward.setAttribute('class', 'mainCorrent')
+  mainAdd.setAttribute('class', 'mainAdd')
+}
+
+async function ChangetoMainAdd(){
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
+
+
+  buttonHome.setAttribute('class', 'pageNotCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
+  mainBD.setAttribute('class', 'mainBirthday')
+  mainHome.setAttribute('class', 'mainHome')
+  mainReward.setAttribute('class', 'mainReward')
+  mainAdd.setAttribute('class', 'mainCorrent')
 }
 
 async function loginFooterNone(){
@@ -144,8 +169,7 @@ async function loginFooterNone(){
     footer.style.display = 'none'
   }
 
-}
-loginFooterNone()
+} loginFooterNone()
 
 async function madeLogin(){
   var mainLogin = document.querySelector('div#mainLogin')
@@ -354,9 +378,6 @@ function progress(){
 
 } progress()
 
-async function addMore(){
-  alert('Em breve!')
-}
 // function userNames(){
 //   const names = [
 //     'Francisco', 
@@ -395,6 +416,10 @@ async function addMore(){
 
 async function start(){
   return(window.location.href = '/level1')
+}
+
+async function addMore(){
+  alert('Em breve!')
 }
 
 // var countDownDate = new Date("July 29, 2021 00:00:00").getTime();
@@ -542,7 +567,7 @@ export default function Home() {
               </li>
             </ul>
           </section>
-          <button id='addMore' class='pageNotCorrent' onClick={addMore}>
+          <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
               <div class='add1'></div>
               <div class='add2'></div>
           </button>
@@ -630,6 +655,19 @@ export default function Home() {
           </div>
           <input type='submit' onClick={madeLogin} value='Entrar' class='keyLogin'></input>
           
+        </div>
+      </div>
+
+      <div id='mainAdd' class='mainAdd'>
+        <div class='circle1'></div>
+        <div class='circle2'></div>
+        <div class='glassBD'>
+            <h1>Nova data</h1>
+            <p>Evento</p>
+            <input class='loginInput'></input>
+            <p>Data do evento</p>
+            <input class='loginInput' type='date'></input>
+            <button onClick={addMore} class='keyLogin'>Guardar</button>
         </div>
       </div>
       <footer id='footer'>

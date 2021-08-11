@@ -229,7 +229,7 @@ div > p.blank{
 
 
 
-.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone{
+.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone, .mainAdd{
   display: none;
 }
 
