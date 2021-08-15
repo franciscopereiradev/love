@@ -186,19 +186,50 @@ async function ChangetoMainAdded(){
   mainAdded.setAttribute('class', 'mainCorrent')
 }
 
-async function addMore(){
-  var event = document.querySelector('input#event')
-  var eventDate = document.querySelector('input#eventDate')
+// async function addMore(){
+//   var eventInput = document.querySelector('input#event')
+//   var eventDateInput = document.querySelector('input#eventDate')
 
-  if(event.value == '' || eventDate.value == ''){
-    alert('Preencha todos os campos')
-  } else{
-    localStorage.setItem('event', event.value)
-    localStorage.setItem('eventDate', eventDate.value)
+//   if(eventInput.value == '' || eventDateInput.value == ''){
+//     alert('Preencha todos os campos')
+//   }else if(localStorage.event == false){
+//     localStorage.setItem('event', eventInput.value)
+//     localStorage.setItem('eventDate', eventDateInput.value)
     
-    window.location.href = '/'
-  }
+//     window.location.href = '/'
+//   }
   
+// }
+
+// async function database(){
+//   const db = openDatabase('Meubanco', '1.0', 'Mybase', 1024);
+//   db.transaction(function(criar){
+//     criar.executeSql('CREATE TABLE event (ID PRIMARY KEY, event TEXT, date TEXT)');
+//   });
+
+// } database()
+
+// async function saveEvent(){
+//   const db = openDatabase('Meubanco', '1.0', 'Mybase', 1024);
+
+//   var event = document.querySelector('input#event').value
+//   var date = document.querySelector('input#eventDate').value
+
+//   db.transaction(function(armazenar){
+//     armazenar.executeSql("INSERT INTO event (event,date) VALUES (?,?)", [event,date]);
+//     console.log('good')
+//   })
+
+//   window.location.href = '/'
+// }
+
+async function saveEvents(req, res){
+  const createEvent = require('../source/database/createEvent')
+
+  const eventValue = {
+    event: req.body.event,
+    date: req.doby.eventDate
+  }
 }
 
 async function loginFooterNone(){
@@ -252,9 +283,6 @@ async function madeLogin(){
   } else {
     alert('Couple code não encontrado!')
   }
-
-  
-
 }
 
 async function autoLogin(){
@@ -487,6 +515,16 @@ async function start(){
 // }
 // }, 1000);
 
+
+async function SelectedEventsFunction(){
+  const Database = require('../source/database/db')
+  const createEvent = require('../source/database/createEvent')
+
+  const selectedEvents = await db.all('SELECT * FROM events')
+  console.log(selectedEvents)
+
+} SelectedEventsFunction()
+
 export default function Home() {
   
   return (
@@ -704,14 +742,14 @@ export default function Home() {
       <div id='mainAdd' class='mainAdd'>
         <div class='circle1'></div>
         <div class='circle2'></div>
-        <div class='glassBD'>
+          <form class='glassBD' action='/' method='POST'>
             <h1>Nova data</h1>
             <p>Evento</p>
-            <input id='event' class='loginInput'></input>
+            <input id='event' name='event' class='loginInput' required></input>
             <p>Data do evento</p>
-            <input id='eventDate' class='loginInput' type='date'></input>
-            <button onClick={addMore} class='keyLogin'>Guardar</button>
-        </div>
+            <input id='eventDate' name='eventDate' class='loginInput' type='date' required></input>
+            <button type='submit' class='keyLogin'>Guardar</button>
+          </form>
       </div>
 
       <div id='mainAdded' class='mainAdded'>
@@ -719,14 +757,14 @@ export default function Home() {
         <div class='circle2'></div>
         <div class='glassBD'>
             <h1>Eventos</h1>
-            <ul class='list'>
-                <li class='listItem'>
-                    <div class='itemBox' >
-                        <h2 id='eventAdded' class='item1'></h2>
-                        <p id='eventDateAdded' class='date1'></p>
-                    </div>
-                </li>
-            </ul>
+            <main>
+
+              {%for event in events %}
+                <p>{{event.event}}</p>
+                <p>{{event.date}}</p>
+              {%endFor%}
+
+            </main>
         </div>
       </div>
 
