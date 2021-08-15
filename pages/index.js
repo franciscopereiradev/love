@@ -758,12 +758,7 @@ export default function Home() {
         <div class='glassBD'>
             <h1>Eventos</h1>
             <main>
-
-              {%for event in events %}
-                <p>{{event.event}}</p>
-                <p>{{event.date}}</p>
-              {%endFor%}
-
+              <p>Coming soon</p>
             </main>
         </div>
       </div>
