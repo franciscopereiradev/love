@@ -726,6 +726,7 @@ footer{
     height: 100%;
     backdrop-filter: blur(0rem);
     border-radius: 0px;
+    border: none;
     background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   }
 
