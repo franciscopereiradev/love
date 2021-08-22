@@ -73,6 +73,26 @@ header{
   
 }
 
+.rewardsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+
+}
+
+.rewardsBox > .keyCheck{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 15px;
+  color: #f2f3f5;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 10px;
+  background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(255, 255, 255, 0.4));
+}
+
 .rules, .inputKeyBG{
   display: flex;
   flex-direction: column;

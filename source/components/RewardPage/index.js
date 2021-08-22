@@ -27,8 +27,11 @@ function RewardPage(){
         <div class='circle2'></div>,
         <div class='glassBD'>
             <h1>Presentes</h1>
-            <a class='keyCheck' onClick={changeToMaintextinho}>Textinho</a>
-            <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
+            <div class='rewardsBox'>
+                <a class='keyCheck' onClick={changeToMaintextinho}>Textinho</a>
+                <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
+            </div>
+                
         </div>
     )
 }
