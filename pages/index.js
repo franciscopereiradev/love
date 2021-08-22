@@ -12,7 +12,7 @@ async function changeToMainBD(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
-  var mainTextinho = document.querySelector('div#mainTextinho')
+  var mainTextinho = document.querySelector('div#textinhoPage')
   var mainAdd = document.querySelector('div#mainAdd')
   var mainAdded = document.querySelector('div#mainAdded')
   var buttonHome = document.querySelector('button#homeBt')
@@ -34,7 +34,7 @@ async function changeToMainHome(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
-  var mainTextinho = document.querySelector('div#mainTextinho')
+  var mainTextinho = document.querySelector('div#textinhoPage')
   var mainAdd = document.querySelector('div#mainAdd')
   var mainAdded = document.querySelector('div#mainAdded')
   var buttonHome = document.querySelector('button#homeBt')
@@ -57,7 +57,7 @@ async function changeToMainReward(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
-  var mainTextinho = document.querySelector('div#mainTextinho')
+  var mainTextinho = document.querySelector('div#textinhoPage')
   var mainAdd = document.querySelector('div#mainAdd')
   var mainAdded = document.querySelector('div#mainAdded')
   var buttonHome = document.querySelector('button#homeBt')
@@ -146,9 +146,9 @@ export default function Home() {
         <LoginPage/>
       </div>
 
-      <div class='mainTextinho' id='mainTextinho'>
+      {/* <div class='mainTextinho' id='mainTextinho'>
         <TextinhoPage/>
-      </div>
+      </div> */}
 
       <div id='mainAdd' class='mainAdd'>
         <div class='circle1'></div>
