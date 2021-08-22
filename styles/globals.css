@@ -2,8 +2,8 @@ html{
   --title: #f2f3f5;
   --text: #e1e2e5;
   --text-secondary: #c1c2c5;
-  --wallpaper: rgb(255, 92, 0);
-  --wallpaper-secondary: rgb(0, 102, 255);
+  --wallpaper: rgb(211, 156, 177);
+  --wallpaper-secondary: rgb(134, 194, 218);
   /* --wallpaper: rgb(204, 30, 204);
   --wallpaper-secondary: rgb(0, 110, 255); */
   /*--wallpaper: rgb(212, 120, 35);
@@ -73,13 +73,46 @@ header{
   
 }
 
+@keyframes animacaoBackground{
+  0% {background: var(--wallpaper)}
+  50% {background:  var(--wallpaper-secondary)}
+  100% {background: var(--wallpaper)}
+}
+
+@keyframes animacaoMoreBtn{
+  0% {width: 90px;}
+  50% {width: 100px;}
+  100% {width: 90px;}
+}
+@keyframes loading{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.loading{
+  height: 50px;
+  width: 50px;
+
+  background: transparent;
+
+  border: 2px solid transparent;
+  border-top-color: #f2f3f5;
+  border-radius: 50%;
+
+  animation-name: loading;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  margin-bottom: 20px;
+}
+
+
 .rewardsBox{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100vw;
-
 }
 
 .rewardsBox > .keyCheck{
@@ -266,7 +299,10 @@ div > p.blank{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary));
+  /* background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary)); */
+  animation-name: animacaoBackground;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
   width: 100vw;
   height: 100vh;
 }
@@ -280,7 +316,7 @@ div > p.blank{
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2.4rem);
-  /* background: linear-gradient(to right bottom, rgba(50,50,50, 0.5), rgba(50,50,50, 0.3)); */
+  background: linear-gradient(to right bottom, rgba(120, 120, 120, 0.3), rgba(80,80,80, 0.3));
 }
 
 .textinhoPage{
@@ -434,7 +470,7 @@ div > p.blank{
 }
 
 .listItemYear{
-  background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(255, 255, 255, 0.4));
+  background: linear-gradient(to right top, rgb(211, 156, 177, 0.5) , rgba(255, 255, 255, 0.4));
 }
 
 .itemDone{
@@ -466,12 +502,11 @@ div > p.blank{
   background-color: var(--background);
   width: 1.2rem;
   height: 0.2rem;
-  border-radius: 5rem;
+  border-radius: 10px;
 }
 .add2{
   transform: rotate(90deg);
 }
-
 
 .progressBarMain{
   margin: 0.6rem 0;
@@ -722,6 +757,12 @@ footer{
   cursor: pointer;
 }
 
+.pageNotCorrent:hover{
+  animation-name: animacaoMoreBtn;
+  animation-duration: 500ms;
+  /* animation-iteration-count: 1; */
+}
+
 .pageCorrent{
   display: flex;
   align-items: center;
@@ -860,7 +901,7 @@ footer{
     border-radius: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(200, 235, 255, 0.4));
+    background: linear-gradient(to right top, rgb(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{

@@ -138,16 +138,16 @@ function MainPage() {
           <section class='achievements'>
             <ul class='list'>
               <li id='pastMonth'class='listItem'>
-                  <h2 class='itemDone'>4 meses de namoro</h2>
-                  <p class='dateDone'>06/07/2021</p>
+                  <h2 class='itemDone'>5 meses de namoro</h2>
+                  <p class='dateDone'>06/08/2021</p>
               </li>
               <li id='correntMonth' class='listItem'>
-                  <h2 class='item1'>5 meses de namoro</h2>
-                  <p class='date1'>06/08/2021</p>
+                  <h2 class='item1'>6 meses de namoro</h2>
+                  <p class='date1'>06/09/2021</p>
               </li>
               <li id='nextMonth'class='listItem'>
-                  <h2 class='item2'>6 meses de namoro</h2>
-                  <p class='date2'>06/09/2021</p>
+                  <h2 class='item2'>7 meses de namoro</h2>
+                  <p class='date2'>06/10/2021</p>
               </li>
 
               <li class='listItemYear'>

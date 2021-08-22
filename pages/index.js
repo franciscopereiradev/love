@@ -169,7 +169,8 @@ export default function Home() {
         <div class='glassBD'>
             <h1>Eventos</h1>
             <main>
-              <p>Coming soon</p>
+              <div class='loading'>
+              </div>
             </main>
         </div>
       </div>
