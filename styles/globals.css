@@ -123,7 +123,7 @@ header{
   font-weight: 600;
   font-size: 24px;
   margin: 10px;
-  background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(255, 255, 255, 0.4));
+  background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(255, 255, 255, 0.4));
 }
 
 .rules, .inputKeyBG{
@@ -176,7 +176,7 @@ header{
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right top, rgba(155, 139, 121, 0.5) , rgba(119, 119, 119, 0.4));
+  background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(119, 119, 119, 0.4));
   width: 100%;
 }
 
