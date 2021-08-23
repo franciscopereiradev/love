@@ -140,19 +140,17 @@ function MainPage() {
                   <p class='dateDone'>06/08/2021</p>
               </li>
               <li id='correntMonth' class='listItem'>
-                  <h2 class='item1'>6 meses de namoro</h2>
-                  <p class='date1'>06/09/2021</p>
+                  <h2 class='item'>6 meses de namoro</h2>
+                  <p class='date'>06/09/2021</p>
               </li>
               <li id='nextMonth'class='listItem'>
-                  <h2 class='item2'>7 meses de namoro</h2>
-                  <p class='date2'>06/10/2021</p>
+                  <h2 class='item'>7 meses de namoro</h2>
+                  <p class='date'>06/10/2021</p>
               </li>
 
               <li class='listItemYear'>
-                <div class='itemBox' >
                   <h2 class='itemYear'>1 ano de namoro </h2>
                   <p class='dateYear'>06/03/2022</p>
-                </div>
               </li>
             </ul>
           </section>
