@@ -1159,7 +1159,7 @@ footer{
     border-radius: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(to right top, rgba(255, 230, 200, 0.5) , rgba(200, 235, 255, 0.4));
+    background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{
