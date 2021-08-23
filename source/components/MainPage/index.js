@@ -123,7 +123,13 @@ function MainPage() {
           </button>
         </header>
           <div class='header'>
-            <h1 class='days'>{countDays()} dias de namoro!</h1>
+            <div class='percent'>
+              <svg>
+                <circle cx='70' cy='70' r='70'></circle>
+                <circle cx='70' cy='70' r='70' style={{strokeDashoffset:` calc(440 - (440 * ${progress()}) / 100)`}}></circle>
+              </svg>
+              <h1 class='days'>{countDays()}</h1>
+            </div>
             <h2 class='years'>Faltam {daysTo()} dias para fazermos {howManyYears()}!</h2>
           </div>
           <section class='progressBarMain'>
