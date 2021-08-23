@@ -123,13 +123,8 @@ function MainPage() {
           </button>
         </header>
           <div class='header'>
-            <h1 class='title'>
-              Estamos juntos à
-            </h1>
-            <h1 class='days'>
-              {countDays()} dias
-            </h1>
-            <h2 class='years'>Faltam {daysTo()} dias para fazermos {howManyYears()} <strong>juntos!</strong></h2>
+            <h1 class='days'>{countDays()} dias de namoro!</h1>
+            <h2 class='years'>Faltam {daysTo()} dias para fazermos {howManyYears()}!</h2>
           </div>
           <section class='progressBarMain'>
             <div class='progressBar'>
