@@ -128,7 +128,7 @@ function MainPage() {
             <h1 class='days'>
               {countDays()} dias
             </h1>
-            <h2 class='years'>Faltam {daysTo()} dias para fazer-mos {howManyYears()} <strong>juntos!</strong></h2>
+            <h2 class='years'>Faltam {daysTo()} dias para fazermos {howManyYears()} <strong>juntos!</strong></h2>
           </div>
           <section class='progressBarMain'>
             <div class='progressBar'>
