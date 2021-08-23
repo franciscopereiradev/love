@@ -114,7 +114,7 @@ header{
   margin-bottom: 20px;
 }
 
-.percent{
+/* .percent{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,8 +152,7 @@ header{
 .percent svg circle:nth-child(2){
   
   stroke: rgba(200, 235, 255, 0.9);
-}
-
+} */
 
 .rewardsBox{
   display: flex;
