@@ -119,11 +119,9 @@ header{
   width: 8rem;
   height: 8rem;
   border-radius: 15px;
-  color: #f2f3f5;
   font-weight: 600;
   font-size: 24px;
   margin: 10px;
-  background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(255, 255, 255, 0.4));
 }
 
 .rules, .inputKeyBG{
@@ -251,7 +249,8 @@ div > p.blank{
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right top, rgba(255, 255, 255) , rgb(255, 255, 255));
+  background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(255, 255, 255, 0.4));
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -271,7 +270,6 @@ div > p.blank{
   transition: 500ms;
   background: linear-gradient(to right top, rgb(255, 255, 255, 0.5) , rgb(255, 255, 255, 0.5));
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 1);
-  border: none;
   color: #fff;
 }
 
@@ -470,6 +468,7 @@ div > p.blank{
 }
 
 .listItemYear{
+  margin-top: 0.4rem;
   background: linear-gradient(to right top, rgb(211, 156, 177, 0.5) , rgba(255, 255, 255, 0.4));
 }
 
@@ -576,7 +575,6 @@ div > p.blank{
   padding: 0;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
   width: 100%;
 }
@@ -932,27 +930,6 @@ footer{
 
   .listItem, .listItemYear{
     height: 4.6rem;
-    /*border-radius: 0px;
-    margin: 0; */
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-  }
-
-  #listSt{
-    
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    
-  }
-  /* #listLast{
-    
-  } */
-  .listItemYear{
-    margin-top: 0.4rem;
-    border-radius: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(to right top, rgb(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item20, .item11, .itemDone, .itemYear{
@@ -964,16 +941,6 @@ footer{
     font-size: 0.6rem;
   }
 
-  .progressBar{
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  .progressBarMain > p {
-    margin: 0;
-    padding: 0;
-  }
-
   .credits > p, .credits > h2{
     font-size: 0.8rem;
   }
@@ -982,129 +949,6 @@ footer{
     font-size: 0.6rem;
   }
 
-  .user{
-    display: none;
-  }
-
-  .userMobile{
-    display: none;
-    /* position: absolute; */
-    align-items: center;  
-    width: 95%;
-    height: 4rem;
-    border-radius: 50px;
-    background: #fff;
-    backdrop-filter: blur(2rem);
-    background: linear-gradient(to right bottom, rgba(255,255, 255, 0.2), rgba(255,255, 255, 0.1));
-  }
-
-  .userMobile > a{
-    /* position: absolute; */
-    margin: 0;
-    padding: 0;
-    margin-left: 7.5px;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    /* background: #fff; */
-    backdrop-filter: blur(2rem);
-    background: linear-gradient(to right bottom, rgba(255,255, 255, 0.3), rgba(255,255, 255, 0.6));
-  }
-  
-  .userMobile > div{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* flex-direction: column; */
-    margin-left: 1rem;
-  }
-  
-  .userMobile > div > p{
-    margin: 0;
-    padding: 6px;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-  }
-  
-  /* .header{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    height: 6rem;
-    width: 100vw;
-  }
-  
-
-  
-
-  .years{
-    margin: 0;
-    padding: 0;
-    font-size: 0.6rem;
-  }
-
-  .days{
-    font-size: 1.4rem;
-  }
-
-  
-
-  .list{
-    width: 95vw;
-  }
-  
-  
-
-  /* .item1, .item2, .itemDone{
-    margin-top: 0.4rem;
-    font-size: 1.4rem;
-  }
-
-  .date1, .date2, .dateDone{
-    font-size: 0.6rem;
-  }
-
-  .done{
-    width: 7rem;
-    font-size: 0.8rem;
-  }
-
-  .addMore{
-    left: 33%;
-    width: 33%;
-    height: 2.4rem;
-    bottom: 4rem;
-  }
-
-  .add1, .add2{
-    width: 1.2rem;
-    height: 0.2rem;
-    border-radius: 5rem;
-  }
-
-  .progressBarMain{
-    background: var(--background);
-    position: absolute;
-    width: 100vw;
-    height: 1.4rem;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
-    top: 90px;
-  }
-
-  .progressBar{
-    height: 1.2rem;
-  }
-
-  
-*/
- 
 }
 
 @media(max-height:800px){
@@ -1223,42 +1067,4 @@ footer{
     display: none;
   }
 
-  .userMobile{
-    display: none;
-    /* position: absolute; */
-    align-items: center;  
-    width: 95%;
-    height: 4rem;
-    border-radius: 50px;
-    background: #fff;
-    backdrop-filter: blur(2rem);
-    background: linear-gradient(to right bottom, rgba(255,255, 255, 0.2), rgba(255,255, 255, 0.1));
-  }
-
-  .userMobile > a{
-    /* position: absolute; */
-    margin: 0;
-    padding: 0;
-    margin-left: 7.5px;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    /* background: #fff; */
-    backdrop-filter: blur(2rem);
-    background: linear-gradient(to right bottom, rgba(255,255, 255, 0.3), rgba(255,255, 255, 0.6));
-  }
-  
-  .userMobile > div{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* flex-direction: column; */
-    margin-left: 1rem;
-  }
-  
-  .userMobile > div > p{
-    margin: 0;
-    padding: 6px;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-  }}
+}
