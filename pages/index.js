@@ -5,7 +5,8 @@ import LoginPage from '../source/components/LoginPage'
 import MainPage from '../source/components/MainPage'
 import BirthdayPage from '../source/components/BirthdayPage'
 import RewardPage from '../source/components/RewardPage'
-import TextinhoPage from '../source/components/TextinhoPage'
+import { FaHome, FaHeart, FaGift } from "react-icons/fa";
+
 
 
 async function changeToMainBD(){
@@ -177,13 +178,13 @@ export default function Home() {
 
       <footer id='footer'>
         <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
-          <p>🎁</p>
+          <p><FaGift/></p>
         </button>
         <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
-          <p>🏠</p>
+          <p><FaHome/></p>
         </button>
         <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
-          <p>❤</p>
+          <p><FaHeart/></p>
         </button>
         
       </footer>

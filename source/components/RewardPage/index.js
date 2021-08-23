@@ -3,19 +3,16 @@ import TextinhoPage from "../TextinhoPage"
 async function changeToMaintextinho(){
     var mainBD = document.querySelector('div#mainBirthday')
     var mainHome = document.querySelector('div#mainHome')
-    var mainReward = document.querySelector('div#mainReward')
     var mainTextinho = document.querySelector('div#textinhoPage')
     var buttonHome = document.querySelector('button#homeBt')
     var buttonBD = document.querySelector('button#birthdayBt')
     var buttonReward = document.querySelector('button#rewardBt')
-  
   
     buttonHome.setAttribute('class', 'pageNotCorrent')
     buttonBD.setAttribute('class', 'pageNotCorrent')
     buttonReward.setAttribute('class', 'pageNotCorrent')
     mainBD.setAttribute('class', 'mainBirthday')
     mainHome.setAttribute('class', 'mainHome')
-    // mainReward.setAttribute('class', 'mainReward')
     mainTextinho.setAttribute('class', 'textinhoPageOn')
 }
 
