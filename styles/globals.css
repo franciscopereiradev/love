@@ -542,13 +542,41 @@ div > p.blank{
 }
 
 .dev{
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center ;
   align-items: center;
+  flex-direction: column;
 }
 
-.dev > h2{
+.credits > p, .credits > h2, .momoPhrase > p{
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.credits > h2{
   margin-left: 10px;
+}
+
+.credits{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.momoPhrase{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* .hover{
@@ -944,12 +972,12 @@ footer{
     padding: 0;
   }
 
-  .dev > p{
+  .credits > p, .credits > h2{
     font-size: 0.8rem;
   }
 
-  .dev > h2{
-    font-size: 0.8rem;
+  .momoPhrase > p {
+    font-size: 0.6rem;
   }
 
   .user{
@@ -1181,12 +1209,12 @@ footer{
     padding: 0;
   }
 
-  .dev > p{
+  .credits > p, .credits > h2{
     font-size: 0.8rem;
   }
 
-  .dev > h2{
-    font-size: 0.8rem;
+  .momoPhrase > p{
+    font-size: 0.6rem;
   }
 
   .user{

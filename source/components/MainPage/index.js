@@ -169,8 +169,14 @@ function MainPage() {
             </button>
           </div>
           <section class='dev'>
-            <p>Made with Love ❤</p>
-            <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
+            <div class='credits'>
+              <p>Made with Love ❤</p>
+              <h2>From <strong>Me</strong> to <strong>You!</strong></h2>
+            </div>
+            <div class='momoPhrase'>
+              <p>"I see forever in your eyes"</p>
+              <p>"I feel okay when i see you smile"</p>
+            </div>
           </section>
           
         </div>
