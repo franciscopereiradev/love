@@ -177,15 +177,17 @@ export default function Home() {
       </div>
 
       <footer id='footer'>
-        <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
-          <p><FaGift/></p>
-        </button>
-        <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
-          <p><FaHome/></p>
-        </button>
-        <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
-          <p><FaHeart/></p>
-        </button>
+        <div class='footerMain'>
+          <button id='rewardBt' class='pageNotCorrent' onClick={changeToMainReward}>
+            <p><FaGift/></p>
+          </button>
+          <button id='homeBt' class='pageCorrent' onClick={changeToMainHome}>
+            <p><FaHome/></p>
+          </button>
+          <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
+            <p><FaHeart/></p>
+          </button>
+        </div>
         
       </footer>
     </div>
