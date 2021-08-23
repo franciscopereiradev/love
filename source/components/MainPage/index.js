@@ -113,8 +113,9 @@ function progress(){
 
 function MainPage() {
   return (
-    <div class='circle1'></div>,
-    <div class='circle2'></div>,
+    <div class='container'>
+      <div class='circle1'></div>
+      <div class='circle2'></div>
         <div class='glass'>
         <header>
           <button id='logout'class='pageNotCorrent' onClick={logout}>
@@ -180,6 +181,7 @@ function MainPage() {
           </section>
           
         </div>
+    </div>
   );
 }
 

@@ -18,15 +18,17 @@ async function changeToMaintextinho(){
 
 function RewardPage(){
     return(
-        <div class='circle1'></div>,
-        <div class='circle2'></div>,
-        <div class='glassBD'>
-            <h1>Presentes</h1>
-            <div class='rewardsBox'>
-                <a class='keyCheck' onClick={changeToMaintextinho}>Textinho</a>
-                <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
+        <div class='container'>
+            <div class='circle1'></div>
+            <div class='circle2'></div>
+            <div class='glassBD'>
+                <h1>Presentes</h1>
+                <div class='rewardsBox'>
+                    <a class='keyCheck' onClick={changeToMaintextinho}>Textinho</a>
+                    <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
+                </div>
+                <TextinhoPage/>   
             </div>
-            <TextinhoPage/>   
         </div>
     )
 }

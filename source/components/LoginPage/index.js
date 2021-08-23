@@ -43,17 +43,19 @@ async function madeLogin(){
 
 function LoginPage() {
   return (
-    <div class='circle1'></div>,
-    <div class='circle2'></div>,
-    <div class='glassBD'>
-      <h1>Couple Code ❤</h1>
-      <input id='password' class='loginInput' type='password'></input>
-      <div class='rememberBox'>
-        <input id='remember' name='login' type='checkbox'></input>
-        <p>Lembrar Couple Code ❤</p>
+    <div class='container'>
+      <div class='circle1'></div>
+      <div class='circle2'></div>
+      <div class='glassBD'>
+        <h1>Couple Code ❤</h1>
+        <input id='password' class='loginInput' type='password'></input>
+        <div class='rememberBox'>
+          <input id='remember' name='login' type='checkbox'></input>
+          <p>Lembrar Couple Code ❤</p>
+        </div>
+        <input type='submit' onClick={madeLogin} value='Entrar' class='keyLogin'></input>
+        
       </div>
-      <input type='submit' onClick={madeLogin} value='Entrar' class='keyLogin'></input>
-      
     </div>
   );
 };

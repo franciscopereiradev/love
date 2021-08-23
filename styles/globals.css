@@ -89,6 +89,13 @@ header{
   100% {transform: rotate(360deg);}
 }
 
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .loading{
   height: 50px;
   width: 50px;
