@@ -1,4 +1,4 @@
-import { FaNewspaper } from 'react-icons/fa'
+import { FaNewspaper, FaPlus } from 'react-icons/fa'
 
 const second = 1000;
 const minute = second * 60;
@@ -161,12 +161,11 @@ function MainPage() {
             </ul>
           </section>
           <div class='addBox'>
-            <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdded}>
+            <button id='addedMore' class='pageNotCorrent' onClick={ChangetoMainAdded}>
               <p><FaNewspaper/></p>
             </button>
             <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
-              <div class='add1'></div>
-              <div class='add2'></div>
+              <p><FaPlus/></p>
             </button>
           </div>
           <section class='dev'>

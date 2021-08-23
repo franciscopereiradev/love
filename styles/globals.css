@@ -804,6 +804,10 @@ footer{
   /* font-size: 26px; */
 }
 
+#addMore > p{
+  font-size: 20px;
+}
+
 .rememberBox{
   margin: 0;
   padding: 0;
