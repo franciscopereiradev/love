@@ -5,6 +5,7 @@ import LoginPage from '../source/components/LoginPage'
 import MainPage from '../source/components/MainPage'
 import BirthdayPage from '../source/components/BirthdayPage'
 import RewardPage from '../source/components/RewardPage'
+import EventsPage from '../source/components/EventsPage'
 import { FaHome, FaHeart, FaGift } from "react-icons/fa";
 
 
@@ -126,6 +127,34 @@ async function enterCheck(){
 } enterCheck()
 
 
+// const express = require('express');
+// const bodyParser = require('body-parser')
+// const app = express();
+
+// app.use(bodyParser.urlencoded({ extended: false}))
+
+// app.use(bodyParser.json())
+
+async function submitEvent(req, res){
+  const createEvent = require('../source/db/createEvent')
+
+  const eventValue = {
+    event: req.body.event,
+    eventDate: req.body.eventDate
+  }
+
+  try {
+    const db = await Database
+    await createEvent(db, { eventValue })
+
+    // return res.redirect("/")
+    alert('all good')
+  } catch (error) {
+    alert(error)
+  }
+} 
+
+
 export default function Home() {
   
   return (
@@ -154,26 +183,18 @@ export default function Home() {
       <div id='mainAdd' class='mainAdd'>
         <div class='circle1'></div>
         <div class='circle2'></div>
-          <form class='glassBD' action='/' method='POST'>
+          <form class='glassBD' method='POST'>
             <h1>Nova data</h1>
             <p>Evento</p>
             <input id='event' name='event' class='loginInput' required></input>
             <p>Data do evento</p>
-            <input id='eventDate' name='eventDate' class='loginInput' type='date' required></input>
-            <button type='submit' class='keyLogin'>Guardar</button>
+            <input id='eventDate' name='eventDate' class='loginInput' required></input>
+            <button onClick={submitEvent} class='keyLogin'>Guardar</button>
           </form>
       </div>
 
       <div id='mainAdded' class='mainAdded'>
-        <div class='circle1'></div>
-        <div class='circle2'></div>
-        <div class='glassBD'>
-            <h1>Eventos</h1>
-            <main>
-              <div class='loading'>
-              </div>
-            </main>
-        </div>
+        <EventsPage/>
       </div>
 
       <footer id='footer'>
@@ -192,4 +213,6 @@ export default function Home() {
       </footer>
     </div>
   )}
+
+  
   

@@ -85,10 +85,10 @@ header{
   100% {color: var(--wallpaper)}
 }
 
-@keyframes animacaoMoreBtn{
-  0% {width: 90px;}
-  50% {width: 100px;}
-  100% {width: 90px;}
+@keyframes animacaoBackgroundBtn{
+  0% {background:  rgba(200, 235, 255, 0.5)}
+  50% {background: rgba(211, 156, 177, 0.5)}
+  100% {background:  rgba(200, 235, 255, 0.5)}
 }
 @keyframes loading{
   0% {transform: rotate(0deg);}
@@ -301,7 +301,10 @@ div > p.blank{
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4));
+  animation-name: animacaoBackgroundBtn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  /* background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4)); */
   color: #fff;
   margin-bottom: 20px;
 }
@@ -511,7 +514,9 @@ div > p.blank{
 
 .listItemYear{
   margin-top: 0.4rem;
-  background: linear-gradient(to right top, rgb(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4));
+  animation-name: animacaoBackgroundBtn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 .item, .itemYear{
@@ -976,19 +981,10 @@ footer{
 
   .listItem, .listItemYear{
     height: 4.6rem;
-    /*border-radius: 0px;
-    margin: 0; */
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
   }
 
   .listItemYear{
     margin-top: 0.4rem;
-    border-radius: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4));
   }
 
   .item, .itemYear{
@@ -998,16 +994,6 @@ footer{
 
   .date, .dateYear{
     font-size: 0.6rem;
-  }
-
-  .progressBar{
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  .progressBarMain > p {
-    margin: 0;
-    padding: 0;
   }
 
   .credits > p, .credits > h2{
