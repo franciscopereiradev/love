@@ -6,6 +6,7 @@ import MainPage from '../source/components/MainPage'
 import BirthdayPage from '../source/components/BirthdayPage'
 import RewardPage from '../source/components/RewardPage'
 import EventsPage from '../source/components/EventsPage'
+import Months from '../source/components/Months'
 import { FaHome, FaHeart, FaGift } from "react-icons/fa";
 
 

@@ -1,4 +1,5 @@
 import { FaNewspaper, FaPlus } from 'react-icons/fa'
+import Months from '../months';
 
 const second = 1000;
 const minute = second * 60;
@@ -135,19 +136,7 @@ function MainPage() {
           
           <section class='achievements'>
             <ul class='list'>
-              <li id='pastMonth'class='listItem'>
-                  <h2 class='itemDone'>5 meses de namoro</h2>
-                  <p class='dateDone'>06/08/2021</p>
-              </li>
-              <li id='correntMonth' class='listItem'>
-                  <h2 class='item'>6 meses de namoro</h2>
-                  <p class='date'>06/09/2021</p>
-              </li>
-              <li id='nextMonth'class='listItem'>
-                  <h2 class='item'>7 meses de namoro</h2>
-                  <p class='date'>06/10/2021</p>
-              </li>
-
+              <Months/>
               <li class='listItemYear'>
                   <h2 class='itemYear'>1 ano de namoro </h2>
                   <p class='dateYear'>06/03/2022</p>
