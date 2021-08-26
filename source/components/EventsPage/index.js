@@ -1,4 +1,9 @@
+import useEvents from '../../hooks/useEvents';
+import Events from '../Events'
+
 function EventsPage(){
+    const { events } = useEvents()
+
     return(  
         <div class='container'>
             <div class='circle1'></div>
@@ -6,7 +11,7 @@ function EventsPage(){
             <div class='glassBD'>
                 <h1>Eventos</h1>
                 <main>
-                <div class='loading'></div>
+                <Events events={events}></Events>
                 </main>
             </div>
         </div>

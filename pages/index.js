@@ -136,24 +136,24 @@ async function enterCheck(){
 
 // app.use(bodyParser.json())
 
-async function submitEvent(req, res){
-  const createEvent = require('../source/db/createEvent')
+// async function submitEvent(req, res){
+//   const createEvent = require('../source/db/createEvent')
 
-  const eventValue = {
-    event: req.body.event,
-    eventDate: req.body.eventDate
-  }
+//   const eventValue = {
+//     event: req.body.event,
+//     eventDate: req.body.eventDate
+//   }
 
-  try {
-    const db = await Database
-    await createEvent(db, { eventValue })
+//   try {
+//     const db = await Database
+//     await createEvent(db, { eventValue })
 
-    // return res.redirect("/")
-    alert('all good')
-  } catch (error) {
-    alert(error)
-  }
-} 
+//     // return res.redirect("/")
+//     alert('all good')
+//   } catch (error) {
+//     alert(error)
+//   }
+// } 
 
 
 export default function Home() {
