@@ -1,5 +1,5 @@
 import { FaNewspaper, FaPlus } from 'react-icons/fa'
-import Months from '../months';
+import Months from '../Months';
 
 const second = 1000;
 const minute = second * 60;
