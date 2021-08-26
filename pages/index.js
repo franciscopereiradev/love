@@ -190,7 +190,7 @@ export default function Home() {
             <input id='event' name='event' class='loginInput' required></input>
             <p>Data do evento</p>
             <input id='eventDate' name='eventDate' class='loginInput' required></input>
-            <button onClick={submitEvent} class='keyLogin'>Guardar</button>
+            <button class='keyLogin'>Guardar</button>
           </form>
       </div>
 

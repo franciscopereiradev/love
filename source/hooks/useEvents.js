@@ -1,7 +1,9 @@
 
 import { useEffect, useState } from 'react';
 import { useCollection } from 'react-firebase-hooks/firestore';
-import { db } from '../firebase';
+import { firebase } from '../firebase';
+import 'firebase/firestore'
+const db = firebase.firestore()
 
 function useEvents () {
   const [events, setEvents] = useState([])
