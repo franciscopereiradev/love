@@ -4,6 +4,8 @@ html{
   --text-secondary: #c1c2c5;
   --wallpaper: rgb(211, 156, 177);
   --wallpaper-secondary: rgb(134, 194, 218);
+  --wallpaper-tirth: rgb(224, 161, 240);
+  --wallpaper-fourth: rgb(131, 183, 231);
   /* --wallpaper: rgb(204, 30, 204);
   --wallpaper-secondary: rgb(0, 110, 255); */
   /*--wallpaper: rgb(212, 120, 35);
@@ -74,9 +76,9 @@ header{
 }
 
 @keyframes animacaoBackground{
-  0% {background: var(--wallpaper)}
-  50% {background:  var(--wallpaper-secondary)}
-  100% {background: var(--wallpaper)}
+  0% {background-position: 0 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0 50%}
 }
 
 @keyframes animacaoBtn{
@@ -364,10 +366,12 @@ div > p.blank{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary)); */
+  background: linear-gradient(-45deg, var(--wallpaper),var(--wallpaper-tirth), var(--wallpaper-secondary), var(--wallpaper-fourth)) no-repeat;
+  background-size: 300% 300%;
   animation-name: animacaoBackground;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease;
   width: 100vw;
   height: 100vh;
 }

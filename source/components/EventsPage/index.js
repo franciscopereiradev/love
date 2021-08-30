@@ -1,8 +1,8 @@
-import useEvents from '../../hooks/useEvents';
-import Events from '../Events'
+// import useEvents from '../../hooks/useEvents';
+// import Events from '../Events'
 
 function EventsPage(){
-    const { events } = useEvents()
+    // const { events } = useEvents()
 
     return(  
         <div class='container'>
@@ -11,7 +11,7 @@ function EventsPage(){
             <div class='glassBD'>
                 <h1>Eventos</h1>
                 <main>
-                <Events events={events}></Events>
+                {/* <Events events={events}></Events> */}
                 </main>
             </div>
         </div>

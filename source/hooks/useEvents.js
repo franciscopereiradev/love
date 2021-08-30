@@ -1,33 +1,33 @@
 
-import { useEffect, useState } from 'react';
-import { useCollection } from 'react-firebase-hooks/firestore';
-import { firebase } from '../firebase';
-import 'firebase/firestore'
-const db = firebase.firestore()
+// import { useEffect, useState } from 'react';
+// import { useCollection } from 'react-firebase-hooks/firestore';
+// import 'firebase/firestore'
 
-function useEvents () {
-  const [events, setEvents] = useState([])
-  const [eventsCollection, loadingEvents, error] = useCollection(
-    db.collection('events')
-      .orderBy('created', 'desc')
-      .limit(500)
-  )
+// const db = firebase.firestore()
 
-  useEffect(() => {
-    const newEvents = eventsCollection?.docs
-      .map(doc => ({
-        ...doc.data(),
-        key: doc.id
-      })).reverse() || []
+// function useEvents () {
+//   const [events, setEvents] = useState([])
+//   const [eventsCollection, loadingEvents, error] = useCollection(
+//     db.collection('events')
+//       .orderBy('created', 'desc')
+//       .limit(500)
+//   )
 
-    setEvents(newEvents)
-  }, [eventsCollection])
+//   useEffect(() => {
+//     const newEvents = eventsCollection?.docs
+//       .map(doc => ({
+//         ...doc.data(),
+//         key: doc.id
+//       })).reverse() || []
 
-  return {
-    events,
-    loadingEvents,
-    error
-  }
-}
+//     setEvents(newEvents)
+//   }, [eventsCollection])
 
-export default useEvents
+//   return {
+//     events,
+//     loadingEvents,
+//     error
+//   }
+// }
+
+// export default useEvents
