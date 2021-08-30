@@ -369,7 +369,7 @@ div > p.blank{
   background: linear-gradient(-45deg, var(--wallpaper),var(--wallpaper-tirth), var(--wallpaper-secondary), var(--wallpaper-fourth)) no-repeat;
   background-size: 300% 300%;
   animation-name: animacaoBackground;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   width: 100vw;
