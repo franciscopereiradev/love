@@ -382,10 +382,10 @@ div > p.blank{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(-45deg, var(--wallpaper),var(--wallpaper-tirth), var(--wallpaper-secondary), var(--wallpaper-fourth)) no-repeat;
+  background: linear-gradient(-45deg, var(--wallpaper-secondary),var(--wallpaper));
   background-size: 300% 300%;
   animation-name: animacaoBackground;
-  animation-duration: 10s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   width: 100vw;
