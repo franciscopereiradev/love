@@ -518,22 +518,20 @@ div > p.blank{
   padding: 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
 .list{
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 150px;
+  width: 90%;
 }
 
-.listItem{
-  margin: 20px 8px;
+.listItem, .listItemYear{
+  margin-bottom: 0.6rem;
   padding: 0;
   width: 100%;
   display: flex;
@@ -541,7 +539,6 @@ div > p.blank{
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  height: auto;
   background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),rgba(255, 255, 255, 0.4));
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -549,38 +546,23 @@ div > p.blank{
   
 }
 
-#pastMonth, #nextMonth{
-  width: 25%;
-}
-
-#correntMonth{
-  height: 100px;
-  width: 40%;
-}
-
 .listItemYear{
-  /* visibility: collapse; */
-  margin: 0.4rem 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* animation-name: animacaoBackgroundBtn;
+  margin-top: 0.4rem;
+  animation-name: animacaoBackgroundBtn;
   animation-duration: 6s;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
 
 .item, .itemYear{
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .itemDone{
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 32px;
   color: var(--text);
   text-decoration-line: line-through;
 }
@@ -952,23 +934,16 @@ footer{
   }
 
   .listItem, .listItemYear{
-    /* height: 4.6rem; */
+    height: 4.6rem;
   }
 
   .item, .itemDone, .itemYear{
     margin-top: 0.8rem;
-    font-size: 1rem;
-  }
-  #correntMonth > .item{
     font-size: 1.4rem;
   }
 
   .date, .dateDone, .dateYear{
     font-size: 0.6rem;
-  }
-
-  #correntMonth > .date{
-    font-size: 0.8rem;
   }
 
   .credits > p, .credits > h2{
@@ -1042,7 +1017,7 @@ footer{
   }
 
   .listItem, .listItemYear{
-    /* height: 4.6rem; */
+    height: 4.6rem;
   }
 
   .listItemYear{
