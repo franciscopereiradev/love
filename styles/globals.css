@@ -602,7 +602,7 @@ div > p.blank{
   background: linear-gradient(33deg, rgba(200, 235, 255, 0.9) 21%, rgba(255, 255, 255, 0.7));
   height: 100%;
   border-radius: 50px;
-  animation: 2s animacaoProgressBar;
+  animation: 1s animacaoProgressBar;
 }
 
 .progressBarMain > p {
