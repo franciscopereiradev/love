@@ -137,11 +137,11 @@ function MainPage() {
           <section class='achievements'>
             <ul class='list'>
               <Months/>
+            </ul>
               <li class='listItemYear'>
                   <h2 class='itemYear'>1 ano de namoro </h2>
                   <p class='dateYear'>06/03/2022</p>
               </li>
-            </ul>
           </section>
           <div class='addBox'>
             <button id='addedMore' class='pageNotCorrent' onClick={ChangetoMainAdded}>
