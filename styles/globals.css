@@ -383,7 +383,7 @@ div > p.blank{
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(-45deg, var(--wallpaper-secondary),var(--wallpaper));
-  background-size: 300% 300%;
+  background-size: 100% 100%;
   animation-name: animacaoBackground;
   animation-duration: 6s;
   animation-iteration-count: infinite;
