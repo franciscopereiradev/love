@@ -785,7 +785,7 @@ footer{
 
 .footerMain{
   transition: 700ms;
-  display: none;
+  display: flex;
   position: fixed;
   flex-direction: column;
   justify-content: center;
@@ -793,7 +793,7 @@ footer{
   width: 60px;
   height: 250px;
   bottom: 70px;
-  right: 10px;
+  right: -70px;
   margin: 0;
   padding: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
