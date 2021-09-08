@@ -74,12 +74,12 @@ header{
   display: flex;
   position: absolute;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   width: 100vw;
   top: 10px;
-  right: 10px;
+  left: 10px;
   
 }
 
@@ -130,6 +130,7 @@ header{
   padding: 0;
   width: 100vw;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .loading{
@@ -393,15 +394,18 @@ div > p.blank{
 }
 
 .glass, .glassBD{
-  background: rgba(0, 0, 0, 0.1);
-  width: 48rem;
-  height: 48rem;
-  border-radius: 1.4rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2.4rem);
-  background: linear-gradient(to right bottom, rgba(120, 120, 120, 0.3), rgba(80,80,80, 0.3));
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 100%;
+  backdrop-filter: blur(0rem);
+  border-radius: 0px;
+  border: none;
 }
 
 .textinhoPage{
@@ -458,14 +462,14 @@ div > p.blank{
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 1);
 }
 
-.glassBD{
+/*.glassBD{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 48rem;
+  width: 48rem; 
   height: auto;
-}
+}*/
 
 .circle1, .circle2{
   background: #fff;
@@ -518,6 +522,7 @@ div > p.blank{
   padding: 0;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .list{
@@ -626,6 +631,7 @@ div > p.blank{
   margin: 0;
   padding: 0;
   margin-top: 10px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -774,7 +780,7 @@ footer{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 95%;
+  width: 800px;
   height: 50px;
   bottom: 10px;
   margin: 0;
@@ -893,7 +899,7 @@ footer{
     backdrop-filter: blur(0rem);
     border-radius: 0px;
     border: none;
-    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    /* background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
   }
 
   .circle1, .circle2{
@@ -983,7 +989,7 @@ footer{
     height: 100%;
     backdrop-filter: blur(0rem);
     border-radius: 0px;
-    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    /* background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
   }
 
   .circle1, .circle2{
