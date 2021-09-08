@@ -784,7 +784,7 @@ footer{
 }
 
 .footerMain{
-  transition: 700ms;
+  transition: 450ms;
   display: flex;
   position: fixed;
   flex-direction: column;
