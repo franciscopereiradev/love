@@ -960,9 +960,13 @@ footer{
     font-size: 0.6rem;
   }
 
+  .footerMain{
+    width: 90%;
+  }
+
 }
 
-@media(max-height:800px){
+/*@media(max-height:800px){
 
   .pageLanding{
     margin: 0;
@@ -989,7 +993,7 @@ footer{
     height: 100%;
     backdrop-filter: blur(0rem);
     border-radius: 0px;
-    /* background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   }
 
   .circle1, .circle2{
@@ -1047,4 +1051,4 @@ footer{
     font-size: 0.6rem;
   }
 
-}
+}*/
