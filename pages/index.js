@@ -162,7 +162,7 @@ function showMenu(){
 
  if(footerMain.style.display == 'flex'){
    footerMain.style.display = 'none'
- } else if(footerMain.style.display == 'none'){
+ } else{
   footerMain.style.display = 'flex'
  }
 

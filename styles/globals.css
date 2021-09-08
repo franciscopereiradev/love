@@ -784,7 +784,7 @@ footer{
 }
 
 .footerMain{
-  display: flex;
+  display: none;
   position: fixed;
   flex-direction: column;
   justify-content: center;
