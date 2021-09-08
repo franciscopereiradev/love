@@ -784,6 +784,7 @@ footer{
 }
 
 .footerMain{
+  transition: 700ms;
   display: none;
   position: fixed;
   flex-direction: column;
@@ -798,7 +799,7 @@ footer{
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 30px;
   background: linear-gradient(to right top, rgba(255, 255, 255, 0.5) , rgb(255, 255, 255, 0.2));
-  animation: 700ms animacaoMenu;
+  /* animation: 700ms animacaoMenu; */
 }
 
 #menu{
@@ -980,11 +981,6 @@ footer{
   .momoPhrase > p {
     font-size: 0.6rem;
   }
-
-  .footerMain{
-    /* width: 90%; */
-  }
-
 }
 
 @media(max-height:800px){

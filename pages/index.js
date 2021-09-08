@@ -160,10 +160,10 @@ async function logout(){
 function showMenu(){
   var footerMain = document.querySelector('div.footerMain')
 
- if(footerMain.style.display == 'flex'){
-   footerMain.style.display = 'none'
- } else{
-  footerMain.style.display = 'flex'
+ if(footerMain.style.right != '-70px'){
+    footerMain.style.right = '-70px'
+ } else {
+  footerMain.style.right = '10px'
  }
 
 }
