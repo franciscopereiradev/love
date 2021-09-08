@@ -8,8 +8,8 @@ import RewardPage from '../source/components/RewardPage'
 import EventsPage from '../source/components/EventsPage'
 // import Months from '../source/components/Months'
 import { FaHome, FaHeart, FaGift } from "react-icons/fa";
-
-
+import { HiMenu } from 'react-icons/hi'
+import { BiExit, BiMenu } from 'react-icons/bi'
 
 async function changeToMainBD(){
   var mainBD = document.querySelector('div#mainBirthday')
@@ -127,7 +127,10 @@ async function enterCheck(){
   });
 } enterCheck()
 
-
+async function logout(){
+  localStorage.setItem('mode', 'logout')
+  window.location.href = '/'
+}
 // const express = require('express');
 // const bodyParser = require('body-parser')
 // const app = express();
@@ -154,6 +157,16 @@ async function enterCheck(){
 //     alert(error)
 //   }
 // } 
+function showMenu(){
+  var footerMain = document.querySelector('div.footerMain')
+
+ if(footerMain.style.display == 'flex'){
+   footerMain.style.display = 'none'
+ } else if(footerMain.style.display == 'none'){
+  footerMain.style.display = 'flex'
+ }
+
+}
 
 
 export default function Home() {
@@ -209,8 +222,13 @@ export default function Home() {
           <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
             <p><FaHeart/></p>
           </button>
+          <button id='logout'class='pageNotCorrent' onClick={logout}>
+            <p><BiExit/></p>
+          </button>
         </div>
-        
+        <button id='menu'class='pageNotCorrent' onClick={showMenu}>
+            <p><BiMenu/></p>
+          </button>
       </footer>
     </div>
   )}

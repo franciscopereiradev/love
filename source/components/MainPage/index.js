@@ -47,12 +47,6 @@ async function ChangetoMainAdded(){
   mainAdded.setAttribute('class', 'mainCorrent')
 }
 
-
-async function logout(){
-  localStorage.setItem('mode', 'logout')
-  window.location.href = '/'
-}
-
 function countDays(){
   const time = today - date_ini;
   const timeInDays = Math.floor(time/day)
@@ -118,11 +112,6 @@ function MainPage() {
       <div class='circle1'></div>
       <div class='circle2'></div>
         <div class='glass'>
-        <header>
-          <button id='logout'class='pageNotCorrent' onClick={logout}>
-            <p>Sair</p>
-          </button>
-        </header>
           <div class='header'>
             <h1 class='days'>{countDays()} dias de namoro!</h1>
             <h2 class='years'>Faltam {daysTo()} dias para fazermos {howManyYears()}!</h2>
