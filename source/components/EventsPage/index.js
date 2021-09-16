@@ -1,5 +1,6 @@
 // import useEvents from '../../hooks/useEvents';
 // import Events from '../Events'
+import { AiOutlineLoading } from 'react-icons/ai'
 
 function EventsPage(){
     // const { events } = useEvents()
@@ -11,7 +12,7 @@ function EventsPage(){
             <div class='glassBD'>
                 <h1>Eventos</h1>
                 <main>
-                {/* <Events events={events}></Events> */}
+                    <div class='loading'></div>
                 </main>
             </div>
         </div>
