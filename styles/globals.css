@@ -285,12 +285,12 @@ div > p.blank{
 .addBox{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 110px;
+  justify-content: space-between;
   align-items: center;
 }
 
 .addBox > button{
-  margin-right: 10px;
 }
 
 .inputKeyBG{
