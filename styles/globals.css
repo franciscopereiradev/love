@@ -290,6 +290,15 @@ div > p.blank{
   align-items: center;
 }
 
+.form{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
 .inputKeyBG{
   display: flex;
   align-items: center;
@@ -320,23 +329,24 @@ div > p.blank{
 }
 
 .keyCheck, .keyLogin{
+  margin: 0;
+  padding: 0;
+  margin: 0 0 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 500ms;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
   animation-name: animacaoBackgroundBtn;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   /* background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4)); */
   color: #fff;
-  margin-bottom: 20px;
+  font-size: 32px;
 }
 
 .keyCheck{
@@ -346,8 +356,8 @@ div > p.blank{
 }
 
 .keyLogin{
-  width: 70%;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
@@ -660,9 +670,8 @@ div > p.blank{
 }
 
 .loginInput{
-  margin-bottom: 25px;
   padding: 0 20px;
-  width: 70%;
+  width: 330px;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -861,12 +870,13 @@ footer{
 }
 
 .rememberBox{
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  width: 400px;
 }
 
 .rememberBox > input{

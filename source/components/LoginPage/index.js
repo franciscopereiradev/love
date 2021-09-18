@@ -1,3 +1,5 @@
+import { FiChevronRight } from 'react-icons/fi'
+
 async function madeLogin(){
   var mainLogin = document.querySelector('div#mainLogin')
   var mainBD = document.querySelector('div#mainBirthday')
@@ -48,12 +50,14 @@ function LoginPage() {
       <div class='circle2'></div>
       <div class='glassBD'>
         <h1>Couple Code ❤</h1>
-        <input id='password' class='loginInput' type='password'></input>
+        <div class='form'>
+          <input id='password' class='loginInput' type='password'></input>
+          <button type='submit' onClick={madeLogin} class='keyLogin'><FiChevronRight/></button>
+        </div>
         <div class='rememberBox'>
           <input id='remember' name='login' type='checkbox'></input>
           <p>Lembrar Couple Code ❤</p>
         </div>
-        <input type='submit' onClick={madeLogin} value='Entrar' class='keyLogin'></input>
         
       </div>
     </div>
