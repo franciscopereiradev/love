@@ -387,7 +387,8 @@ div > p.blank{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  max-width: 800px;
+  width: 100vw;
   height: 100%;
 
   border-radius: 0px;
