@@ -260,7 +260,8 @@ div > p.blank{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  max-width: 400px;
+  width: 90vw;
 }
 .inputKeyBG{
   display: flex;
@@ -320,8 +321,8 @@ div > p.blank{
 
 .rules > .keyCheck{
   margin: 0px;
-  border-radius: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .keyLogin{
