@@ -365,6 +365,8 @@ div > p.blank{
 }
 
 .mainCorrent{
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -854,7 +856,8 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  max-width: 400px;
+  width: 100vw;
 }
 
 .rememberBox > input{
