@@ -333,7 +333,7 @@ div > p.blank{
 
 .glassBD > .keyLogin{
   margin-top: 20px;
-  width: 250px;
+  width: 70%;
 }
 .keyLogin > svg{
   animation-name: animacaoLoginBtn;
