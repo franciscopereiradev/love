@@ -417,9 +417,8 @@ div > p.blank{
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: -50px;
   width: 95vw;
-  max-height: 500px;
+  max-height: 95vh;
   animation-name: animacaoText;
   animation-duration: 800ms;
   border-radius: 25px;
