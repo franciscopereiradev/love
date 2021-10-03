@@ -332,6 +332,7 @@ div > p.blank{
 }
 
 .glassBD > .keyLogin{
+  margin: 0;
   margin-top: 20px;
   width: 70%;
 }
