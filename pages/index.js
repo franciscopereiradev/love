@@ -193,27 +193,6 @@ async function changeTheme(){
   }
 
 }
-
-function verifyTheme(){
-  var mainLogin = document.querySelector('div#mainLogin')
-  var mainBD = document.querySelector('div#mainBirthday')
-  var mainHome = document.querySelector('div#mainHome')
-  var mainReward = document.querySelector('div#mainReward')
-
-  if(localStorage.theme == 'light'){
-    mainLogin.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    mainBD.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    mainHome.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    mainReward.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    
-  } else if(localStorage.theme == 'dark'){
-    mainLogin.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
-    mainBD.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
-    mainHome.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
-    mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
-  }
-}verifyTheme()
-
 export default function Home() {
   
   return (
