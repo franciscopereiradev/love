@@ -176,6 +176,7 @@ async function changeTheme(){
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
 
+  localStorage.setItem('theme', 'dark')
   if(localStorage.theme == 'light'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
     mainBD.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
