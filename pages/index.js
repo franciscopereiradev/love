@@ -175,16 +175,14 @@ async function changeTheme(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
-
-  // localStorage.setItem('theme', 'dark')
   
   if(localStorage.theme == 'light'){
-    mainLogin.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    mainBD.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    mainHome.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
-    mainReward.style.background = 'linear-gradient(-45deg, rgb(153, 131, 158), rgb(88, 115, 139))'
+    mainLogin.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainBD.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainHome.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainReward.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     
-    localStorage.setItem('theme', 'dark')
+    localStorage.theme = 'dark'
   } else if(localStorage.theme == 'dark'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainBD.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
@@ -192,9 +190,36 @@ async function changeTheme(){
     mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     
     localStorage.theme = 'light'
+  } else{
+    localStorage.setItem('theme', 'light')
   }
 
+  
 }
+async function darkThemeCheck(){
+  var mainLogin = document.querySelector('div#mainLogin')
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+
+  if(localStorage.theme == 'dark'){
+    mainLogin.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainBD.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainHome.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainReward.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+
+  } else if(localStorage.theme == 'light'){
+    mainLogin.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainBD.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainHome.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+
+  } else{
+    localStorage.setItem('theme', 'light')
+  }
+} darkThemeCheck()
+
+
 export default function Home() {
   
   return (
