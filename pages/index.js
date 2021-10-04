@@ -175,12 +175,16 @@ async function changeTheme(){
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
   var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
   
   if(localStorage.theme == 'light'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainBD.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainHome.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainReward.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainAdd.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainAdded.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     
     localStorage.theme = 'dark'
   } else if(localStorage.theme == 'dark'){
@@ -188,7 +192,9 @@ async function changeTheme(){
     mainBD.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainHome.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
-    
+    mainAdd.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainAdded.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+        
     localStorage.theme = 'light'
   } else{
     localStorage.setItem('theme', 'light')
@@ -200,6 +206,8 @@ async function darkThemeCheck(){
   var mainLogin = document.querySelector('div#mainLogin')
   var mainBD = document.querySelector('div#mainBirthday')
   var mainHome = document.querySelector('div#mainHome')
+  var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
   var mainReward = document.querySelector('div#mainReward')
 
   if(localStorage.theme == 'dark'){
@@ -207,12 +215,16 @@ async function darkThemeCheck(){
     mainBD.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainHome.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainReward.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainAdd.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainAdded.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
 
   } else if(localStorage.theme == 'light'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainBD.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainHome.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainAdd.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainAdded.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
 
   } else{
     localStorage.setItem('theme', 'light')
