@@ -160,7 +160,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .rewardsBox > .keyCheck{
@@ -170,6 +170,66 @@ header{
   font-weight: 600;
   font-size: 24px;
   margin: 10px;
+}
+
+.textBox{
+  display: flex;
+  flex-direction: row;
+  width: 17rem;
+  justify-content: space-between;
+}
+
+.textBtn{
+  margin: 0;
+  padding: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 500ms;
+  border: none;
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
+  animation-name: animacaoBackgroundBtn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  color: #fff;
+  cursor: pointer;
+}
+
+.videoBtn{
+  margin: 0;
+  padding: 0;
+  width: 17rem;
+  height: 3rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+  border: none;
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
+  animation-name: animacaoBackgroundBtn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  /* background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(200, 235, 255, 0.4)); */
+  color: #fff;
+  font-size: 24px;
 }
 
 .rules, .inputKeyBG{
@@ -231,6 +291,13 @@ header{
   margin: 10px;
   color: #fff;
   font-size: 12px;
+}
+
+.textinhoMain > .textinho2{
+  text-align: center;
+  margin: 10px;
+  color: #fff;
+  font-size: 8px;
 }
 
 div > p.blank{

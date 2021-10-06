@@ -1,4 +1,5 @@
 import TextinhoPage from "../TextinhoPage"
+import Textinho2Page from '../Textinho2Page'
 
 async function changeToMaintextinho(){
     var mainBD = document.querySelector('div#mainBirthday')
@@ -16,6 +17,23 @@ async function changeToMaintextinho(){
     mainTextinho.setAttribute('class', 'textinhoPageOn')
 }
 
+async function changeToMaintextinho2(){
+    var mainBD = document.querySelector('div#mainBirthday')
+    var mainHome = document.querySelector('div#mainHome')
+    var mainTextinho2 = document.querySelector('div#textinho2Page')
+    var buttonHome = document.querySelector('button#homeBt')
+    var buttonBD = document.querySelector('button#birthdayBt')
+    var buttonReward = document.querySelector('button#rewardBt')
+  
+    buttonHome.setAttribute('class', 'pageNotCorrent')
+    buttonBD.setAttribute('class', 'pageNotCorrent')
+    buttonReward.setAttribute('class', 'pageNotCorrent')
+    mainBD.setAttribute('class', 'mainBirthday')
+    mainHome.setAttribute('class', 'mainHome')
+    mainTextinho2.setAttribute('class', 'textinhoPageOn')
+}
+
+
 function RewardPage(){
     return(
         <div class='container'>
@@ -24,10 +42,14 @@ function RewardPage(){
             <div class='glassBD'>
                 <h1>Presentes</h1>
                 <div class='rewardsBox'>
-                    <a class='keyCheck' onClick={changeToMaintextinho}>Textinho</a>
-                    <a class='keyCheck' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
+                    <div class='textBox'>
+                        <a class='textBtn' onClick={changeToMaintextinho2}>Textinho de 7 meses</a>
+                        <a class='textBtn' onClick={changeToMaintextinho}>Textinho de Aniversário</a>
+                    </div>
+                    <a class='videoBtn' href='https://youtu.be/Vd35zKHoLMI' target='_black'>Vídeo</a>
                 </div>
-                <TextinhoPage/>   
+                <TextinhoPage/> 
+                <Textinho2Page/>
             </div>
         </div>
     )
