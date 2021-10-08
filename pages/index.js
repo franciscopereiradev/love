@@ -6,6 +6,7 @@ import MainPage from '../source/components/MainPage'
 import BirthdayPage from '../source/components/BirthdayPage'
 import RewardPage from '../source/components/RewardPage'
 import EventsPage from '../source/components/EventsPage'
+import AddPage from '../source/components/AddPage'
 // import Months from '../source/components/Months'
 import { FaHome, FaHeart, FaGift } from "react-icons/fa";
 import { HiMenu } from 'react-icons/hi'
@@ -231,7 +232,6 @@ async function darkThemeCheck(){
   }
 } darkThemeCheck()
 
-
 export default function Home() {
   
   return (
@@ -258,16 +258,7 @@ export default function Home() {
       </div> */}
 
       <div id='mainAdd' class='mainAdd'>
-        <div class='circle1'></div>
-        <div class='circle2'></div>
-          <form class='glassBD' method='POST'>
-            <h1>Nova data</h1>
-            <p>Evento</p>
-            <input id='event' name='event' class='loginInput' required></input>
-            <p>Data do evento</p>
-            <input id='eventDate' name='eventDate' class='loginInput' required></input>
-            <button class='keyLogin'>Guardar</button>
-          </form>
+        <AddPage/>
       </div>
 
       <div id='mainAdded' class='mainAdded'>
