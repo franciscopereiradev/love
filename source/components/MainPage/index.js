@@ -9,43 +9,43 @@ const day = hour * 24;
 const today = new Date().getTime();
 const date_ini = new Date(`March 06 2021 00:00:00 `).getTime();
 
-async function ChangetoMainAdd(){
-  var mainBD = document.querySelector('div#mainBirthday')
-  var mainHome = document.querySelector('div#mainHome')
-  var mainReward = document.querySelector('div#mainReward')
-  var mainAdd = document.querySelector('div#mainAdd')
-  var buttonHome = document.querySelector('button#homeBt')
-  var buttonBD = document.querySelector('button#birthdayBt')
-  var buttonReward = document.querySelector('button#rewardBt')
+// async function ChangetoMainAdd(){
+//   var mainBD = document.querySelector('div#mainBirthday')
+//   var mainHome = document.querySelector('div#mainHome')
+//   var mainReward = document.querySelector('div#mainReward')
+//   var mainAdd = document.querySelector('div#mainAdd')
+//   var buttonHome = document.querySelector('button#homeBt')
+//   var buttonReward = document.querySelector('button#rewardBt')
+//   var buttonBD = document.querySelector('button#birthdayBt')
 
 
-  buttonHome.setAttribute('class', 'pageNotCorrent')
-  buttonBD.setAttribute('class', 'pageNotCorrent')
-  buttonReward.setAttribute('class', 'pageNotCorrent')
-  mainBD.setAttribute('class', 'mainBirthday')
-  mainHome.setAttribute('class', 'mainHome')
-  mainReward.setAttribute('class', 'mainReward')
-  mainAdd.setAttribute('class', 'mainCorrent')
-}
+//   buttonHome.setAttribute('class', 'pageNotCorrent')
+//   buttonBD.setAttribute('class', 'pageNotCorrent')
+//   buttonReward.setAttribute('class', 'pageNotCorrent')
+//   mainBD.setAttribute('class', 'mainBirthday')
+//   mainHome.setAttribute('class', 'mainHome')
+//   mainReward.setAttribute('class', 'mainReward')
+//   mainAdd.setAttribute('class', 'mainCorrent')
+// }
 
-async function ChangetoMainAdded(){
-  var mainBD = document.querySelector('div#mainBirthday')
-  var mainHome = document.querySelector('div#mainHome')
-  var mainReward = document.querySelector('div#mainReward')
-  var mainAdded = document.querySelector('div#mainAdded')
-  var buttonHome = document.querySelector('button#homeBt')
-  var buttonBD = document.querySelector('button#birthdayBt')
-  var buttonReward = document.querySelector('button#rewardBt')
+// async function ChangetoMainAdded(){
+//   var mainBD = document.querySelector('div#mainBirthday')
+//   var mainHome = document.querySelector('div#mainHome')
+//   var mainReward = document.querySelector('div#mainReward')
+//   var mainAdded = document.querySelector('div#mainAdded')
+//   var buttonHome = document.querySelector('button#homeBt')
+//   var buttonBD = document.querySelector('button#birthdayBt')
+//   var buttonReward = document.querySelector('button#rewardBt')
 
 
-  buttonHome.setAttribute('class', 'pageNotCorrent')
-  buttonBD.setAttribute('class', 'pageNotCorrent')
-  buttonReward.setAttribute('class', 'pageNotCorrent')
-  mainBD.setAttribute('class', 'mainBirthday')
-  mainHome.setAttribute('class', 'mainHome')
-  mainReward.setAttribute('class', 'mainReward')
-  mainAdded.setAttribute('class', 'mainCorrent')
-}
+//   buttonHome.setAttribute('class', 'pageNotCorrent')
+//   buttonBD.setAttribute('class', 'pageNotCorrent')
+//   buttonReward.setAttribute('class', 'pageNotCorrent')
+//   mainBD.setAttribute('class', 'mainBirthday')
+//   mainHome.setAttribute('class', 'mainHome')
+//   mainReward.setAttribute('class', 'mainReward')
+//   mainAdded.setAttribute('class', 'mainCorrent')
+// }
 
 function countDays(){
   const time = today - date_ini;
@@ -132,14 +132,14 @@ function MainPage() {
               </li>
             </ul>
           </section>
-          <div class='addBox'>
+          {/* <div class='addBox'>
             <button id='addedMore' class='pageNotCorrent' onClick={ChangetoMainAdded}>
               <p><FaNewspaper/></p>
             </button>
             <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
               <p><FaPlus/></p>
             </button>
-          </div>
+          </div> */}
           <section class='dev'>
             <div class='credits'>
               <p>Made with Love ❤</p>

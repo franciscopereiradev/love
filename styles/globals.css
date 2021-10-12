@@ -243,7 +243,7 @@ header{
   box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right top, rgba(134, 194, 218, 0.5) , rgba(255, 255, 255, 0.4));
+  background: linear-gradient(to right top, rgba(200, 235, 255, 0.4),rgba(255, 255, 255, 0.4));
   /* height: 50px; */
   width: 90%;
 }
@@ -297,7 +297,7 @@ header{
   text-align: center;
   margin: 10px;
   color: #fff;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 div > p.blank{
@@ -432,7 +432,7 @@ div > p.blank{
 
 
 
-.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone, .mainAdd, .mainAdded, .mainTextinho{
+.mainHome, .mainBirthday, .mainReward, .mainLogin, .footerNone, .mainAdd, .mainAdded, .mainTextinho, .mainMovie{
   display: none;
 }
 
@@ -486,6 +486,7 @@ div > p.blank{
   margin: 0;
   padding: 0;
   width: 95vw;
+  max-width: 700px;
   max-height: 95vh;
   animation-name: animacaoText;
   animation-duration: 800ms;
@@ -843,7 +844,7 @@ footer{
   justify-content: center;
   align-items: center;
   width: 60px;
-  height: 300px;
+  height: 430px;
   bottom: 70px;
   right: -70px;
   margin: 0;

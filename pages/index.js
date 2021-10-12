@@ -7,11 +7,12 @@ import BirthdayPage from '../source/components/BirthdayPage'
 import RewardPage from '../source/components/RewardPage'
 import EventsPage from '../source/components/EventsPage'
 import AddPage from '../source/components/AddPage'
+import MoviePage from '../source/components/MoviePage'
 // import Months from '../source/components/Months'
 import { FaHome, FaHeart, FaGift } from "react-icons/fa";
-import { HiMenu } from 'react-icons/hi'
-import { BiExit, BiMenu } from 'react-icons/bi'
-import { IoInvertModeOutline, IoInvertMode } from 'react-icons/io5'
+import { BiExit, BiMenu, BiMovie } from 'react-icons/bi'
+import { IoInvertModeOutline  } from 'react-icons/io5'
+import { MdEventNote, MdMovie } from 'react-icons/md'
 import { Children } from 'react'
 
 async function changeToMainBD(){
@@ -24,7 +25,13 @@ async function changeToMainBD(){
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
+  var buttonAdd = document.querySelector('button#eventBt')
+  var mainMovie = document.querySelector('div#mainMovie')
+  var buttonMovie =  document.querySelector('button#movieBt')
 
+  mainMovie.setAttribute('class', 'mainMovie')
+  buttonMovie.setAttribute('class', 'pageNotCorrent')
+  buttonAdd.setAttribute('class', 'pageNotCorrent')
   buttonHome.setAttribute('class', 'pageNotCorrent')
   buttonBD.setAttribute('class', 'pageCorrent')
   buttonReward.setAttribute('class', 'pageNotCorrent')
@@ -46,8 +53,13 @@ async function changeToMainHome(){
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
+  var buttonAdd = document.querySelector('button#eventBt')
+  var mainMovie = document.querySelector('div#mainMovie')
+  var buttonMovie =  document.querySelector('button#movieBt')
 
-
+  mainMovie.setAttribute('class', 'mainMovie')
+  buttonMovie.setAttribute('class', 'pageNotCorrent')
+  buttonAdd.setAttribute('class', 'pageNotCorrent')
   buttonHome.setAttribute('class', 'pageCorrent')
   buttonBD.setAttribute('class', 'pageNotCorrent')
   buttonReward.setAttribute('class', 'pageNotCorrent')
@@ -69,8 +81,13 @@ async function changeToMainReward(){
   var buttonHome = document.querySelector('button#homeBt')
   var buttonBD = document.querySelector('button#birthdayBt')
   var buttonReward = document.querySelector('button#rewardBt')
+  var buttonAdd = document.querySelector('button#eventBt')
+  var mainMovie = document.querySelector('div#mainMovie')
+  var buttonMovie =  document.querySelector('button#movieBt')
 
-
+  mainMovie.setAttribute('class', 'mainMovie')
+  buttonMovie.setAttribute('class', 'pageNotCorrent')
+  buttonAdd.setAttribute('class', 'pageNotCorrent')
   buttonHome.setAttribute('class', 'pageNotCorrent')
   buttonBD.setAttribute('class', 'pageNotCorrent')
   buttonReward.setAttribute('class', 'pageCorrent')
@@ -80,6 +97,59 @@ async function changeToMainReward(){
   mainTextinho.setAttribute('class', 'mainTextinho')
   mainAdd.setAttribute('class', 'mainAdd')
   mainAdded.setAttribute('class', 'mainAdded')
+}
+
+async function ChangetoMainAdded(){
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
+  var buttonAdd = document.querySelector('button#eventBt')
+  var mainMovie = document.querySelector('div#mainMovie')
+  var buttonMovie =  document.querySelector('button#movieBt')
+
+  mainMovie.setAttribute('class', 'mainMovie')
+  buttonMovie.setAttribute('class', 'pageNotCorrent')
+  buttonAdd.setAttribute('class', 'pageCorrent')
+  buttonHome.setAttribute('class', 'pageNotCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
+  mainBD.setAttribute('class', 'mainBirthday')
+  mainHome.setAttribute('class', 'mainHome')
+  mainReward.setAttribute('class', 'mainReward')
+  mainAdd.setAttribute('class', 'mainAdd')
+  mainAdded.setAttribute('class', 'mainCorrent')
+}
+
+async function ChangetoMainMovie(){
+  var mainBD = document.querySelector('div#mainBirthday')
+  var mainHome = document.querySelector('div#mainHome')
+  var mainReward = document.querySelector('div#mainReward')
+  var mainAdd = document.querySelector('div#mainAdd')
+  var mainAdded = document.querySelector('div#mainAdded')
+  var buttonHome = document.querySelector('button#homeBt')
+  var buttonBD = document.querySelector('button#birthdayBt')
+  var buttonReward = document.querySelector('button#rewardBt')
+  var buttonAdd = document.querySelector('button#eventBt')
+  var mainMovie = document.querySelector('div#mainMovie')
+  var buttonMovie =  document.querySelector('button#movieBt')
+
+  mainMovie.setAttribute('class', 'mainCorrent')
+  buttonMovie.setAttribute('class', 'pageCorrent')
+  buttonAdd.setAttribute('class', 'pageNotCorrent')
+  buttonHome.setAttribute('class', 'pageNotCorrent')
+  buttonBD.setAttribute('class', 'pageNotCorrent')
+  buttonReward.setAttribute('class', 'pageNotCorrent')
+  mainBD.setAttribute('class', 'mainBirthday')
+  mainHome.setAttribute('class', 'mainHome')
+  mainReward.setAttribute('class', 'mainReward')
+  mainAdd.setAttribute('class', 'mainAdd')
+  mainAdded.setAttribute('class', 'mainAdded')
+  
 }
 
 async function loginFooterNone(){
@@ -178,6 +248,7 @@ async function changeTheme(){
   var mainReward = document.querySelector('div#mainReward')
   var mainAdd = document.querySelector('div#mainAdd')
   var mainAdded = document.querySelector('div#mainAdded')
+  var mainMovie = document.querySelector('div#mainMovie')
   
   if(localStorage.theme == 'light'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
@@ -186,6 +257,7 @@ async function changeTheme(){
     mainReward.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainAdd.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainAdded.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainMovie.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     
     localStorage.theme = 'dark'
   } else if(localStorage.theme == 'dark'){
@@ -195,6 +267,7 @@ async function changeTheme(){
     mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainAdd.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainAdded.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainMovie.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
         
     localStorage.theme = 'light'
   } else{
@@ -210,6 +283,7 @@ async function darkThemeCheck(){
   var mainAdd = document.querySelector('div#mainAdd')
   var mainAdded = document.querySelector('div#mainAdded')
   var mainReward = document.querySelector('div#mainReward')
+  var mainMovie = document.querySelector('div#mainMovie')
 
   if(localStorage.theme == 'dark'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
@@ -218,6 +292,7 @@ async function darkThemeCheck(){
     mainReward.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainAdd.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
     mainAdded.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
+    mainMovie.style.background = 'linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158))'
 
   } else if(localStorage.theme == 'light'){
     mainLogin.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
@@ -226,11 +301,13 @@ async function darkThemeCheck(){
     mainReward.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainAdd.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
     mainAdded.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
+    mainMovie.style.background = 'linear-gradient(-45deg, rgb(134, 194, 218), rgb(211, 156, 177))'
 
   } else{
     localStorage.setItem('theme', 'light')
   }
 } darkThemeCheck()
+
 
 export default function Home() {
   
@@ -253,9 +330,9 @@ export default function Home() {
         <LoginPage/>
       </div>
 
-      {/* <div class='mainTextinho' id='mainTextinho'>
-        <TextinhoPage/>
-      </div> */}
+      <div class='mainMovie' id='mainMovie'>
+        <MoviePage/>
+      </div>
 
       <div id='mainAdd' class='mainAdd'>
         <AddPage/>
@@ -278,6 +355,12 @@ export default function Home() {
           </button>
           <button id='birthdayBt' class='pageNotCorrent' onClick={changeToMainBD}>
             <p><FaHeart/></p>
+          </button>
+          <button id='eventBt' class='pageNotCorrent' onClick={ChangetoMainAdded}>
+              <p><MdEventNote/></p>
+          </button>
+          <button id='movieBt' class='pageNotCorrent' onClick={ChangetoMainMovie}>
+              <p><MdMovie/></p>
           </button>
           <button id='logout'class='pageNotCorrent' onClick={logout}>
             <p><BiExit/></p>
