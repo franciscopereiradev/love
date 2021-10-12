@@ -31,9 +31,9 @@ function MoviePage(){
             <div class='circle1'></div>
             <div class='circle2'></div>
             <div class='glassBD'>
-                <h1>Filmes e series</h1>
+                <h2>Filmes e series</h2>
                 <main style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                    <h2>Ainda não tens nenhum filme ou serie!</h2>
+                    <p>Ainda não tens nenhum filme ou serie!</p>
                     <button id='addMore' class='pageNotCorrent' onClick={indisponivel}>
                         <p><FaPlus/></p>
                     </button>
