@@ -13,6 +13,8 @@ function addEpisode911(){
         localStorage.setItem('EpNineOneOne', '1')
     } else{
     localStorage.EpNineOneOne ++
+
+    return(localStorage.EpNineOneOne)
 }}
     
 
@@ -149,7 +151,7 @@ function MoviePage(){
                             <div class='serieCard'>
                                 <h2 class='cardTitle'>9-1-1</h2>
                                 <p class='cardNext'>Proximo Episodio:</p>
-                                <p class='cardEp'>T: 5 Ep: {localStorage.EpNineOneOne}</p>
+                                <p class='cardEp'>T: 5 Ep: {addEpisode911()}</p>
                                 <div class='cardFooter'>
                                     <button class='cardBtn' onClick={addEpisode911}>
                                         <MdDone/> 
