@@ -55,7 +55,7 @@ function EventsPage(){
             <div class='circle2'></div>
             <div class='glassBD'>
                 <h2>Eventos</h2>
-                <main style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                <main style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}>
                     <p>Ainda não tens nenhum evento!</p>
                     <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
                         <p><FaPlus/></p>

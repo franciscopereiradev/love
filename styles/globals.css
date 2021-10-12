@@ -1002,6 +1002,7 @@ footer{
   padding: 0;
   height: 40px;
   font-size: 14px;
+  color: #fff;
 }
 
 .cardNext{
@@ -1009,6 +1010,7 @@ footer{
   padding: 0;
   height: 20px;
   font-size: 12px;
+  color: #fff;
 }
 
 .cardEp{
@@ -1016,6 +1018,7 @@ footer{
   padding: 0;
   height: 40px;
   font-size: 12px;
+  color: #fff;
 }
 
 .cardFooter{
