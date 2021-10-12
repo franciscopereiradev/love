@@ -450,7 +450,7 @@ div > p.blank{
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .glass, .glassBD{
@@ -950,4 +950,98 @@ footer{
 .rememberBox > p{
   font-size: 16px;
   color: #fff;
+}
+
+.movies, .series{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.containerMovies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.cardRow{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.movieCard, .serieCard{
+  margin: 0 10px;
+  padding: 0;
+  width: 120px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),rgba(255, 255, 255, 0.4));
+  box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cardTitle{
+  margin: 10px 10px 0 10px;
+  padding: 0;
+  height: 40px;
+  font-size: 14px;
+}
+
+.cardNext{
+  margin: 5px;
+  padding: 0;
+  height: 20px;
+  font-size: 12px;
+}
+
+.cardEp{
+  margin: 5px;
+  padding: 0;
+  height: 40px;
+  font-size: 12px;
+}
+
+.cardFooter{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cardBtn{
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15px;
+  background: linear-gradient(to right bottom, rgba(200, 235, 255, 0.4),rgba(255, 255, 255, 0.4));
+  box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
