@@ -42,6 +42,8 @@ function MoviePage(){
                         <div class='cardRow'>
                             <div class='movieCard'></div>
                             <div class='movieCard'></div>
+                        </div>
+                        <div class='cardRow'>
                             <div class='movieCard'></div>
                             <div class='movieCard'></div>
                         </div>
