@@ -1,3 +1,4 @@
+import next from 'next'
 import React, { useState } from 'react'
 import { FaPlus } from 'react-icons/fa'
 import { MdDone, MdDoneAll } from 'react-icons/md'
@@ -5,6 +6,16 @@ import { MdDone, MdDoneAll } from 'react-icons/md'
 function indisponivel(){
     alert('Temporariamente indisponível!')
 }
+
+
+function addEpisode911(){
+    if(!localStorage.EpNineOneOne){
+        localStorage.setItem('EpNineOneOne', '4')
+    } else{
+    localStorage.EpNineOneOne ++
+}}
+
+const nextEpisode911 = localStorage.EpNineOneOne
 
 function MoviePage(){
     const [event, setEvent] = useState([])
@@ -139,9 +150,9 @@ function MoviePage(){
                             <div class='serieCard'>
                                 <h2 class='cardTitle'>9-1-1</h2>
                                 <p class='cardNext'>Proximo Episodio:</p>
-                                <p class='cardEp'>T: 5 Ep: 4</p>
+                                <p class='cardEp'>T: 5 Ep: {nextEpisode911}</p>
                                 <div class='cardFooter'>
-                                    <button class='cardBtn'>
+                                    <button class='cardBtn' onClick={addEpisode911}>
                                         <MdDone/> 
                                     </button>
                                     <button class='cardBtn'>
