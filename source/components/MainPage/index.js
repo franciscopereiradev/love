@@ -106,45 +106,13 @@ function progress(){
 
 } progress()
 
-var countDownDate = new Date("Oct 12, 2021 22:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
 function MainPage() {
   return (
     <div class='container'>
       <div class='circle1'></div>
       <div class='circle2'></div>
         <div class='glass'>
-          <div>
-            <h1 id='demo'></h1>
-            <h2>Surpresa de 220 dias</h2>
-          </div>
-          {/* <div class='header'>
+          <div class='header'>
             <h1 class='days'>{countDays()} dias de namoro!</h1>
             <h2 class='years'>Faltam {daysTo()} dias para fazermos {howManyYears()}!</h2>
           </div>
@@ -173,7 +141,7 @@ function MainPage() {
               <p>"I see forever in your eyes"</p>
               <p>"I feel okay when i see you smile"</p>
             </div>
-          </section>*/}
+          </section>
           
         </div>
     </div>
