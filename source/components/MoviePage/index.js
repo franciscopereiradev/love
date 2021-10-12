@@ -10,7 +10,7 @@ function indisponivel(){
 
 function addEpisode911(){
     if(!localStorage.EpNineOneOne){
-        localStorage.setItem('EpNineOneOne', '4')
+        localStorage.setItem('EpNineOneOne', '1')
     } else{
     localStorage.EpNineOneOne ++
 }}
