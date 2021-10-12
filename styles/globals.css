@@ -282,7 +282,7 @@ header{
   box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right top, rgba(200, 235, 255, 0.4),rgba(201, 201, 201, 0.4));
+  background: linear-gradient(to right top, rgb(200, 235, 255),rgb(201, 201, 201));
   width: 100%;
 }
 
