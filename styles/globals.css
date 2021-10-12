@@ -282,7 +282,7 @@ header{
   box-shadow: 10px 10px 25px rgba(90, 110, 120, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right top, rgba(211, 156, 177, 0.5) , rgba(119, 119, 119, 0.4));
+  background: linear-gradient(to right top, rgba(200, 235, 255, 0.4),rgba(201, 201, 201, 0.4));
   width: 100%;
 }
 
@@ -298,6 +298,14 @@ header{
   margin: 10px;
   color: #fff;
   font-size: 10px;
+}
+
+.textinhoMain > .textinho3{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
 }
 
 div > p.blank{
@@ -491,7 +499,7 @@ div > p.blank{
   animation-name: animacaoText;
   animation-duration: 800ms;
   border-radius: 25px;
-  background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary));
+  /* background: linear-gradient(to right top, var(--wallpaper), var(--wallpaper-secondary)); */
 
   
 
