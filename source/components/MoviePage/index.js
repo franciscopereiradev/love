@@ -75,6 +75,8 @@ function MoviePage(){
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                        <div class='cardRow'>
                             <div class='serieCard'>
                                 <h2 class='cardTitle'>Elite</h2>
                                 <p class='cardNext'>Proximo Episodio:</p>
@@ -102,6 +104,7 @@ function MoviePage(){
                                 </div>
                             </div>
                         </div>
+
                         <div class='cardRow'>
                             <div class='serieCard'>
                                 <h2 class='cardTitle'>Stranger things</h2>
@@ -129,6 +132,8 @@ function MoviePage(){
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                        <div class='cardRow'>
                             <div class='serieCard'>
                                 <h2 class='cardTitle'>9-1-1</h2>
                                 <p class='cardNext'>Proximo Episodio:</p>
