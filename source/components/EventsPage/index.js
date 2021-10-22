@@ -82,6 +82,7 @@ function EventsPage(){
                         </div>
                         </div>
                     ))
+                    
                 }               
                     <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
                         <p><FaPlus/></p>
