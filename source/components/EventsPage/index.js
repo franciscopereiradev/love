@@ -1,8 +1,9 @@
 // import useEvents from '../../hooks/useEvents';
 // import Events from '../Events'
+import { supabase } from '../../utils/supabaseClient'
 import { AiOutlineLoading } from 'react-icons/ai'
 import { FaPlus } from 'react-icons/fa'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import firebase from '../firebase'
 import 'firebase/firestore';
 
@@ -28,9 +29,24 @@ async function ChangetoMainAdd(){
 }
   
 
+
 function EventsPage(){
-    const [event, setEvent] = useState([])
+    const [events, setEvents] = useState([])
     const [loading, setLoading] = useState(false)
+    const [event, setEvent] = useState({ title: "", date: ""})
+    const { title, date } = event
+
+    useEffect(() => {
+        fetchEvents()
+    }, [])
+
+    async function fetchEvents(){
+        const { data } = await supabase
+        .from('events')
+        .select()
+    setEvents(data)
+    console.log("data: ", data)
+    }
 
     // const ref = firebase.firestore().collection('events')
 
@@ -55,12 +71,21 @@ function EventsPage(){
             <div class='circle2'></div>
             <div class='glassBD'>
                 <h2>Eventos</h2>
-                <main style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}>
-                    <p>Ainda não tens nenhum evento!</p>
+                {
+                    events.map(event =>(
+                        <div class='achievements'>
+                        <div class='list'>
+                            <li key={event.id} class='listItem'>
+                                <h2 class="item">{event.title}</h2>
+                                <p class='date'>{event.date}</p>
+                            </li>
+                        </div>
+                        </div>
+                    ))
+                }               
                     <button id='addMore' class='pageNotCorrent' onClick={ChangetoMainAdd}>
                         <p><FaPlus/></p>
                     </button>
-                </main>
             </div>
         </div>
     )
