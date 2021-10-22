@@ -28,21 +28,24 @@ function AddPage(){
         .single()
     setEvent({ title: "", date: ""})
     fetchEvents()
+
+    sessionStorage
+
+    window.location.href = '/'
     }
 
     return(
         <div class='container'>
             <div class='circle1'></div>
             <div class='circle2'></div>
-            <form class='glassBD' method='POST'>
+            <div class='glassBD'>
                 <h1>Nova data</h1>
                 <p>Evento</p>
                 <input id='event' name='event' value={title} class='loginInput' required onChange={e => setEvent({ ...event, title: e.target.value})}></input>
                 <p>Data do evento</p>
                 <input id='eventDate' value={date} type='date' name='eventDate' class='loginInput' required onChange={e => setEvent({ ...event, date: e.target.value})}></input>
                 <button class='keyLogin' onClick={createEvent}>Guardar</button>
-                
-            </form>
+            </div>
         </div>
     )
 }

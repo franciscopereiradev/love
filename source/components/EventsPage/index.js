@@ -4,8 +4,6 @@ import { supabase } from '../../utils/supabaseClient'
 import { AiOutlineLoading } from 'react-icons/ai'
 import { FaPlus } from 'react-icons/fa'
 import React, { useState, useEffect } from 'react'
-import firebase from '../firebase'
-import 'firebase/firestore';
 
 async function ChangetoMainAdd(){
     var mainBD = document.querySelector('div#mainBirthday')
