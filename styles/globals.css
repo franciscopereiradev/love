@@ -139,6 +139,17 @@ header{
   background: rgba(0, 0, 0, 0.1);
 }
 
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, rgb(88, 115, 139), rgb(153, 131, 158));
+}
+
 .loading{
   height: 50px;
   width: 50px;
@@ -474,6 +485,7 @@ div > p.blank{
 
   border-radius: 0px;
   border: none;
+
 }
 
 .textinhoPage{

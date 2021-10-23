@@ -29,8 +29,6 @@ function AddPage(){
     setEvent({ title: "", date: ""})
     fetchEvents()
 
-    sessionStorage
-
     window.location.href = '/'
     }
 
